@@ -1,0 +1,29 @@
+
+.container {
+	height: 1200rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title {
+	font-size: 200%;
+	width: 600rpx;
+	margin-bottom: 150rpx;
+}
+input {
+	width: 600rpx;
+	height: 100rpx;
+	margin-bottom: 50rpx;
+	border: 1rpx solid black;
+	border-radius: 10rpx;
+	padding-left: 10rpx;
+}
+.loginButton {
+	width: 600rpx;
+	height: 100rpx;
+	background-color: #f0f8ff;
+	font-size: 120%;
+	margin-top: 50rpx;
+}
+
