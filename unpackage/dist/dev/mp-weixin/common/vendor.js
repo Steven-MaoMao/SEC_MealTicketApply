@@ -2500,7 +2500,7 @@ uni$1;exports.default = _default;
 
 /***/ }),
 
-/***/ 104:
+/***/ 106:
 /*!*****************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-popup/components/uni-popup/popup.js ***!
   \*****************************************************************************************/
@@ -2664,18 +2664,18 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 112:
+/***/ 114:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 113);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 115);
 
 /***/ }),
 
-/***/ 113:
+/***/ 115:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -2706,7 +2706,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 114);
+module.exports = __webpack_require__(/*! ./runtime */ 116);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -2723,7 +2723,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 114:
+/***/ 116:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -3455,7 +3455,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 115:
+/***/ 117:
 /*!******************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/Sansnn-uQRCode/js_sdk/uqrcode/uqrcode.js ***!
   \******************************************************************************************/
@@ -3499,7 +3499,7 @@ if (hadRuntime) {
 //   http://www.denso-wave.com/qrcode/faqpatent-e.html
 //
 //---------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 112));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var uQRCode;!function () {function o(o) {this.mode = d.MODE_8BIT_BYTE, this.data = o;}function e(o, e) {this.typeNumber = o, this.errorCorrectLevel = e, this.modules = null, this.moduleCount = 0, this.dataCache = null, this.dataList = new Array();}function r(o, e) {if (null == o.length) throw new Error(o.length + "/" + e);for (var r = 0; r < o.length && 0 == o[r];) {r++;}this.num = new Array(o.length - r + e);for (var t = 0; t < o.length - r; t++) {this.num[t] = o[t + r];}}function t(o, e) {this.totalCount = o, this.dataCount = e;}function i() {this.buffer = new Array(), this.length = 0;}function n() {function o(t, i, n) {t().then(function (o) {i(o);}).catch(function (o) {n(o);}).finally(function () {if (e.length) {var _r = e.shift();o(_r.task, _r.resolve, _r.reject);} else r = !1;});}var e = this.waitingQueue = [],r = this.isRunning = !1;this.exec = function (t) {return new Promise(function (i, n) {r ? e.push({ task: t, resolve: i, reject: n }) : (r = !0, o(t, i, n));});};}function a(o) {this.errMsg = o;}function u(o, e) {var r = this.data = "",t = this.size = 200,i = this.typeNumber = -1,n = (this.errorCorrectLevel = s.H, this.useDynamicSize = !1, this.dynamicSize = void 0, this.margin = 0),a = (this.backgroundColor = "#FFFFFF", this.backgroundImageSrc = void 0, this.backgroundImageWidth = void 0),d = this.backgroundImageHeight = void 0,g = this.backgroundImageX = void 0,l = this.backgroundImageY = void 0,h = (this.backgroundImageAlpha = 1, this.backgroundImageBorderRadius = 0, this.foregroundColor = "#000000", this.foregroundImageSrc = void 0, this.foregroundImageWidth = void 0),c = this.foregroundImageHeight = void 0,m = this.foregroundImageX = void 0,f = this.foregroundImageY = void 0,v = this.foregroundImagePadding = 0,C = (this.foregroundImageBackgroundColor = "#FFFFFF", this.foregroundImageBorderRadius = 0),p = this.foregroundImageShadowOffsetX = 0,b = this.foregroundImageShadowOffsetY = 0,y = this.foregroundImageShadowBlur = 0,k = (this.foregroundImageShadowColor = "#808080", this.foregroundPadding = 0, this.foregroundRadius = 1),I = this.positionProbeBackgroundColor = void 0,w = this.positionProbeForegroundColor = void 0,B = this.separatorColor = void 0,T = this.positionAdjustBackgroundColor = void 0,P = this.positionAdjustForegroundColor = void 0,S = this.timingBackgroundColor = void 0,A = this.timingForegroundColor = void 0,E = this.typeNumberBackgroundColor = void 0,D = this.typeNumberForegroundColor = void 0,N = this.darkBlockColor = void 0,L = (this.style = "default", this.patterns = [], this.canvasContext = void 0);this.queue = !1, this.modules = [], this.moduleCount = 0, this.drawModules = [];Object.defineProperties(this, { data: { get: function get() {return "" !== r && void 0 !== r || console.error("[uQRCode]: data must be set!"), r;}, set: function set(o) {r = o;} }, size: { get: function get() {return t;}, set: function set(o) {t = Number(o);} }, typeNumber: { get: function get() {return i;}, set: function set(o) {i = Number(o);} }, margin: { get: function get() {return n;}, set: function set(o) {n = Number(o);} }, backgroundImageWidth: { get: function get() {return void 0 === a ? this.dynamicSize : this.useDynamicSize ? this.dynamicSize / this.size * a : a;}, set: function set(o) {a = Number(o);} }, backgroundImageHeight: { get: function get() {return void 0 === d ? this.dynamicSize : this.useDynamicSize ? this.dynamicSize / this.size * d : d;}, set: function set(o) {d = Number(o);} }, backgroundImageX: { get: function get() {return void 0 === g ? 0 : this.useDynamicSize ? this.dynamicSize / this.size * g : g;}, set: function set(o) {g = Number(o);} }, backgroundImageY: { get: function get() {return void 0 === l ? 0 : this.useDynamicSize ? this.dynamicSize / this.size * l : l;}, set: function set(o) {l = Number(o);} }, foregroundImageWidth: { get: function get() {return void 0 === h ? (this.dynamicSize - 2 * this.margin) / 4 : this.useDynamicSize ? this.dynamicSize / this.size * h : h;}, set: function set(o) {h = Number(o);} }, foregroundImageHeight: { get: function get() {return void 0 === c ? (this.dynamicSize - 2 * this.margin) / 4 : this.useDynamicSize ? this.dynamicSize / this.size * c : c;}, set: function set(o) {c = Number(o);} }, foregroundImageX: { get: function get() {return void 0 === m ? this.dynamicSize / 2 - this.foregroundImageWidth / 2 : this.useDynamicSize ? this.dynamicSize / this.size * m : m;}, set: function set(o) {m = Number(o);} }, foregroundImageY: { get: function get() {return void 0 === f ? this.dynamicSize / 2 - this.foregroundImageHeight / 2 : this.useDynamicSize ? this.dynamicSize / this.size * f : f;}, set: function set(o) {f = Number(o);} }, foregroundImagePadding: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * v : v;}, set: function set(o) {v = Number(o);} }, foregroundImageBorderRadius: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * C : C;}, set: function set(o) {C = Number(o);} }, foregroundImageShadowOffsetX: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * p : p;}, set: function set(o) {p = Number(o);} }, foregroundImageShadowOffsetY: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * b : b;}, set: function set(o) {b = Number(o);} }, foregroundImageShadowBlur: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * y : y;}, set: function set(o) {y = Number(o);} }, foregroundRadius: { get: function get() {return k;}, set: function set(o) {k = o > 1 ? 1 : o < 0 ? 0 : o;} }, positionProbeBackgroundColor: { get: function get() {return I || this.backgroundColor;}, set: function set(o) {I = o;} }, positionProbeForegroundColor: { get: function get() {return w || this.foregroundColor;}, set: function set(o) {w = o;} }, separatorColor: { get: function get() {return B || this.backgroundColor;}, set: function set(o) {B = o;} }, positionAdjustBackgroundColor: { get: function get() {return T || this.backgroundColor;}, set: function set(o) {T = o;} }, positionAdjustForegroundColor: { get: function get() {return P || this.foregroundColor;}, set: function set(o) {P = o;} }, timingBackgroundColor: { get: function get() {return S || this.backgroundColor;}, set: function set(o) {S = o;} }, timingForegroundColor: { get: function get() {return A || this.foregroundColor;}, set: function set(o) {A = o;} }, typeNumberBackgroundColor: { get: function get() {return E || this.backgroundColor;}, set: function set(o) {E = o;} }, typeNumberForegroundColor: { get: function get() {return D || this.foregroundColor;}, set: function set(o) {D = o;} }, darkBlockColor: { get: function get() {return N || this.foregroundColor;}, set: function set(o) {N = o;} }, canvasContext: { get: function get() {return void 0 === L && console.error("[uQRCode]: use drawCanvas, you need to set the canvasContext!"), L;}, set: function set(o) {L = u.getCanvasContext(o);} } }), o && this.setOptions(o), e && (this.canvasContext = u.getCanvasContext(e));}o.prototype = { getLength: function getLength(o) {return this.data.length;}, write: function write(o) {for (var e = 0; e < this.data.length; e++) {o.put(this.data.charCodeAt(e), 8);}} }, e.prototype = { addData: function addData(e) {var r = new o(e);this.dataList.push(r), this.dataCache = null;}, isDark: function isDark(o, e) {if (o < 0 || this.moduleCount <= o || e < 0 || this.moduleCount <= e) throw new Error(o + "," + e);return this.modules[o][e];}, getModuleCount: function getModuleCount() {return this.moduleCount;}, make: function make() {if (this.typeNumber < 1) {var o = 1;for (o = 1; o < 40; o++) {for (var e = t.getRSBlocks(o, this.errorCorrectLevel), r = new i(), n = 0, a = 0; a < e.length; a++) {n += e[a].dataCount;}for (a = 0; a < this.dataList.length; a++) {var u = this.dataList[a];r.put(u.mode, 4), r.put(u.getLength(), l.getLengthInBits(u.mode, o)), u.write(r);}if (r.getLengthInBits() <= 8 * n) break;}this.typeNumber = o;}this.makeImpl(!1, this.getBestMaskPattern());}, makeImpl: function makeImpl(o, r) {this.moduleCount = 4 * this.typeNumber + 17, this.modules = new Array(this.moduleCount);for (var t = 0; t < this.moduleCount; t++) {this.modules[t] = new Array(this.moduleCount);for (var i = 0; i < this.moduleCount; i++) {this.modules[t][i] = null;}}this.setupPositionProbePattern(0, 0), this.setupPositionProbePattern(this.moduleCount - 7, 0), this.setupPositionProbePattern(0, this.moduleCount - 7), this.setupPositionAdjustPattern(), this.setupTimingPattern(), this.setupTypeInfo(o, r), this.typeNumber >= 7 && this.setupTypeNumber(o), null == this.dataCache && (this.dataCache = e.createData(this.typeNumber, this.errorCorrectLevel, this.dataList)), this.mapData(this.dataCache, r);}, setupPositionProbePattern: function setupPositionProbePattern(o, e) {for (var r = -1; r <= 7; r++) {if (!(o + r <= -1 || this.moduleCount <= o + r)) for (var t = -1; t <= 7; t++) {e + t <= -1 || this.moduleCount <= e + t || (this.modules[o + r][e + t] = 0 <= r && r <= 6 && (0 == t || 6 == t) || 0 <= t && t <= 6 && (0 == r || 6 == r) || 2 <= r && r <= 4 && 2 <= t && t <= 4);}}}, getBestMaskPattern: function getBestMaskPattern() {for (var o = 0, e = 0, r = 0; r < 8; r++) {this.makeImpl(!0, r);var t = l.getLostPoint(this);(0 == r || o > t) && (o = t, e = r);}return e;}, createMovieClip: function createMovieClip(o, e, r) {var t = o.createEmptyMovieClip(e, r),i = 1;this.make();for (var n = 0; n < this.modules.length; n++) {for (var a = n * i, u = 0; u < this.modules[n].length; u++) {var d = u * i,s = this.modules[n][u];s && (t.beginFill(0, 100), t.moveTo(d, a), t.lineTo(d + i, a), t.lineTo(d + i, a + i), t.lineTo(d, a + i), t.endFill());}}return t;}, setupTimingPattern: function setupTimingPattern() {for (var o = 8; o < this.moduleCount - 8; o++) {null == this.modules[o][6] && (this.modules[o][6] = o % 2 == 0);}for (var e = 8; e < this.moduleCount - 8; e++) {null == this.modules[6][e] && (this.modules[6][e] = e % 2 == 0);}}, setupPositionAdjustPattern: function setupPositionAdjustPattern() {for (var o = l.getPatternPosition(this.typeNumber), e = 0; e < o.length; e++) {for (var r = 0; r < o.length; r++) {var t = o[e],i = o[r];if (null == this.modules[t][i]) for (var n = -2; n <= 2; n++) {for (var a = -2; a <= 2; a++) {this.modules[t + n][i + a] = -2 == n || 2 == n || -2 == a || 2 == a || 0 == n && 0 == a;}}}}}, setupTypeNumber: function setupTypeNumber(o) {for (var e = l.getBCHTypeNumber(this.typeNumber), r = 0; r < 18; r++) {var t = !o && 1 == (e >> r & 1);this.modules[Math.floor(r / 3)][r % 3 + this.moduleCount - 8 - 3] = t;}for (r = 0; r < 18; r++) {t = !o && 1 == (e >> r & 1);this.modules[r % 3 + this.moduleCount - 8 - 3][Math.floor(r / 3)] = t;}}, setupTypeInfo: function setupTypeInfo(o, e) {for (var r = this.errorCorrectLevel << 3 | e, t = l.getBCHTypeInfo(r), i = 0; i < 15; i++) {var n = !o && 1 == (t >> i & 1);i < 6 ? this.modules[i][8] = n : i < 8 ? this.modules[i + 1][8] = n : this.modules[this.moduleCount - 15 + i][8] = n;}for (i = 0; i < 15; i++) {n = !o && 1 == (t >> i & 1);i < 8 ? this.modules[8][this.moduleCount - i - 1] = n : i < 9 ? this.modules[8][15 - i - 1 + 1] = n : this.modules[8][15 - i - 1] = n;}this.modules[this.moduleCount - 8][8] = !o;}, mapData: function mapData(o, e) {for (var r = -1, t = this.moduleCount - 1, i = 7, n = 0, a = this.moduleCount - 1; a > 0; a -= 2) {for (6 == a && a--;;) {for (var u = 0; u < 2; u++) {if (null == this.modules[t][a - u]) {var d = !1;n < o.length && (d = 1 == (o[n] >>> i & 1));var s = l.getMask(e, t, a - u);s && (d = !d), this.modules[t][a - u] = d, i--, -1 == i && (n++, i = 7);}}if (t += r, t < 0 || this.moduleCount <= t) {t -= r, r = -r;break;}}}} }, e.PAD0 = 236, e.PAD1 = 17, e.createData = function (o, r, n) {for (var a = t.getRSBlocks(o, r), u = new i(), d = 0; d < n.length; d++) {var s = n[d];u.put(s.mode, 4), u.put(s.getLength(), l.getLengthInBits(s.mode, o)), s.write(u);}var g = 0;for (d = 0; d < a.length; d++) {g += a[d].dataCount;}if (u.getLengthInBits() > 8 * g) throw new Error("code length overflow. (" + u.getLengthInBits() + ">" + 8 * g + ")");for (u.getLengthInBits() + 4 <= 8 * g && u.put(0, 4); u.getLengthInBits() % 8 != 0;) {u.putBit(!1);}for (; !(u.getLengthInBits() >= 8 * g || (u.put(e.PAD0, 8), u.getLengthInBits() >= 8 * g));) {u.put(e.PAD1, 8);}return e.createBytes(u, a);}, e.createBytes = function (o, e) {for (var t = 0, i = 0, n = 0, a = new Array(e.length), u = new Array(e.length), d = 0; d < e.length; d++) {var s = e[d].dataCount,g = e[d].totalCount - s;i = Math.max(i, s), n = Math.max(n, g), a[d] = new Array(s);for (var h = 0; h < a[d].length; h++) {a[d][h] = 255 & o.buffer[h + t];}t += s;var c = l.getErrorCorrectPolynomial(g),m = new r(a[d], c.getLength() - 1),f = m.mod(c);u[d] = new Array(c.getLength() - 1);for (h = 0; h < u[d].length; h++) {var v = h + f.getLength() - u[d].length;u[d][h] = v >= 0 ? f.get(v) : 0;}}var C = 0;for (h = 0; h < e.length; h++) {C += e[h].totalCount;}var p = new Array(C),b = 0;for (h = 0; h < i; h++) {for (d = 0; d < e.length; d++) {h < a[d].length && (p[b++] = a[d][h]);}}for (h = 0; h < n; h++) {for (d = 0; d < e.length; d++) {h < u[d].length && (p[b++] = u[d][h]);}}return p;};for (var d = { MODE_NUMBER: 1, MODE_ALPHA_NUM: 2, MODE_8BIT_BYTE: 4, MODE_KANJI: 8 }, s = { L: 1, M: 0, Q: 3, H: 2 }, g = { PATTERN000: 0, PATTERN001: 1, PATTERN010: 2, PATTERN011: 3, PATTERN100: 4, PATTERN101: 5, PATTERN110: 6, PATTERN111: 7 }, l = { PATTERN_POSITION_TABLE: [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]], G15: 1335, G18: 7973, G15_MASK: 21522, getBCHTypeInfo: function getBCHTypeInfo(o) {for (var e = o << 10; l.getBCHDigit(e) - l.getBCHDigit(l.G15) >= 0;) {e ^= l.G15 << l.getBCHDigit(e) - l.getBCHDigit(l.G15);}return (o << 10 | e) ^ l.G15_MASK;}, getBCHTypeNumber: function getBCHTypeNumber(o) {for (var e = o << 12; l.getBCHDigit(e) - l.getBCHDigit(l.G18) >= 0;) {e ^= l.G18 << l.getBCHDigit(e) - l.getBCHDigit(l.G18);}return o << 12 | e;}, getBCHDigit: function getBCHDigit(o) {for (var e = 0; 0 != o;) {e++, o >>>= 1;}return e;}, getPatternPosition: function getPatternPosition(o) {return l.PATTERN_POSITION_TABLE[o - 1];}, getMask: function getMask(o, e, r) {switch (o) {case g.PATTERN000:return (e + r) % 2 == 0;case g.PATTERN001:return e % 2 == 0;case g.PATTERN010:return r % 3 == 0;case g.PATTERN011:return (e + r) % 3 == 0;case g.PATTERN100:return (Math.floor(e / 2) + Math.floor(r / 3)) % 2 == 0;case g.PATTERN101:return e * r % 2 + e * r % 3 == 0;case g.PATTERN110:return (e * r % 2 + e * r % 3) % 2 == 0;case g.PATTERN111:return (e * r % 3 + (e + r) % 2) % 2 == 0;default:throw new Error("bad maskPattern:" + o);}}, getErrorCorrectPolynomial: function getErrorCorrectPolynomial(o) {for (var e = new r([1], 0), t = 0; t < o; t++) {e = e.multiply(new r([1, h.gexp(t)], 0));}return e;}, getLengthInBits: function getLengthInBits(o, e) {if (1 <= e && e < 10) switch (o) {case d.MODE_NUMBER:return 10;case d.MODE_ALPHA_NUM:return 9;case d.MODE_8BIT_BYTE:case d.MODE_KANJI:return 8;default:throw new Error("mode:" + o);} else if (e < 27) switch (o) {case d.MODE_NUMBER:return 12;case d.MODE_ALPHA_NUM:return 11;case d.MODE_8BIT_BYTE:return 16;case d.MODE_KANJI:return 10;default:throw new Error("mode:" + o);} else {if (!(e < 41)) throw new Error("type:" + e);switch (o) {case d.MODE_NUMBER:return 14;case d.MODE_ALPHA_NUM:return 13;case d.MODE_8BIT_BYTE:return 16;case d.MODE_KANJI:return 12;default:throw new Error("mode:" + o);}}}, getLostPoint: function getLostPoint(o) {for (var e = o.getModuleCount(), r = 0, t = 0; t < e; t++) {for (var i = 0; i < e; i++) {for (var n = 0, a = o.isDark(t, i), u = -1; u <= 1; u++) {if (!(t + u < 0 || e <= t + u)) for (var d = -1; d <= 1; d++) {i + d < 0 || e <= i + d || 0 == u && 0 == d || a == o.isDark(t + u, i + d) && n++;}}n > 5 && (r += 3 + n - 5);}}for (t = 0; t < e - 1; t++) {for (i = 0; i < e - 1; i++) {var s = 0;o.isDark(t, i) && s++, o.isDark(t + 1, i) && s++, o.isDark(t, i + 1) && s++, o.isDark(t + 1, i + 1) && s++, 0 != s && 4 != s || (r += 3);}}for (t = 0; t < e; t++) {for (i = 0; i < e - 6; i++) {o.isDark(t, i) && !o.isDark(t, i + 1) && o.isDark(t, i + 2) && o.isDark(t, i + 3) && o.isDark(t, i + 4) && !o.isDark(t, i + 5) && o.isDark(t, i + 6) && (r += 40);}}for (i = 0; i < e; i++) {for (t = 0; t < e - 6; t++) {o.isDark(t, i) && !o.isDark(t + 1, i) && o.isDark(t + 2, i) && o.isDark(t + 3, i) && o.isDark(t + 4, i) && !o.isDark(t + 5, i) && o.isDark(t + 6, i) && (r += 40);}}var g = 0;for (i = 0; i < e; i++) {for (t = 0; t < e; t++) {o.isDark(t, i) && g++;}}var l = Math.abs(100 * g / e / e - 50) / 5;return r += 10 * l, r;} }, h = { glog: function glog(o) {if (o < 1) throw new Error("glog(" + o + ")");return h.LOG_TABLE[o];}, gexp: function gexp(o) {for (; o < 0;) {o += 255;}for (; o >= 256;) {o -= 255;}return h.EXP_TABLE[o];}, EXP_TABLE: new Array(256), LOG_TABLE: new Array(256) }, c = 0; c < 8; c++) {h.EXP_TABLE[c] = 1 << c;}for (c = 8; c < 256; c++) {h.EXP_TABLE[c] = h.EXP_TABLE[c - 4] ^ h.EXP_TABLE[c - 5] ^ h.EXP_TABLE[c - 6] ^ h.EXP_TABLE[c - 8];}for (c = 0; c < 255; c++) {h.LOG_TABLE[h.EXP_TABLE[c]] = c;}r.prototype = { get: function get(o) {return this.num[o];}, getLength: function getLength() {return this.num.length;}, multiply: function multiply(o) {for (var e = new Array(this.getLength() + o.getLength() - 1), t = 0; t < this.getLength(); t++) {for (var i = 0; i < o.getLength(); i++) {e[t + i] ^= h.gexp(h.glog(this.get(t)) + h.glog(o.get(i)));}}return new r(e, 0);}, mod: function mod(o) {if (this.getLength() - o.getLength() < 0) return this;for (var e = h.glog(this.get(0)) - h.glog(o.get(0)), t = new Array(this.getLength()), i = 0; i < this.getLength(); i++) {t[i] = this.get(i);}for (i = 0; i < o.getLength(); i++) {t[i] ^= h.gexp(h.glog(o.get(i)) + e);}return new r(t, 0).mod(o);} }, t.RS_BLOCK_TABLE = [[1, 26, 19], [1, 26, 16], [1, 26, 13], [1, 26, 9], [1, 44, 34], [1, 44, 28], [1, 44, 22], [1, 44, 16], [1, 70, 55], [1, 70, 44], [2, 35, 17], [2, 35, 13], [1, 100, 80], [2, 50, 32], [2, 50, 24], [4, 25, 9], [1, 134, 108], [2, 67, 43], [2, 33, 15, 2, 34, 16], [2, 33, 11, 2, 34, 12], [2, 86, 68], [4, 43, 27], [4, 43, 19], [4, 43, 15], [2, 98, 78], [4, 49, 31], [2, 32, 14, 4, 33, 15], [4, 39, 13, 1, 40, 14], [2, 121, 97], [2, 60, 38, 2, 61, 39], [4, 40, 18, 2, 41, 19], [4, 40, 14, 2, 41, 15], [2, 146, 116], [3, 58, 36, 2, 59, 37], [4, 36, 16, 4, 37, 17], [4, 36, 12, 4, 37, 13], [2, 86, 68, 2, 87, 69], [4, 69, 43, 1, 70, 44], [6, 43, 19, 2, 44, 20], [6, 43, 15, 2, 44, 16], [4, 101, 81], [1, 80, 50, 4, 81, 51], [4, 50, 22, 4, 51, 23], [3, 36, 12, 8, 37, 13], [2, 116, 92, 2, 117, 93], [6, 58, 36, 2, 59, 37], [4, 46, 20, 6, 47, 21], [7, 42, 14, 4, 43, 15], [4, 133, 107], [8, 59, 37, 1, 60, 38], [8, 44, 20, 4, 45, 21], [12, 33, 11, 4, 34, 12], [3, 145, 115, 1, 146, 116], [4, 64, 40, 5, 65, 41], [11, 36, 16, 5, 37, 17], [11, 36, 12, 5, 37, 13], [5, 109, 87, 1, 110, 88], [5, 65, 41, 5, 66, 42], [5, 54, 24, 7, 55, 25], [11, 36, 12], [5, 122, 98, 1, 123, 99], [7, 73, 45, 3, 74, 46], [15, 43, 19, 2, 44, 20], [3, 45, 15, 13, 46, 16], [1, 135, 107, 5, 136, 108], [10, 74, 46, 1, 75, 47], [1, 50, 22, 15, 51, 23], [2, 42, 14, 17, 43, 15], [5, 150, 120, 1, 151, 121], [9, 69, 43, 4, 70, 44], [17, 50, 22, 1, 51, 23], [2, 42, 14, 19, 43, 15], [3, 141, 113, 4, 142, 114], [3, 70, 44, 11, 71, 45], [17, 47, 21, 4, 48, 22], [9, 39, 13, 16, 40, 14], [3, 135, 107, 5, 136, 108], [3, 67, 41, 13, 68, 42], [15, 54, 24, 5, 55, 25], [15, 43, 15, 10, 44, 16], [4, 144, 116, 4, 145, 117], [17, 68, 42], [17, 50, 22, 6, 51, 23], [19, 46, 16, 6, 47, 17], [2, 139, 111, 7, 140, 112], [17, 74, 46], [7, 54, 24, 16, 55, 25], [34, 37, 13], [4, 151, 121, 5, 152, 122], [4, 75, 47, 14, 76, 48], [11, 54, 24, 14, 55, 25], [16, 45, 15, 14, 46, 16], [6, 147, 117, 4, 148, 118], [6, 73, 45, 14, 74, 46], [11, 54, 24, 16, 55, 25], [30, 46, 16, 2, 47, 17], [8, 132, 106, 4, 133, 107], [8, 75, 47, 13, 76, 48], [7, 54, 24, 22, 55, 25], [22, 45, 15, 13, 46, 16], [10, 142, 114, 2, 143, 115], [19, 74, 46, 4, 75, 47], [28, 50, 22, 6, 51, 23], [33, 46, 16, 4, 47, 17], [8, 152, 122, 4, 153, 123], [22, 73, 45, 3, 74, 46], [8, 53, 23, 26, 54, 24], [12, 45, 15, 28, 46, 16], [3, 147, 117, 10, 148, 118], [3, 73, 45, 23, 74, 46], [4, 54, 24, 31, 55, 25], [11, 45, 15, 31, 46, 16], [7, 146, 116, 7, 147, 117], [21, 73, 45, 7, 74, 46], [1, 53, 23, 37, 54, 24], [19, 45, 15, 26, 46, 16], [5, 145, 115, 10, 146, 116], [19, 75, 47, 10, 76, 48], [15, 54, 24, 25, 55, 25], [23, 45, 15, 25, 46, 16], [13, 145, 115, 3, 146, 116], [2, 74, 46, 29, 75, 47], [42, 54, 24, 1, 55, 25], [23, 45, 15, 28, 46, 16], [17, 145, 115], [10, 74, 46, 23, 75, 47], [10, 54, 24, 35, 55, 25], [19, 45, 15, 35, 46, 16], [17, 145, 115, 1, 146, 116], [14, 74, 46, 21, 75, 47], [29, 54, 24, 19, 55, 25], [11, 45, 15, 46, 46, 16], [13, 145, 115, 6, 146, 116], [14, 74, 46, 23, 75, 47], [44, 54, 24, 7, 55, 25], [59, 46, 16, 1, 47, 17], [12, 151, 121, 7, 152, 122], [12, 75, 47, 26, 76, 48], [39, 54, 24, 14, 55, 25], [22, 45, 15, 41, 46, 16], [6, 151, 121, 14, 152, 122], [6, 75, 47, 34, 76, 48], [46, 54, 24, 10, 55, 25], [2, 45, 15, 64, 46, 16], [17, 152, 122, 4, 153, 123], [29, 74, 46, 14, 75, 47], [49, 54, 24, 10, 55, 25], [24, 45, 15, 46, 46, 16], [4, 152, 122, 18, 153, 123], [13, 74, 46, 32, 75, 47], [48, 54, 24, 14, 55, 25], [42, 45, 15, 32, 46, 16], [20, 147, 117, 4, 148, 118], [40, 75, 47, 7, 76, 48], [43, 54, 24, 22, 55, 25], [10, 45, 15, 67, 46, 16], [19, 148, 118, 6, 149, 119], [18, 75, 47, 31, 76, 48], [34, 54, 24, 34, 55, 25], [20, 45, 15, 61, 46, 16]], t.getRSBlocks = function (o, e) {var r = t.getRsBlockTable(o, e);if (null == r) throw new Error("bad rs block @ typeNumber:" + o + "/errorCorrectLevel:" + e);for (var i = r.length / 3, n = new Array(), a = 0; a < i; a++) {for (var u = r[3 * a + 0], d = r[3 * a + 1], s = r[3 * a + 2], g = 0; g < u; g++) {n.push(new t(d, s));}}return n;}, t.getRsBlockTable = function (o, e) {switch (e) {case s.L:return t.RS_BLOCK_TABLE[4 * (o - 1) + 0];case s.M:return t.RS_BLOCK_TABLE[4 * (o - 1) + 1];case s.Q:return t.RS_BLOCK_TABLE[4 * (o - 1) + 2];case s.H:return t.RS_BLOCK_TABLE[4 * (o - 1) + 3];default:return;}}, i.prototype = { get: function get(o) {var e = Math.floor(o / 8);return 1 == (this.buffer[e] >>> 7 - o % 8 & 1);}, put: function put(o, e) {for (var r = 0; r < e; r++) {this.putBit(1 == (o >>> e - r - 1 & 1));}}, getLengthInBits: function getLengthInBits() {return this.length;}, putBit: function putBit(o) {var e = Math.floor(this.length / 8);this.buffer.length <= e && this.buffer.push(0), o && (this.buffer[e] |= 128 >>> this.length % 8), this.length++;} }, u.errorCorrectLevel = s, u.queue = new n(), u.queueLoadImage = new n(), u.isQueueLoadImage = !1, u.loadImageCache = [], u.utf16To8 = function (o) {for (var e, r = "", t = 0; t < o.length; t++) {e = o.charCodeAt(t), e >= 1 && e <= 127 ? r += o.charAt(t) : e > 2047 ? (r += String.fromCharCode(224 | e >> 12 & 15), r += String.fromCharCode(128 | e >> 6 & 63), r += String.fromCharCode(128 | e >> 0 & 63)) : (r += String.fromCharCode(192 | e >> 6 & 31), r += String.fromCharCode(128 | e >> 0 & 63));}return r;}, u.deepReplace = function () {var o = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var r = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;var t;t = r ? o : _objectSpread({}, o);for (var _o in e) {var i = e[_o];null != i && (i.constructor == Object ? t[_o] = this.deepReplace(t[_o], i) : i.constructor != String || i ? t[_o] = i : t[_o] = t[_o]);}return t;}, u.getSomePropertyToNewObject = function () {var o = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];var r = {};return e.forEach(function (e) {r[e] = o[e];}), r;}, u.getCanvasContext = function (o) {return o.setFillStyle = o.setFillStyle || function (e) {o.fillStyle = e;}, o.setFontSize = o.setFontSize || function (e) {o.font = "".concat(e, "px");}, o.setTextAlign = o.setTextAlign || function (e) {o.textAlign = e;}, o.setTextBaseline = o.setTextBaseline || function (e) {o.textBaseline = e;}, o.draw = o.draw || function (o, e) {e && e();}, o;}, u.getLoadImage = function (o) {return "function" == typeof o ? function (e) {var r = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : !1;return u.isQueueLoadImage ? u.queueLoadImage.exec(function () {return new Promise(function (t, i) {setTimeout(function () {var r = u.loadImageCache.find(function (o) {return o.src == e;});r ? t(r.img) : o(e).then(function (o) {u.loadImageCache.push({ src: e, img: o }), t(o);}).catch(function (o) {i(o);});}, r ? 150 : 10);});}) : o(e);} : function (o) {return Promise.resolve(o);};};var m = u.loadImage = function (o) {return Promise.resolve(o);};Object.defineProperty(u, "loadImage", { get: function get() {return m;}, set: function set(o) {m = u.getLoadImage(o);} }), u.prototype = { setOptions: function setOptions(o) {var e, r, t, i, n, a, d, s, g, l, h, c, m, f, v, C, p, b, y, k, I, w, B, T, P, S, A, E, D, N, L, R, z, M, x, _, O, F, H, X, j, Y, Q, G, K, W, q, U, $, J, V, Z, oo, eo, ro, to, io, no, ao;o && u.deepReplace(this, { data: o.data || o.text, size: o.size, typeNumber: o.typeNumber, errorCorrectLevel: o.errorCorrectLevel, useDynamicSize: o.useDynamicSize, margin: o.margin, backgroundColor: o.backgroundColor || (null === (e = o.background) || void 0 === e ? void 0 : e.color), backgroundImageSrc: o.backgroundImageSrc || (null === (r = o.background) || void 0 === r ? void 0 : null === (t = r.image) || void 0 === t ? void 0 : t.src), backgroundImageWidth: o.backgroundImageWidth || (null === (i = o.background) || void 0 === i ? void 0 : null === (n = i.image) || void 0 === n ? void 0 : n.width), backgroundImageHeight: o.backgroundImageHeight || (null === (a = o.background) || void 0 === a ? void 0 : null === (d = a.image) || void 0 === d ? void 0 : d.height), backgroundImageX: o.backgroundImageX || (null === (s = o.background) || void 0 === s ? void 0 : null === (g = s.image) || void 0 === g ? void 0 : g.x), backgroundImageY: o.backgroundImageY || (null === (l = o.background) || void 0 === l ? void 0 : null === (h = l.image) || void 0 === h ? void 0 : h.y), backgroundImageAlpha: o.backgroundImageAlpha || (null === (c = o.background) || void 0 === c ? void 0 : null === (m = c.image) || void 0 === m ? void 0 : m.alpha), backgroundImageBorderRadius: o.backgroundImageBorderRadius || (null === (f = o.background) || void 0 === f ? void 0 : null === (v = f.image) || void 0 === v ? void 0 : v.borderRadius), foregroundColor: o.foregroundColor || (null === (C = o.foreground) || void 0 === C ? void 0 : C.color), foregroundImageSrc: o.foregroundImageSrc || (null === (p = o.foreground) || void 0 === p ? void 0 : null === (b = p.image) || void 0 === b ? void 0 : b.src), foregroundImageWidth: o.foregroundImageWidth || (null === (y = o.foreground) || void 0 === y ? void 0 : null === (k = y.image) || void 0 === k ? void 0 : k.width), foregroundImageHeight: o.foregroundImageHeight || (null === (I = o.foreground) || void 0 === I ? void 0 : null === (w = I.image) || void 0 === w ? void 0 : w.height), foregroundImageX: o.foregroundImageX || (null === (B = o.foreground) || void 0 === B ? void 0 : null === (T = B.image) || void 0 === T ? void 0 : T.x), foregroundImageY: o.foregroundImageY || (null === (P = o.foreground) || void 0 === P ? void 0 : null === (S = P.image) || void 0 === S ? void 0 : S.y), foregroundImagePadding: o.foregroundImagePadding || (null === (A = o.foreground) || void 0 === A ? void 0 : null === (E = A.image) || void 0 === E ? void 0 : E.padding), foregroundImageBackgroundColor: o.foregroundImageBackgroundColor || (null === (D = o.foreground) || void 0 === D ? void 0 : null === (N = D.image) || void 0 === N ? void 0 : N.backgroundColor), foregroundImageBorderRadius: o.foregroundImageBorderRadius || (null === (L = o.foreground) || void 0 === L ? void 0 : null === (R = L.image) || void 0 === R ? void 0 : R.borderRadius), foregroundImageShadowOffsetX: o.foregroundImageShadowOffsetX || (null === (z = o.foreground) || void 0 === z ? void 0 : null === (M = z.image) || void 0 === M ? void 0 : M.shadowOffsetX), foregroundImageShadowOffsetY: o.foregroundImageShadowOffsetY || (null === (x = o.foreground) || void 0 === x ? void 0 : null === (_ = x.image) || void 0 === _ ? void 0 : _.shadowOffsetY), foregroundImageShadowBlur: o.foregroundImageShadowBlur || (null === (O = o.foreground) || void 0 === O ? void 0 : null === (F = O.image) || void 0 === F ? void 0 : F.shadowBlur), foregroundImageShadowColor: o.foregroundImageShadowColor || (null === (H = o.foreground) || void 0 === H ? void 0 : null === (X = H.image) || void 0 === X ? void 0 : X.shadowColor), foregroundPadding: o.foregroundPadding, foregroundRadius: o.foregroundRadius, positionProbeBackgroundColor: o.positionProbeBackgroundColor || (null === (j = o.positionProbe) || void 0 === j ? void 0 : j.backgroundColor) || (null === (Y = o.positionDetection) || void 0 === Y ? void 0 : Y.backgroundColor), positionProbeForegroundColor: o.positionProbeForegroundColor || (null === (Q = o.positionProbe) || void 0 === Q ? void 0 : Q.foregroundColor) || (null === (G = o.positionDetection) || void 0 === G ? void 0 : G.foregroundColor), separatorColor: o.separatorColor || (null === (K = o.separator) || void 0 === K ? void 0 : K.color), positionAdjustBackgroundColor: o.positionAdjustBackgroundColor || (null === (W = o.positionAdjust) || void 0 === W ? void 0 : W.backgroundColor) || (null === (q = o.alignment) || void 0 === q ? void 0 : q.backgroundColor), positionAdjustForegroundColor: o.positionAdjustForegroundColor || (null === (U = o.positionAdjust) || void 0 === U ? void 0 : U.foregroundColor) || (null === ($ = o.alignment) || void 0 === $ ? void 0 : $.foregroundColor), timingBackgroundColor: o.timingBackgroundColor || (null === (J = o.timing) || void 0 === J ? void 0 : J.backgroundColor), timingForegroundColor: o.timingForegroundColor || (null === (V = o.timing) || void 0 === V ? void 0 : V.foregroundColor), typeNumberBackgroundColor: o.typeNumberBackgroundColor || (null === (Z = o.typeNumber) || void 0 === Z ? void 0 : Z.backgroundColor) || (null === (oo = o.versionInformation) || void 0 === oo ? void 0 : oo.backgroundColor), typeNumberForegroundColor: o.typeNumberForegroundColor || (null === (eo = o.typeNumber) || void 0 === eo ? void 0 : eo.foregroundColor) || (null === (ro = o.versionInformation) || void 0 === ro ? void 0 : ro.foregroundColor), darkBlockColor: o.darkBlockColor || (null === (to = o.darkBlock) || void 0 === to ? void 0 : to.color), style: o.style, patterns: o.patterns || (null === (io = o.art) || void 0 === io ? void 0 : io.patterns) || (null === (no = o.art) || void 0 === no ? void 0 : null === (ao = no.shape) || void 0 === ao ? void 0 : ao.map(function (o) {return o.imageSrc = o.image, o;})), queue: o.queue }, !0);}, make: function make() {this.foregroundColor === this.backgroundColor && console.error("[uQRCode]: foregroundColor and backgroundColor cannot be the same!");var o = new e(this.typeNumber, this.errorCorrectLevel);o.addData(u.utf16To8(this.data.toString())), o.make(), this.typeNumber = o.typeNumber, this.modules = o.modules, this.moduleCount = o.moduleCount;var r = this.size - 2 * this.margin;this.dynamicSize = Math.ceil(r / o.moduleCount) * o.moduleCount + 2 * this.margin, this.useDynamicSize || (this.dynamicSize = this.size), this.paintData(), this.paintPositionProbe(), this.paintSeparator(), this.paintTiming(), this.paintPositionAdjust(), this.paintDarkBlock(), this.paintTypeNumber(), this.getDrawModules();}, paintData: function paintData() {var o = this.dynamicSize,e = this.margin,r = this.backgroundColor,t = this.foregroundColor,i = this.foregroundPadding,n = this.style,a = this.modules,u = this.moduleCount,d = (o - 2 * e) / u,s = d,g = 0;i > 0 && "liquid" != n && "art" != n && (g = s * i / 2, s -= 2 * g);for (var l = 0; l < u; l++) {for (var h = 0; h < u; h++) {var c = a[l][h];if (c) {var m = h * d + e + g,f = l * d + e + g;a[l][h] = { size: s, x: m, y: f, type: ["foreground"], color: t, isBlack: !0, isDrawn: !1 };} else a[l][h] = { size: s, x: h * s + e, y: l * s + e, type: ["background"], color: r, isBlack: !1, isDrawn: !1 };}}}, paintPositionProbe: function paintPositionProbe() {var o = this.modules,e = this.moduleCount,r = this.positionProbeBackgroundColor,t = this.positionProbeForegroundColor,i = [[0, 0, 1], [1, 0, 1], [2, 0, 1], [3, 0, 1], [4, 0, 1], [5, 0, 1], [6, 0, 1], [0, 1, 1], [1, 1, 0], [2, 1, 0], [3, 1, 0], [4, 1, 0], [5, 1, 0], [6, 1, 1], [0, 2, 1], [1, 2, 0], [2, 2, 1], [3, 2, 1], [4, 2, 1], [5, 2, 0], [6, 2, 1], [0, 3, 1], [1, 3, 0], [2, 3, 1], [3, 3, 1], [4, 3, 1], [5, 3, 0], [6, 3, 1], [0, 4, 1], [1, 4, 0], [2, 4, 1], [3, 4, 1], [4, 4, 1], [5, 4, 0], [6, 4, 1], [0, 5, 1], [1, 5, 0], [2, 5, 0], [3, 5, 0], [4, 5, 0], [5, 5, 0], [6, 5, 1], [0, 6, 1], [1, 6, 1], [2, 6, 1], [3, 6, 1], [4, 6, 1], [5, 6, 1], [6, 6, 1]],n = e - 7;i.forEach(function (e) {var i = o[e[0]][e[1]],a = o[e[0] + n][e[1]],u = o[e[0]][e[1] + n];u.type.push("positionProbe"), a.type.push("positionProbe"), i.type.push("positionProbe"), i.color = 1 == e[2] ? t : r, a.color = 1 == e[2] ? t : r, u.color = 1 == e[2] ? t : r;});}, paintSeparator: function paintSeparator() {var o = this.modules,e = this.moduleCount,r = this.separatorColor;[[7, 0], [7, 1], [7, 2], [7, 3], [7, 4], [7, 5], [7, 6], [7, 7], [0, 7], [1, 7], [2, 7], [3, 7], [4, 7], [5, 7], [6, 7]].forEach(function (t) {var i = o[t[0]][t[1]],n = o[e - t[0] - 1][t[1]],a = o[t[0]][e - t[1] - 1];a.type.push("separator"), n.type.push("separator"), i.type.push("separator"), i.color = r, n.color = r, a.color = r;});}, paintPositionAdjust: function paintPositionAdjust() {var o = this.typeNumber,e = this.modules,r = this.moduleCount,t = this.foregroundColor,i = this.backgroundColor,n = this.positionAdjustForegroundColor,a = this.positionAdjustBackgroundColor,u = this.timingForegroundColor,d = this.timingBackgroundColor;var s = [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]],g = s[o - 1];if (g) {var _o2 = [[-2, -2, 1], [-1, -2, 1], [0, -2, 1], [1, -2, 1], [2, -2, 1], [-2, -1, 1], [-1, -1, 0], [0, -1, 0], [1, -1, 0], [2, -1, 1], [-2, 0, 1], [-1, 0, 0], [0, 0, 1], [1, 0, 0], [2, 0, 1], [-2, 1, 1], [-1, 1, 0], [0, 1, 0], [1, 1, 0], [2, 1, 1], [-2, 2, 1], [-1, 2, 1], [0, 2, 1], [1, 2, 1], [2, 2, 1]],_s = g.length;for (var _l = 0; _l < _s; _l++) {var _loop = function _loop(_h) {var _x$y = { x: g[_l], y: g[_h] },s = _x$y.x,c = _x$y.y;s < 9 && c < 9 || s > r - 9 - 1 && c < 9 || c > r - 9 - 1 && s < 9 || _o2.forEach(function (o) {var r = e[s + o[0]][c + o[1]];r.type.push("positionAdjust"), r.type.includes("timing") ? 1 == o[2] ? r.color = n == t ? u : n : r.color = n == t && a == i ? d : a : r.color = 1 == o[2] ? n : a;});};for (var _h = 0; _h < _s; _h++) {_loop(_h);}}}}, paintTiming: function paintTiming() {var o = this.modules,e = this.moduleCount,r = this.timingForegroundColor,t = this.timingBackgroundColor,i = e - 16;for (var _e = 0; _e < i; _e++) {var n = o[6][8 + _e],a = o[8 + _e][6];n.type.push("timing"), a.type.push("timing"), n.color = 1 & _e ^ 1 ? r : t, a.color = 1 & _e ^ 1 ? r : t;}}, paintDarkBlock: function paintDarkBlock() {var o = this.modules,e = this.moduleCount,r = this.darkBlockColor;var t = o[e - 7 - 1][8];t.type.push("darkBlock"), t.color = r;}, paintTypeNumber: function paintTypeNumber() {var o = this.typeNumber,e = this.modules,r = this.moduleCount,t = this.typeNumberBackgroundColor,i = this.typeNumberForegroundColor;if (o < 7) return e;var n = [0, 0, 0, 0, 0, 0, 0, "000111110010010100", "001000010110111100", "001001101010011001", "001010010011010011", "001011101111110110", "001100011101100010", "001101100001000111", "001110011000001101", "001111100100101000", "010000101101111000", "010001010001011101", "010010101000010111", "010011010100110010", "010100100110100110", "010101011010000011", "010110100011001001", "010111011111101100", "011000111011000100", "011001000111100001", "011010111110101011", "011011000010001110", "011100110000011010", "011101001100111111", "011110110101110101", "011111001001010000", "100000100111010101", "100001011011110000", "100010100010111010", "100011011110011111", "100100101100001011", "100101010000101110", "100110101001100100", "100111010101000001", "101000110001101001"];var a = n[o] + n[o],u = [r - 11, r - 10, r - 9],d = [[5, u[2]], [5, u[1]], [5, u[0]], [4, u[2]], [4, u[1]], [4, u[0]], [3, u[2]], [3, u[1]], [3, u[0]], [2, u[2]], [2, u[1]], [2, u[0]], [1, u[2]], [1, u[1]], [1, u[0]], [0, u[2]], [0, u[1]], [0, u[0]], [u[2], 5], [u[1], 5], [u[0], 5], [u[2], 4], [u[1], 4], [u[0], 4], [u[2], 3], [u[1], 3], [u[0], 3], [u[2], 2], [u[1], 2], [u[0], 2], [u[2], 1], [u[1], 1], [u[0], 1], [u[2], 0], [u[1], 0], [u[0], 0]];d.forEach(function (o, r) {var n = e[o[0]][o[1]];n.type.push("typeNumber"), n.color = "1" == a[r] ? i : t;});}, getDrawModules: function getDrawModules() {var o = this.drawModules = [],e = this.modules,r = this.moduleCount,t = this.dynamicSize,i = this.backgroundColor,n = this.backgroundImageSrc,a = this.backgroundImageX,u = this.backgroundImageY,d = this.backgroundImageWidth,s = this.backgroundImageHeight,g = this.backgroundImageAlpha,l = this.backgroundImageBorderRadius,h = this.style,c = this.patterns,m = this.foregroundImageSrc,f = this.foregroundImageX,v = this.foregroundImageY,C = this.foregroundImageWidth,p = this.foregroundImageHeight,b = this.foregroundImagePadding,y = this.foregroundImageBackgroundColor,k = this.foregroundImageBorderRadius,I = this.foregroundImageShadowOffsetX,w = this.foregroundImageShadowOffsetY,B = this.foregroundImageShadowBlur,T = this.foregroundImageShadowColor;i && o.push({ name: "background", type: "box", color: i, x: 0, y: 0, width: t, height: t }), n && o.push({ name: "backgroundImage", type: "image", imageSrc: n, imageSource: "backgroundImageSrc", x: a, y: u, width: d, height: s, alpha: g, borderRadius: l });for (var P = 0; P < r; P++) {for (var S = 0; S < r; S++) {var A = e[P][S];A.isDrawn || (A.type.includes("foreground") ? o.push({ name: "foreground", type: "block", color: A.color, x: A.x, y: A.y, width: A.size, height: A.size, rowIndex: P, colIndex: S }) : o.push({ name: "background", type: "block", color: A.color, x: A.x, y: A.y, width: A.size, height: A.size, rowIndex: P, colIndex: S }), A.isDrawn = !0);}}m && o.push({ name: "foregroundImage", type: "image", imageSrc: m, imageSource: "foregroundImageSrc", x: f, y: v, width: C, height: p, padding: b, backgroundColor: y, borderRadius: k, shadowOffsetX: I, shadowOffsetY: w, shadowBlur: B, shadowColor: T });}, getModuleIsBack: function getModuleIsBack(o, e) {var r = this.moduleCount;return !(0 > o || 0 > e || o >= r || e >= r) && this.modules[o][e].isBlack;}, drawCanvas: function drawCanvas() {var _this = this;var o = this.canvasContext,e = this.foregroundColor,r = this.backgroundColor,t = this.queue,i = this.style;if (e === r) return Promise.reject(new a("[uQRCode]: foregroundColor and backgroundColor cannot be the same!"));var n = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e, r) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.prev = 0;o.draw(!1);_context.next = 4;return _this.styleDefault();case 4:o.draw(!0);setTimeout(e, 150);_context.next = 13;break;case 8:_context.prev = 8;_context.t0 = _context["catch"](0);if (_context.t0 instanceof a) {_context.next = 12;break;}throw _context.t0;case 12:r(_context.t0);case 13:case "end":return _context.stop();}}}, _callee, null, [[0, 8]]);}));return function n(_x, _x2) {return _ref.apply(this, arguments);};}();return new Promise(function (o, e) {t ? u.queue.exec(function () {return new Promise(function (o, e) {n(o, e);});}).then(function () {setTimeout(o, 150);}).catch(function (o) {e(o);}) : n(o, e);});}, draw: function draw() {return this.drawCanvas();}, styleDefault: function styleDefault() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var o, e, r, t, i, n, d, s, g, l, h, c, m, f, v, C, p, b;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:o = _this2.drawModules, e = _this2.canvasContext, r = _this2.backgroundColor, t = _this2.margin, i = _this2.queue;n = 0;case 2:if (!(n < o.length)) {_context2.next = 46;break;}e.save();d = o[n];_context2.t0 = d.type;_context2.next = _context2.t0 === "box" ? 8 : _context2.t0 === "block" ? 10 : _context2.t0 === "image" ? 12 : 42;break;case 8:"background" == d.name && (e.setFillStyle(d.color), e.fillRect(d.x, d.y, d.width, d.height));return _context2.abrupt("break", 42);case 10:"foreground" == d.name && (e.beginPath(), e.rect(Math.round(d.x) + .5, Math.round(d.y) + .5, Math.round(d.width), Math.round(d.height)), e.closePath(), e.fillStyle = d.color, e.fill(), e.strokeStyle = d.color, e.stroke());return _context2.abrupt("break", 42);case 12:if (!("backgroundImage" === d.name)) {_context2.next = 27;break;}s = d.x, g = d.y, l = d.width, h = d.height, c = d.borderRadius;l < 2 * c && (c = l / 2), h < 2 * c && (c = h / 2), e.globalAlpha = d.alpha, e.beginPath(), e.moveTo(s + c, g), e.arcTo(s + l, g, s + l, g + h, c), e.arcTo(s + l, g + h, s, g + h, c), e.arcTo(s, g + h, s, g, c), e.arcTo(s, g, s + l, g, c), e.closePath(), e.strokeStyle = "rgba(0,0,0,0)", e.stroke(), e.clip();_context2.prev = 15;_context2.next = 18;return u.loadImage(d.imageSrc);case 18:m = _context2.sent;e.drawImage(m, d.x, d.y, d.width, d.height);_context2.next = 25;break;case 22:_context2.prev = 22;_context2.t1 = _context2["catch"](15);throw console.error("[uQRCode]: ".concat(d.imageSource, " invalid!")), new a("[uQRCode]: ".concat(d.imageSource, " invalid!"));case 25:_context2.next = 42;break;case 27:if (!("foregroundImage" === d.name)) {_context2.next = 42;break;}s = d.x, g = d.y, l = d.width, h = d.height, c = d.borderRadius;l < 2 * c && (c = l / 2), h < 2 * c && (c = h / 2);f = d.x - d.padding, v = d.y - d.padding, C = d.width + 2 * d.padding, p = d.height + 2 * d.padding, b = C / l * c;C < 2 * b && (b = C / 2), p < 2 * b && (b = p / 2), e.save(), e.shadowOffsetX = d.shadowOffsetX, e.shadowOffsetY = d.shadowOffsetY, e.shadowBlur = d.shadowBlur, e.shadowColor = d.shadowColor, e.beginPath(), e.moveTo(f + b, v), e.arcTo(f + C, v, f + C, v + p, b), e.arcTo(f + C, v + p, f, v + p, b), e.arcTo(f, v + p, f, v, b), e.arcTo(f, v, f + C, v, b), e.closePath(), e.setFillStyle(d.backgroundColor), e.fill(), e.restore(), e.beginPath(), e.moveTo(f + b, v), e.arcTo(f + C, v, f + C, v + p, b), e.arcTo(f + C, v + p, f, v + p, b), e.arcTo(f, v + p, f, v, b), e.arcTo(f, v, f + C, v, b), e.closePath(), e.setFillStyle(d.padding > 0 ? d.backgroundColor : "rgba(0,0,0,0)"), e.fill(), e.beginPath(), e.moveTo(s + c, g), e.arcTo(s + l, g, s + l, g + h, c), e.arcTo(s + l, g + h, s, g + h, c), e.arcTo(s, g + h, s, g, c), e.arcTo(s, g, s + l, g, c), e.closePath(), e.strokeStyle = "rgba(0,0,0,0)", e.stroke(), e.clip();_context2.prev = 32;_context2.next = 35;return u.loadImage(d.imageSrc);case 35:m = _context2.sent;e.drawImage(m, d.x, d.y, d.width, d.height);_context2.next = 42;break;case 39:_context2.prev = 39;_context2.t2 = _context2["catch"](32);throw console.error("[uQRCode]: ".concat(d.imageSource, " invalid!")), new a("[uQRCode]: ".concat(d.imageSource, " invalid!"));case 42:i && e.draw(!0), e.restore();case 43:n++;_context2.next = 2;break;case 46:case "end":return _context2.stop();}}}, _callee2, null, [[15, 22], [32, 39]]);}))();} }, uQRCode = u, uQRCode.export = function () {var o, e;o = "undefined" != typeof window ? window : global, e = uQRCode,  true ? module.exports = e : undefined;};}();
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 114));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var uQRCode;!function () {function o(o) {this.mode = d.MODE_8BIT_BYTE, this.data = o;}function e(o, e) {this.typeNumber = o, this.errorCorrectLevel = e, this.modules = null, this.moduleCount = 0, this.dataCache = null, this.dataList = new Array();}function r(o, e) {if (null == o.length) throw new Error(o.length + "/" + e);for (var r = 0; r < o.length && 0 == o[r];) {r++;}this.num = new Array(o.length - r + e);for (var t = 0; t < o.length - r; t++) {this.num[t] = o[t + r];}}function t(o, e) {this.totalCount = o, this.dataCount = e;}function i() {this.buffer = new Array(), this.length = 0;}function n() {function o(t, i, n) {t().then(function (o) {i(o);}).catch(function (o) {n(o);}).finally(function () {if (e.length) {var _r = e.shift();o(_r.task, _r.resolve, _r.reject);} else r = !1;});}var e = this.waitingQueue = [],r = this.isRunning = !1;this.exec = function (t) {return new Promise(function (i, n) {r ? e.push({ task: t, resolve: i, reject: n }) : (r = !0, o(t, i, n));});};}function a(o) {this.errMsg = o;}function u(o, e) {var r = this.data = "",t = this.size = 200,i = this.typeNumber = -1,n = (this.errorCorrectLevel = s.H, this.useDynamicSize = !1, this.dynamicSize = void 0, this.margin = 0),a = (this.backgroundColor = "#FFFFFF", this.backgroundImageSrc = void 0, this.backgroundImageWidth = void 0),d = this.backgroundImageHeight = void 0,g = this.backgroundImageX = void 0,l = this.backgroundImageY = void 0,h = (this.backgroundImageAlpha = 1, this.backgroundImageBorderRadius = 0, this.foregroundColor = "#000000", this.foregroundImageSrc = void 0, this.foregroundImageWidth = void 0),c = this.foregroundImageHeight = void 0,m = this.foregroundImageX = void 0,f = this.foregroundImageY = void 0,v = this.foregroundImagePadding = 0,C = (this.foregroundImageBackgroundColor = "#FFFFFF", this.foregroundImageBorderRadius = 0),p = this.foregroundImageShadowOffsetX = 0,b = this.foregroundImageShadowOffsetY = 0,y = this.foregroundImageShadowBlur = 0,k = (this.foregroundImageShadowColor = "#808080", this.foregroundPadding = 0, this.foregroundRadius = 1),I = this.positionProbeBackgroundColor = void 0,w = this.positionProbeForegroundColor = void 0,B = this.separatorColor = void 0,T = this.positionAdjustBackgroundColor = void 0,P = this.positionAdjustForegroundColor = void 0,S = this.timingBackgroundColor = void 0,A = this.timingForegroundColor = void 0,E = this.typeNumberBackgroundColor = void 0,D = this.typeNumberForegroundColor = void 0,N = this.darkBlockColor = void 0,L = (this.style = "default", this.patterns = [], this.canvasContext = void 0);this.queue = !1, this.modules = [], this.moduleCount = 0, this.drawModules = [];Object.defineProperties(this, { data: { get: function get() {return "" !== r && void 0 !== r || console.error("[uQRCode]: data must be set!"), r;}, set: function set(o) {r = o;} }, size: { get: function get() {return t;}, set: function set(o) {t = Number(o);} }, typeNumber: { get: function get() {return i;}, set: function set(o) {i = Number(o);} }, margin: { get: function get() {return n;}, set: function set(o) {n = Number(o);} }, backgroundImageWidth: { get: function get() {return void 0 === a ? this.dynamicSize : this.useDynamicSize ? this.dynamicSize / this.size * a : a;}, set: function set(o) {a = Number(o);} }, backgroundImageHeight: { get: function get() {return void 0 === d ? this.dynamicSize : this.useDynamicSize ? this.dynamicSize / this.size * d : d;}, set: function set(o) {d = Number(o);} }, backgroundImageX: { get: function get() {return void 0 === g ? 0 : this.useDynamicSize ? this.dynamicSize / this.size * g : g;}, set: function set(o) {g = Number(o);} }, backgroundImageY: { get: function get() {return void 0 === l ? 0 : this.useDynamicSize ? this.dynamicSize / this.size * l : l;}, set: function set(o) {l = Number(o);} }, foregroundImageWidth: { get: function get() {return void 0 === h ? (this.dynamicSize - 2 * this.margin) / 4 : this.useDynamicSize ? this.dynamicSize / this.size * h : h;}, set: function set(o) {h = Number(o);} }, foregroundImageHeight: { get: function get() {return void 0 === c ? (this.dynamicSize - 2 * this.margin) / 4 : this.useDynamicSize ? this.dynamicSize / this.size * c : c;}, set: function set(o) {c = Number(o);} }, foregroundImageX: { get: function get() {return void 0 === m ? this.dynamicSize / 2 - this.foregroundImageWidth / 2 : this.useDynamicSize ? this.dynamicSize / this.size * m : m;}, set: function set(o) {m = Number(o);} }, foregroundImageY: { get: function get() {return void 0 === f ? this.dynamicSize / 2 - this.foregroundImageHeight / 2 : this.useDynamicSize ? this.dynamicSize / this.size * f : f;}, set: function set(o) {f = Number(o);} }, foregroundImagePadding: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * v : v;}, set: function set(o) {v = Number(o);} }, foregroundImageBorderRadius: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * C : C;}, set: function set(o) {C = Number(o);} }, foregroundImageShadowOffsetX: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * p : p;}, set: function set(o) {p = Number(o);} }, foregroundImageShadowOffsetY: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * b : b;}, set: function set(o) {b = Number(o);} }, foregroundImageShadowBlur: { get: function get() {return this.useDynamicSize ? this.dynamicSize / this.size * y : y;}, set: function set(o) {y = Number(o);} }, foregroundRadius: { get: function get() {return k;}, set: function set(o) {k = o > 1 ? 1 : o < 0 ? 0 : o;} }, positionProbeBackgroundColor: { get: function get() {return I || this.backgroundColor;}, set: function set(o) {I = o;} }, positionProbeForegroundColor: { get: function get() {return w || this.foregroundColor;}, set: function set(o) {w = o;} }, separatorColor: { get: function get() {return B || this.backgroundColor;}, set: function set(o) {B = o;} }, positionAdjustBackgroundColor: { get: function get() {return T || this.backgroundColor;}, set: function set(o) {T = o;} }, positionAdjustForegroundColor: { get: function get() {return P || this.foregroundColor;}, set: function set(o) {P = o;} }, timingBackgroundColor: { get: function get() {return S || this.backgroundColor;}, set: function set(o) {S = o;} }, timingForegroundColor: { get: function get() {return A || this.foregroundColor;}, set: function set(o) {A = o;} }, typeNumberBackgroundColor: { get: function get() {return E || this.backgroundColor;}, set: function set(o) {E = o;} }, typeNumberForegroundColor: { get: function get() {return D || this.foregroundColor;}, set: function set(o) {D = o;} }, darkBlockColor: { get: function get() {return N || this.foregroundColor;}, set: function set(o) {N = o;} }, canvasContext: { get: function get() {return void 0 === L && console.error("[uQRCode]: use drawCanvas, you need to set the canvasContext!"), L;}, set: function set(o) {L = u.getCanvasContext(o);} } }), o && this.setOptions(o), e && (this.canvasContext = u.getCanvasContext(e));}o.prototype = { getLength: function getLength(o) {return this.data.length;}, write: function write(o) {for (var e = 0; e < this.data.length; e++) {o.put(this.data.charCodeAt(e), 8);}} }, e.prototype = { addData: function addData(e) {var r = new o(e);this.dataList.push(r), this.dataCache = null;}, isDark: function isDark(o, e) {if (o < 0 || this.moduleCount <= o || e < 0 || this.moduleCount <= e) throw new Error(o + "," + e);return this.modules[o][e];}, getModuleCount: function getModuleCount() {return this.moduleCount;}, make: function make() {if (this.typeNumber < 1) {var o = 1;for (o = 1; o < 40; o++) {for (var e = t.getRSBlocks(o, this.errorCorrectLevel), r = new i(), n = 0, a = 0; a < e.length; a++) {n += e[a].dataCount;}for (a = 0; a < this.dataList.length; a++) {var u = this.dataList[a];r.put(u.mode, 4), r.put(u.getLength(), l.getLengthInBits(u.mode, o)), u.write(r);}if (r.getLengthInBits() <= 8 * n) break;}this.typeNumber = o;}this.makeImpl(!1, this.getBestMaskPattern());}, makeImpl: function makeImpl(o, r) {this.moduleCount = 4 * this.typeNumber + 17, this.modules = new Array(this.moduleCount);for (var t = 0; t < this.moduleCount; t++) {this.modules[t] = new Array(this.moduleCount);for (var i = 0; i < this.moduleCount; i++) {this.modules[t][i] = null;}}this.setupPositionProbePattern(0, 0), this.setupPositionProbePattern(this.moduleCount - 7, 0), this.setupPositionProbePattern(0, this.moduleCount - 7), this.setupPositionAdjustPattern(), this.setupTimingPattern(), this.setupTypeInfo(o, r), this.typeNumber >= 7 && this.setupTypeNumber(o), null == this.dataCache && (this.dataCache = e.createData(this.typeNumber, this.errorCorrectLevel, this.dataList)), this.mapData(this.dataCache, r);}, setupPositionProbePattern: function setupPositionProbePattern(o, e) {for (var r = -1; r <= 7; r++) {if (!(o + r <= -1 || this.moduleCount <= o + r)) for (var t = -1; t <= 7; t++) {e + t <= -1 || this.moduleCount <= e + t || (this.modules[o + r][e + t] = 0 <= r && r <= 6 && (0 == t || 6 == t) || 0 <= t && t <= 6 && (0 == r || 6 == r) || 2 <= r && r <= 4 && 2 <= t && t <= 4);}}}, getBestMaskPattern: function getBestMaskPattern() {for (var o = 0, e = 0, r = 0; r < 8; r++) {this.makeImpl(!0, r);var t = l.getLostPoint(this);(0 == r || o > t) && (o = t, e = r);}return e;}, createMovieClip: function createMovieClip(o, e, r) {var t = o.createEmptyMovieClip(e, r),i = 1;this.make();for (var n = 0; n < this.modules.length; n++) {for (var a = n * i, u = 0; u < this.modules[n].length; u++) {var d = u * i,s = this.modules[n][u];s && (t.beginFill(0, 100), t.moveTo(d, a), t.lineTo(d + i, a), t.lineTo(d + i, a + i), t.lineTo(d, a + i), t.endFill());}}return t;}, setupTimingPattern: function setupTimingPattern() {for (var o = 8; o < this.moduleCount - 8; o++) {null == this.modules[o][6] && (this.modules[o][6] = o % 2 == 0);}for (var e = 8; e < this.moduleCount - 8; e++) {null == this.modules[6][e] && (this.modules[6][e] = e % 2 == 0);}}, setupPositionAdjustPattern: function setupPositionAdjustPattern() {for (var o = l.getPatternPosition(this.typeNumber), e = 0; e < o.length; e++) {for (var r = 0; r < o.length; r++) {var t = o[e],i = o[r];if (null == this.modules[t][i]) for (var n = -2; n <= 2; n++) {for (var a = -2; a <= 2; a++) {this.modules[t + n][i + a] = -2 == n || 2 == n || -2 == a || 2 == a || 0 == n && 0 == a;}}}}}, setupTypeNumber: function setupTypeNumber(o) {for (var e = l.getBCHTypeNumber(this.typeNumber), r = 0; r < 18; r++) {var t = !o && 1 == (e >> r & 1);this.modules[Math.floor(r / 3)][r % 3 + this.moduleCount - 8 - 3] = t;}for (r = 0; r < 18; r++) {t = !o && 1 == (e >> r & 1);this.modules[r % 3 + this.moduleCount - 8 - 3][Math.floor(r / 3)] = t;}}, setupTypeInfo: function setupTypeInfo(o, e) {for (var r = this.errorCorrectLevel << 3 | e, t = l.getBCHTypeInfo(r), i = 0; i < 15; i++) {var n = !o && 1 == (t >> i & 1);i < 6 ? this.modules[i][8] = n : i < 8 ? this.modules[i + 1][8] = n : this.modules[this.moduleCount - 15 + i][8] = n;}for (i = 0; i < 15; i++) {n = !o && 1 == (t >> i & 1);i < 8 ? this.modules[8][this.moduleCount - i - 1] = n : i < 9 ? this.modules[8][15 - i - 1 + 1] = n : this.modules[8][15 - i - 1] = n;}this.modules[this.moduleCount - 8][8] = !o;}, mapData: function mapData(o, e) {for (var r = -1, t = this.moduleCount - 1, i = 7, n = 0, a = this.moduleCount - 1; a > 0; a -= 2) {for (6 == a && a--;;) {for (var u = 0; u < 2; u++) {if (null == this.modules[t][a - u]) {var d = !1;n < o.length && (d = 1 == (o[n] >>> i & 1));var s = l.getMask(e, t, a - u);s && (d = !d), this.modules[t][a - u] = d, i--, -1 == i && (n++, i = 7);}}if (t += r, t < 0 || this.moduleCount <= t) {t -= r, r = -r;break;}}}} }, e.PAD0 = 236, e.PAD1 = 17, e.createData = function (o, r, n) {for (var a = t.getRSBlocks(o, r), u = new i(), d = 0; d < n.length; d++) {var s = n[d];u.put(s.mode, 4), u.put(s.getLength(), l.getLengthInBits(s.mode, o)), s.write(u);}var g = 0;for (d = 0; d < a.length; d++) {g += a[d].dataCount;}if (u.getLengthInBits() > 8 * g) throw new Error("code length overflow. (" + u.getLengthInBits() + ">" + 8 * g + ")");for (u.getLengthInBits() + 4 <= 8 * g && u.put(0, 4); u.getLengthInBits() % 8 != 0;) {u.putBit(!1);}for (; !(u.getLengthInBits() >= 8 * g || (u.put(e.PAD0, 8), u.getLengthInBits() >= 8 * g));) {u.put(e.PAD1, 8);}return e.createBytes(u, a);}, e.createBytes = function (o, e) {for (var t = 0, i = 0, n = 0, a = new Array(e.length), u = new Array(e.length), d = 0; d < e.length; d++) {var s = e[d].dataCount,g = e[d].totalCount - s;i = Math.max(i, s), n = Math.max(n, g), a[d] = new Array(s);for (var h = 0; h < a[d].length; h++) {a[d][h] = 255 & o.buffer[h + t];}t += s;var c = l.getErrorCorrectPolynomial(g),m = new r(a[d], c.getLength() - 1),f = m.mod(c);u[d] = new Array(c.getLength() - 1);for (h = 0; h < u[d].length; h++) {var v = h + f.getLength() - u[d].length;u[d][h] = v >= 0 ? f.get(v) : 0;}}var C = 0;for (h = 0; h < e.length; h++) {C += e[h].totalCount;}var p = new Array(C),b = 0;for (h = 0; h < i; h++) {for (d = 0; d < e.length; d++) {h < a[d].length && (p[b++] = a[d][h]);}}for (h = 0; h < n; h++) {for (d = 0; d < e.length; d++) {h < u[d].length && (p[b++] = u[d][h]);}}return p;};for (var d = { MODE_NUMBER: 1, MODE_ALPHA_NUM: 2, MODE_8BIT_BYTE: 4, MODE_KANJI: 8 }, s = { L: 1, M: 0, Q: 3, H: 2 }, g = { PATTERN000: 0, PATTERN001: 1, PATTERN010: 2, PATTERN011: 3, PATTERN100: 4, PATTERN101: 5, PATTERN110: 6, PATTERN111: 7 }, l = { PATTERN_POSITION_TABLE: [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]], G15: 1335, G18: 7973, G15_MASK: 21522, getBCHTypeInfo: function getBCHTypeInfo(o) {for (var e = o << 10; l.getBCHDigit(e) - l.getBCHDigit(l.G15) >= 0;) {e ^= l.G15 << l.getBCHDigit(e) - l.getBCHDigit(l.G15);}return (o << 10 | e) ^ l.G15_MASK;}, getBCHTypeNumber: function getBCHTypeNumber(o) {for (var e = o << 12; l.getBCHDigit(e) - l.getBCHDigit(l.G18) >= 0;) {e ^= l.G18 << l.getBCHDigit(e) - l.getBCHDigit(l.G18);}return o << 12 | e;}, getBCHDigit: function getBCHDigit(o) {for (var e = 0; 0 != o;) {e++, o >>>= 1;}return e;}, getPatternPosition: function getPatternPosition(o) {return l.PATTERN_POSITION_TABLE[o - 1];}, getMask: function getMask(o, e, r) {switch (o) {case g.PATTERN000:return (e + r) % 2 == 0;case g.PATTERN001:return e % 2 == 0;case g.PATTERN010:return r % 3 == 0;case g.PATTERN011:return (e + r) % 3 == 0;case g.PATTERN100:return (Math.floor(e / 2) + Math.floor(r / 3)) % 2 == 0;case g.PATTERN101:return e * r % 2 + e * r % 3 == 0;case g.PATTERN110:return (e * r % 2 + e * r % 3) % 2 == 0;case g.PATTERN111:return (e * r % 3 + (e + r) % 2) % 2 == 0;default:throw new Error("bad maskPattern:" + o);}}, getErrorCorrectPolynomial: function getErrorCorrectPolynomial(o) {for (var e = new r([1], 0), t = 0; t < o; t++) {e = e.multiply(new r([1, h.gexp(t)], 0));}return e;}, getLengthInBits: function getLengthInBits(o, e) {if (1 <= e && e < 10) switch (o) {case d.MODE_NUMBER:return 10;case d.MODE_ALPHA_NUM:return 9;case d.MODE_8BIT_BYTE:case d.MODE_KANJI:return 8;default:throw new Error("mode:" + o);} else if (e < 27) switch (o) {case d.MODE_NUMBER:return 12;case d.MODE_ALPHA_NUM:return 11;case d.MODE_8BIT_BYTE:return 16;case d.MODE_KANJI:return 10;default:throw new Error("mode:" + o);} else {if (!(e < 41)) throw new Error("type:" + e);switch (o) {case d.MODE_NUMBER:return 14;case d.MODE_ALPHA_NUM:return 13;case d.MODE_8BIT_BYTE:return 16;case d.MODE_KANJI:return 12;default:throw new Error("mode:" + o);}}}, getLostPoint: function getLostPoint(o) {for (var e = o.getModuleCount(), r = 0, t = 0; t < e; t++) {for (var i = 0; i < e; i++) {for (var n = 0, a = o.isDark(t, i), u = -1; u <= 1; u++) {if (!(t + u < 0 || e <= t + u)) for (var d = -1; d <= 1; d++) {i + d < 0 || e <= i + d || 0 == u && 0 == d || a == o.isDark(t + u, i + d) && n++;}}n > 5 && (r += 3 + n - 5);}}for (t = 0; t < e - 1; t++) {for (i = 0; i < e - 1; i++) {var s = 0;o.isDark(t, i) && s++, o.isDark(t + 1, i) && s++, o.isDark(t, i + 1) && s++, o.isDark(t + 1, i + 1) && s++, 0 != s && 4 != s || (r += 3);}}for (t = 0; t < e; t++) {for (i = 0; i < e - 6; i++) {o.isDark(t, i) && !o.isDark(t, i + 1) && o.isDark(t, i + 2) && o.isDark(t, i + 3) && o.isDark(t, i + 4) && !o.isDark(t, i + 5) && o.isDark(t, i + 6) && (r += 40);}}for (i = 0; i < e; i++) {for (t = 0; t < e - 6; t++) {o.isDark(t, i) && !o.isDark(t + 1, i) && o.isDark(t + 2, i) && o.isDark(t + 3, i) && o.isDark(t + 4, i) && !o.isDark(t + 5, i) && o.isDark(t + 6, i) && (r += 40);}}var g = 0;for (i = 0; i < e; i++) {for (t = 0; t < e; t++) {o.isDark(t, i) && g++;}}var l = Math.abs(100 * g / e / e - 50) / 5;return r += 10 * l, r;} }, h = { glog: function glog(o) {if (o < 1) throw new Error("glog(" + o + ")");return h.LOG_TABLE[o];}, gexp: function gexp(o) {for (; o < 0;) {o += 255;}for (; o >= 256;) {o -= 255;}return h.EXP_TABLE[o];}, EXP_TABLE: new Array(256), LOG_TABLE: new Array(256) }, c = 0; c < 8; c++) {h.EXP_TABLE[c] = 1 << c;}for (c = 8; c < 256; c++) {h.EXP_TABLE[c] = h.EXP_TABLE[c - 4] ^ h.EXP_TABLE[c - 5] ^ h.EXP_TABLE[c - 6] ^ h.EXP_TABLE[c - 8];}for (c = 0; c < 255; c++) {h.LOG_TABLE[h.EXP_TABLE[c]] = c;}r.prototype = { get: function get(o) {return this.num[o];}, getLength: function getLength() {return this.num.length;}, multiply: function multiply(o) {for (var e = new Array(this.getLength() + o.getLength() - 1), t = 0; t < this.getLength(); t++) {for (var i = 0; i < o.getLength(); i++) {e[t + i] ^= h.gexp(h.glog(this.get(t)) + h.glog(o.get(i)));}}return new r(e, 0);}, mod: function mod(o) {if (this.getLength() - o.getLength() < 0) return this;for (var e = h.glog(this.get(0)) - h.glog(o.get(0)), t = new Array(this.getLength()), i = 0; i < this.getLength(); i++) {t[i] = this.get(i);}for (i = 0; i < o.getLength(); i++) {t[i] ^= h.gexp(h.glog(o.get(i)) + e);}return new r(t, 0).mod(o);} }, t.RS_BLOCK_TABLE = [[1, 26, 19], [1, 26, 16], [1, 26, 13], [1, 26, 9], [1, 44, 34], [1, 44, 28], [1, 44, 22], [1, 44, 16], [1, 70, 55], [1, 70, 44], [2, 35, 17], [2, 35, 13], [1, 100, 80], [2, 50, 32], [2, 50, 24], [4, 25, 9], [1, 134, 108], [2, 67, 43], [2, 33, 15, 2, 34, 16], [2, 33, 11, 2, 34, 12], [2, 86, 68], [4, 43, 27], [4, 43, 19], [4, 43, 15], [2, 98, 78], [4, 49, 31], [2, 32, 14, 4, 33, 15], [4, 39, 13, 1, 40, 14], [2, 121, 97], [2, 60, 38, 2, 61, 39], [4, 40, 18, 2, 41, 19], [4, 40, 14, 2, 41, 15], [2, 146, 116], [3, 58, 36, 2, 59, 37], [4, 36, 16, 4, 37, 17], [4, 36, 12, 4, 37, 13], [2, 86, 68, 2, 87, 69], [4, 69, 43, 1, 70, 44], [6, 43, 19, 2, 44, 20], [6, 43, 15, 2, 44, 16], [4, 101, 81], [1, 80, 50, 4, 81, 51], [4, 50, 22, 4, 51, 23], [3, 36, 12, 8, 37, 13], [2, 116, 92, 2, 117, 93], [6, 58, 36, 2, 59, 37], [4, 46, 20, 6, 47, 21], [7, 42, 14, 4, 43, 15], [4, 133, 107], [8, 59, 37, 1, 60, 38], [8, 44, 20, 4, 45, 21], [12, 33, 11, 4, 34, 12], [3, 145, 115, 1, 146, 116], [4, 64, 40, 5, 65, 41], [11, 36, 16, 5, 37, 17], [11, 36, 12, 5, 37, 13], [5, 109, 87, 1, 110, 88], [5, 65, 41, 5, 66, 42], [5, 54, 24, 7, 55, 25], [11, 36, 12], [5, 122, 98, 1, 123, 99], [7, 73, 45, 3, 74, 46], [15, 43, 19, 2, 44, 20], [3, 45, 15, 13, 46, 16], [1, 135, 107, 5, 136, 108], [10, 74, 46, 1, 75, 47], [1, 50, 22, 15, 51, 23], [2, 42, 14, 17, 43, 15], [5, 150, 120, 1, 151, 121], [9, 69, 43, 4, 70, 44], [17, 50, 22, 1, 51, 23], [2, 42, 14, 19, 43, 15], [3, 141, 113, 4, 142, 114], [3, 70, 44, 11, 71, 45], [17, 47, 21, 4, 48, 22], [9, 39, 13, 16, 40, 14], [3, 135, 107, 5, 136, 108], [3, 67, 41, 13, 68, 42], [15, 54, 24, 5, 55, 25], [15, 43, 15, 10, 44, 16], [4, 144, 116, 4, 145, 117], [17, 68, 42], [17, 50, 22, 6, 51, 23], [19, 46, 16, 6, 47, 17], [2, 139, 111, 7, 140, 112], [17, 74, 46], [7, 54, 24, 16, 55, 25], [34, 37, 13], [4, 151, 121, 5, 152, 122], [4, 75, 47, 14, 76, 48], [11, 54, 24, 14, 55, 25], [16, 45, 15, 14, 46, 16], [6, 147, 117, 4, 148, 118], [6, 73, 45, 14, 74, 46], [11, 54, 24, 16, 55, 25], [30, 46, 16, 2, 47, 17], [8, 132, 106, 4, 133, 107], [8, 75, 47, 13, 76, 48], [7, 54, 24, 22, 55, 25], [22, 45, 15, 13, 46, 16], [10, 142, 114, 2, 143, 115], [19, 74, 46, 4, 75, 47], [28, 50, 22, 6, 51, 23], [33, 46, 16, 4, 47, 17], [8, 152, 122, 4, 153, 123], [22, 73, 45, 3, 74, 46], [8, 53, 23, 26, 54, 24], [12, 45, 15, 28, 46, 16], [3, 147, 117, 10, 148, 118], [3, 73, 45, 23, 74, 46], [4, 54, 24, 31, 55, 25], [11, 45, 15, 31, 46, 16], [7, 146, 116, 7, 147, 117], [21, 73, 45, 7, 74, 46], [1, 53, 23, 37, 54, 24], [19, 45, 15, 26, 46, 16], [5, 145, 115, 10, 146, 116], [19, 75, 47, 10, 76, 48], [15, 54, 24, 25, 55, 25], [23, 45, 15, 25, 46, 16], [13, 145, 115, 3, 146, 116], [2, 74, 46, 29, 75, 47], [42, 54, 24, 1, 55, 25], [23, 45, 15, 28, 46, 16], [17, 145, 115], [10, 74, 46, 23, 75, 47], [10, 54, 24, 35, 55, 25], [19, 45, 15, 35, 46, 16], [17, 145, 115, 1, 146, 116], [14, 74, 46, 21, 75, 47], [29, 54, 24, 19, 55, 25], [11, 45, 15, 46, 46, 16], [13, 145, 115, 6, 146, 116], [14, 74, 46, 23, 75, 47], [44, 54, 24, 7, 55, 25], [59, 46, 16, 1, 47, 17], [12, 151, 121, 7, 152, 122], [12, 75, 47, 26, 76, 48], [39, 54, 24, 14, 55, 25], [22, 45, 15, 41, 46, 16], [6, 151, 121, 14, 152, 122], [6, 75, 47, 34, 76, 48], [46, 54, 24, 10, 55, 25], [2, 45, 15, 64, 46, 16], [17, 152, 122, 4, 153, 123], [29, 74, 46, 14, 75, 47], [49, 54, 24, 10, 55, 25], [24, 45, 15, 46, 46, 16], [4, 152, 122, 18, 153, 123], [13, 74, 46, 32, 75, 47], [48, 54, 24, 14, 55, 25], [42, 45, 15, 32, 46, 16], [20, 147, 117, 4, 148, 118], [40, 75, 47, 7, 76, 48], [43, 54, 24, 22, 55, 25], [10, 45, 15, 67, 46, 16], [19, 148, 118, 6, 149, 119], [18, 75, 47, 31, 76, 48], [34, 54, 24, 34, 55, 25], [20, 45, 15, 61, 46, 16]], t.getRSBlocks = function (o, e) {var r = t.getRsBlockTable(o, e);if (null == r) throw new Error("bad rs block @ typeNumber:" + o + "/errorCorrectLevel:" + e);for (var i = r.length / 3, n = new Array(), a = 0; a < i; a++) {for (var u = r[3 * a + 0], d = r[3 * a + 1], s = r[3 * a + 2], g = 0; g < u; g++) {n.push(new t(d, s));}}return n;}, t.getRsBlockTable = function (o, e) {switch (e) {case s.L:return t.RS_BLOCK_TABLE[4 * (o - 1) + 0];case s.M:return t.RS_BLOCK_TABLE[4 * (o - 1) + 1];case s.Q:return t.RS_BLOCK_TABLE[4 * (o - 1) + 2];case s.H:return t.RS_BLOCK_TABLE[4 * (o - 1) + 3];default:return;}}, i.prototype = { get: function get(o) {var e = Math.floor(o / 8);return 1 == (this.buffer[e] >>> 7 - o % 8 & 1);}, put: function put(o, e) {for (var r = 0; r < e; r++) {this.putBit(1 == (o >>> e - r - 1 & 1));}}, getLengthInBits: function getLengthInBits() {return this.length;}, putBit: function putBit(o) {var e = Math.floor(this.length / 8);this.buffer.length <= e && this.buffer.push(0), o && (this.buffer[e] |= 128 >>> this.length % 8), this.length++;} }, u.errorCorrectLevel = s, u.queue = new n(), u.queueLoadImage = new n(), u.isQueueLoadImage = !1, u.loadImageCache = [], u.utf16To8 = function (o) {for (var e, r = "", t = 0; t < o.length; t++) {e = o.charCodeAt(t), e >= 1 && e <= 127 ? r += o.charAt(t) : e > 2047 ? (r += String.fromCharCode(224 | e >> 12 & 15), r += String.fromCharCode(128 | e >> 6 & 63), r += String.fromCharCode(128 | e >> 0 & 63)) : (r += String.fromCharCode(192 | e >> 6 & 31), r += String.fromCharCode(128 | e >> 0 & 63));}return r;}, u.deepReplace = function () {var o = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var r = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;var t;t = r ? o : _objectSpread({}, o);for (var _o in e) {var i = e[_o];null != i && (i.constructor == Object ? t[_o] = this.deepReplace(t[_o], i) : i.constructor != String || i ? t[_o] = i : t[_o] = t[_o]);}return t;}, u.getSomePropertyToNewObject = function () {var o = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];var r = {};return e.forEach(function (e) {r[e] = o[e];}), r;}, u.getCanvasContext = function (o) {return o.setFillStyle = o.setFillStyle || function (e) {o.fillStyle = e;}, o.setFontSize = o.setFontSize || function (e) {o.font = "".concat(e, "px");}, o.setTextAlign = o.setTextAlign || function (e) {o.textAlign = e;}, o.setTextBaseline = o.setTextBaseline || function (e) {o.textBaseline = e;}, o.draw = o.draw || function (o, e) {e && e();}, o;}, u.getLoadImage = function (o) {return "function" == typeof o ? function (e) {var r = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : !1;return u.isQueueLoadImage ? u.queueLoadImage.exec(function () {return new Promise(function (t, i) {setTimeout(function () {var r = u.loadImageCache.find(function (o) {return o.src == e;});r ? t(r.img) : o(e).then(function (o) {u.loadImageCache.push({ src: e, img: o }), t(o);}).catch(function (o) {i(o);});}, r ? 150 : 10);});}) : o(e);} : function (o) {return Promise.resolve(o);};};var m = u.loadImage = function (o) {return Promise.resolve(o);};Object.defineProperty(u, "loadImage", { get: function get() {return m;}, set: function set(o) {m = u.getLoadImage(o);} }), u.prototype = { setOptions: function setOptions(o) {var e, r, t, i, n, a, d, s, g, l, h, c, m, f, v, C, p, b, y, k, I, w, B, T, P, S, A, E, D, N, L, R, z, M, x, _, O, F, H, X, j, Y, Q, G, K, W, q, U, $, J, V, Z, oo, eo, ro, to, io, no, ao;o && u.deepReplace(this, { data: o.data || o.text, size: o.size, typeNumber: o.typeNumber, errorCorrectLevel: o.errorCorrectLevel, useDynamicSize: o.useDynamicSize, margin: o.margin, backgroundColor: o.backgroundColor || (null === (e = o.background) || void 0 === e ? void 0 : e.color), backgroundImageSrc: o.backgroundImageSrc || (null === (r = o.background) || void 0 === r ? void 0 : null === (t = r.image) || void 0 === t ? void 0 : t.src), backgroundImageWidth: o.backgroundImageWidth || (null === (i = o.background) || void 0 === i ? void 0 : null === (n = i.image) || void 0 === n ? void 0 : n.width), backgroundImageHeight: o.backgroundImageHeight || (null === (a = o.background) || void 0 === a ? void 0 : null === (d = a.image) || void 0 === d ? void 0 : d.height), backgroundImageX: o.backgroundImageX || (null === (s = o.background) || void 0 === s ? void 0 : null === (g = s.image) || void 0 === g ? void 0 : g.x), backgroundImageY: o.backgroundImageY || (null === (l = o.background) || void 0 === l ? void 0 : null === (h = l.image) || void 0 === h ? void 0 : h.y), backgroundImageAlpha: o.backgroundImageAlpha || (null === (c = o.background) || void 0 === c ? void 0 : null === (m = c.image) || void 0 === m ? void 0 : m.alpha), backgroundImageBorderRadius: o.backgroundImageBorderRadius || (null === (f = o.background) || void 0 === f ? void 0 : null === (v = f.image) || void 0 === v ? void 0 : v.borderRadius), foregroundColor: o.foregroundColor || (null === (C = o.foreground) || void 0 === C ? void 0 : C.color), foregroundImageSrc: o.foregroundImageSrc || (null === (p = o.foreground) || void 0 === p ? void 0 : null === (b = p.image) || void 0 === b ? void 0 : b.src), foregroundImageWidth: o.foregroundImageWidth || (null === (y = o.foreground) || void 0 === y ? void 0 : null === (k = y.image) || void 0 === k ? void 0 : k.width), foregroundImageHeight: o.foregroundImageHeight || (null === (I = o.foreground) || void 0 === I ? void 0 : null === (w = I.image) || void 0 === w ? void 0 : w.height), foregroundImageX: o.foregroundImageX || (null === (B = o.foreground) || void 0 === B ? void 0 : null === (T = B.image) || void 0 === T ? void 0 : T.x), foregroundImageY: o.foregroundImageY || (null === (P = o.foreground) || void 0 === P ? void 0 : null === (S = P.image) || void 0 === S ? void 0 : S.y), foregroundImagePadding: o.foregroundImagePadding || (null === (A = o.foreground) || void 0 === A ? void 0 : null === (E = A.image) || void 0 === E ? void 0 : E.padding), foregroundImageBackgroundColor: o.foregroundImageBackgroundColor || (null === (D = o.foreground) || void 0 === D ? void 0 : null === (N = D.image) || void 0 === N ? void 0 : N.backgroundColor), foregroundImageBorderRadius: o.foregroundImageBorderRadius || (null === (L = o.foreground) || void 0 === L ? void 0 : null === (R = L.image) || void 0 === R ? void 0 : R.borderRadius), foregroundImageShadowOffsetX: o.foregroundImageShadowOffsetX || (null === (z = o.foreground) || void 0 === z ? void 0 : null === (M = z.image) || void 0 === M ? void 0 : M.shadowOffsetX), foregroundImageShadowOffsetY: o.foregroundImageShadowOffsetY || (null === (x = o.foreground) || void 0 === x ? void 0 : null === (_ = x.image) || void 0 === _ ? void 0 : _.shadowOffsetY), foregroundImageShadowBlur: o.foregroundImageShadowBlur || (null === (O = o.foreground) || void 0 === O ? void 0 : null === (F = O.image) || void 0 === F ? void 0 : F.shadowBlur), foregroundImageShadowColor: o.foregroundImageShadowColor || (null === (H = o.foreground) || void 0 === H ? void 0 : null === (X = H.image) || void 0 === X ? void 0 : X.shadowColor), foregroundPadding: o.foregroundPadding, foregroundRadius: o.foregroundRadius, positionProbeBackgroundColor: o.positionProbeBackgroundColor || (null === (j = o.positionProbe) || void 0 === j ? void 0 : j.backgroundColor) || (null === (Y = o.positionDetection) || void 0 === Y ? void 0 : Y.backgroundColor), positionProbeForegroundColor: o.positionProbeForegroundColor || (null === (Q = o.positionProbe) || void 0 === Q ? void 0 : Q.foregroundColor) || (null === (G = o.positionDetection) || void 0 === G ? void 0 : G.foregroundColor), separatorColor: o.separatorColor || (null === (K = o.separator) || void 0 === K ? void 0 : K.color), positionAdjustBackgroundColor: o.positionAdjustBackgroundColor || (null === (W = o.positionAdjust) || void 0 === W ? void 0 : W.backgroundColor) || (null === (q = o.alignment) || void 0 === q ? void 0 : q.backgroundColor), positionAdjustForegroundColor: o.positionAdjustForegroundColor || (null === (U = o.positionAdjust) || void 0 === U ? void 0 : U.foregroundColor) || (null === ($ = o.alignment) || void 0 === $ ? void 0 : $.foregroundColor), timingBackgroundColor: o.timingBackgroundColor || (null === (J = o.timing) || void 0 === J ? void 0 : J.backgroundColor), timingForegroundColor: o.timingForegroundColor || (null === (V = o.timing) || void 0 === V ? void 0 : V.foregroundColor), typeNumberBackgroundColor: o.typeNumberBackgroundColor || (null === (Z = o.typeNumber) || void 0 === Z ? void 0 : Z.backgroundColor) || (null === (oo = o.versionInformation) || void 0 === oo ? void 0 : oo.backgroundColor), typeNumberForegroundColor: o.typeNumberForegroundColor || (null === (eo = o.typeNumber) || void 0 === eo ? void 0 : eo.foregroundColor) || (null === (ro = o.versionInformation) || void 0 === ro ? void 0 : ro.foregroundColor), darkBlockColor: o.darkBlockColor || (null === (to = o.darkBlock) || void 0 === to ? void 0 : to.color), style: o.style, patterns: o.patterns || (null === (io = o.art) || void 0 === io ? void 0 : io.patterns) || (null === (no = o.art) || void 0 === no ? void 0 : null === (ao = no.shape) || void 0 === ao ? void 0 : ao.map(function (o) {return o.imageSrc = o.image, o;})), queue: o.queue }, !0);}, make: function make() {this.foregroundColor === this.backgroundColor && console.error("[uQRCode]: foregroundColor and backgroundColor cannot be the same!");var o = new e(this.typeNumber, this.errorCorrectLevel);o.addData(u.utf16To8(this.data.toString())), o.make(), this.typeNumber = o.typeNumber, this.modules = o.modules, this.moduleCount = o.moduleCount;var r = this.size - 2 * this.margin;this.dynamicSize = Math.ceil(r / o.moduleCount) * o.moduleCount + 2 * this.margin, this.useDynamicSize || (this.dynamicSize = this.size), this.paintData(), this.paintPositionProbe(), this.paintSeparator(), this.paintTiming(), this.paintPositionAdjust(), this.paintDarkBlock(), this.paintTypeNumber(), this.getDrawModules();}, paintData: function paintData() {var o = this.dynamicSize,e = this.margin,r = this.backgroundColor,t = this.foregroundColor,i = this.foregroundPadding,n = this.style,a = this.modules,u = this.moduleCount,d = (o - 2 * e) / u,s = d,g = 0;i > 0 && "liquid" != n && "art" != n && (g = s * i / 2, s -= 2 * g);for (var l = 0; l < u; l++) {for (var h = 0; h < u; h++) {var c = a[l][h];if (c) {var m = h * d + e + g,f = l * d + e + g;a[l][h] = { size: s, x: m, y: f, type: ["foreground"], color: t, isBlack: !0, isDrawn: !1 };} else a[l][h] = { size: s, x: h * s + e, y: l * s + e, type: ["background"], color: r, isBlack: !1, isDrawn: !1 };}}}, paintPositionProbe: function paintPositionProbe() {var o = this.modules,e = this.moduleCount,r = this.positionProbeBackgroundColor,t = this.positionProbeForegroundColor,i = [[0, 0, 1], [1, 0, 1], [2, 0, 1], [3, 0, 1], [4, 0, 1], [5, 0, 1], [6, 0, 1], [0, 1, 1], [1, 1, 0], [2, 1, 0], [3, 1, 0], [4, 1, 0], [5, 1, 0], [6, 1, 1], [0, 2, 1], [1, 2, 0], [2, 2, 1], [3, 2, 1], [4, 2, 1], [5, 2, 0], [6, 2, 1], [0, 3, 1], [1, 3, 0], [2, 3, 1], [3, 3, 1], [4, 3, 1], [5, 3, 0], [6, 3, 1], [0, 4, 1], [1, 4, 0], [2, 4, 1], [3, 4, 1], [4, 4, 1], [5, 4, 0], [6, 4, 1], [0, 5, 1], [1, 5, 0], [2, 5, 0], [3, 5, 0], [4, 5, 0], [5, 5, 0], [6, 5, 1], [0, 6, 1], [1, 6, 1], [2, 6, 1], [3, 6, 1], [4, 6, 1], [5, 6, 1], [6, 6, 1]],n = e - 7;i.forEach(function (e) {var i = o[e[0]][e[1]],a = o[e[0] + n][e[1]],u = o[e[0]][e[1] + n];u.type.push("positionProbe"), a.type.push("positionProbe"), i.type.push("positionProbe"), i.color = 1 == e[2] ? t : r, a.color = 1 == e[2] ? t : r, u.color = 1 == e[2] ? t : r;});}, paintSeparator: function paintSeparator() {var o = this.modules,e = this.moduleCount,r = this.separatorColor;[[7, 0], [7, 1], [7, 2], [7, 3], [7, 4], [7, 5], [7, 6], [7, 7], [0, 7], [1, 7], [2, 7], [3, 7], [4, 7], [5, 7], [6, 7]].forEach(function (t) {var i = o[t[0]][t[1]],n = o[e - t[0] - 1][t[1]],a = o[t[0]][e - t[1] - 1];a.type.push("separator"), n.type.push("separator"), i.type.push("separator"), i.color = r, n.color = r, a.color = r;});}, paintPositionAdjust: function paintPositionAdjust() {var o = this.typeNumber,e = this.modules,r = this.moduleCount,t = this.foregroundColor,i = this.backgroundColor,n = this.positionAdjustForegroundColor,a = this.positionAdjustBackgroundColor,u = this.timingForegroundColor,d = this.timingBackgroundColor;var s = [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]],g = s[o - 1];if (g) {var _o2 = [[-2, -2, 1], [-1, -2, 1], [0, -2, 1], [1, -2, 1], [2, -2, 1], [-2, -1, 1], [-1, -1, 0], [0, -1, 0], [1, -1, 0], [2, -1, 1], [-2, 0, 1], [-1, 0, 0], [0, 0, 1], [1, 0, 0], [2, 0, 1], [-2, 1, 1], [-1, 1, 0], [0, 1, 0], [1, 1, 0], [2, 1, 1], [-2, 2, 1], [-1, 2, 1], [0, 2, 1], [1, 2, 1], [2, 2, 1]],_s = g.length;for (var _l = 0; _l < _s; _l++) {var _loop = function _loop(_h) {var _x$y = { x: g[_l], y: g[_h] },s = _x$y.x,c = _x$y.y;s < 9 && c < 9 || s > r - 9 - 1 && c < 9 || c > r - 9 - 1 && s < 9 || _o2.forEach(function (o) {var r = e[s + o[0]][c + o[1]];r.type.push("positionAdjust"), r.type.includes("timing") ? 1 == o[2] ? r.color = n == t ? u : n : r.color = n == t && a == i ? d : a : r.color = 1 == o[2] ? n : a;});};for (var _h = 0; _h < _s; _h++) {_loop(_h);}}}}, paintTiming: function paintTiming() {var o = this.modules,e = this.moduleCount,r = this.timingForegroundColor,t = this.timingBackgroundColor,i = e - 16;for (var _e = 0; _e < i; _e++) {var n = o[6][8 + _e],a = o[8 + _e][6];n.type.push("timing"), a.type.push("timing"), n.color = 1 & _e ^ 1 ? r : t, a.color = 1 & _e ^ 1 ? r : t;}}, paintDarkBlock: function paintDarkBlock() {var o = this.modules,e = this.moduleCount,r = this.darkBlockColor;var t = o[e - 7 - 1][8];t.type.push("darkBlock"), t.color = r;}, paintTypeNumber: function paintTypeNumber() {var o = this.typeNumber,e = this.modules,r = this.moduleCount,t = this.typeNumberBackgroundColor,i = this.typeNumberForegroundColor;if (o < 7) return e;var n = [0, 0, 0, 0, 0, 0, 0, "000111110010010100", "001000010110111100", "001001101010011001", "001010010011010011", "001011101111110110", "001100011101100010", "001101100001000111", "001110011000001101", "001111100100101000", "010000101101111000", "010001010001011101", "010010101000010111", "010011010100110010", "010100100110100110", "010101011010000011", "010110100011001001", "010111011111101100", "011000111011000100", "011001000111100001", "011010111110101011", "011011000010001110", "011100110000011010", "011101001100111111", "011110110101110101", "011111001001010000", "100000100111010101", "100001011011110000", "100010100010111010", "100011011110011111", "100100101100001011", "100101010000101110", "100110101001100100", "100111010101000001", "101000110001101001"];var a = n[o] + n[o],u = [r - 11, r - 10, r - 9],d = [[5, u[2]], [5, u[1]], [5, u[0]], [4, u[2]], [4, u[1]], [4, u[0]], [3, u[2]], [3, u[1]], [3, u[0]], [2, u[2]], [2, u[1]], [2, u[0]], [1, u[2]], [1, u[1]], [1, u[0]], [0, u[2]], [0, u[1]], [0, u[0]], [u[2], 5], [u[1], 5], [u[0], 5], [u[2], 4], [u[1], 4], [u[0], 4], [u[2], 3], [u[1], 3], [u[0], 3], [u[2], 2], [u[1], 2], [u[0], 2], [u[2], 1], [u[1], 1], [u[0], 1], [u[2], 0], [u[1], 0], [u[0], 0]];d.forEach(function (o, r) {var n = e[o[0]][o[1]];n.type.push("typeNumber"), n.color = "1" == a[r] ? i : t;});}, getDrawModules: function getDrawModules() {var o = this.drawModules = [],e = this.modules,r = this.moduleCount,t = this.dynamicSize,i = this.backgroundColor,n = this.backgroundImageSrc,a = this.backgroundImageX,u = this.backgroundImageY,d = this.backgroundImageWidth,s = this.backgroundImageHeight,g = this.backgroundImageAlpha,l = this.backgroundImageBorderRadius,h = this.style,c = this.patterns,m = this.foregroundImageSrc,f = this.foregroundImageX,v = this.foregroundImageY,C = this.foregroundImageWidth,p = this.foregroundImageHeight,b = this.foregroundImagePadding,y = this.foregroundImageBackgroundColor,k = this.foregroundImageBorderRadius,I = this.foregroundImageShadowOffsetX,w = this.foregroundImageShadowOffsetY,B = this.foregroundImageShadowBlur,T = this.foregroundImageShadowColor;i && o.push({ name: "background", type: "box", color: i, x: 0, y: 0, width: t, height: t }), n && o.push({ name: "backgroundImage", type: "image", imageSrc: n, imageSource: "backgroundImageSrc", x: a, y: u, width: d, height: s, alpha: g, borderRadius: l });for (var P = 0; P < r; P++) {for (var S = 0; S < r; S++) {var A = e[P][S];A.isDrawn || (A.type.includes("foreground") ? o.push({ name: "foreground", type: "block", color: A.color, x: A.x, y: A.y, width: A.size, height: A.size, rowIndex: P, colIndex: S }) : o.push({ name: "background", type: "block", color: A.color, x: A.x, y: A.y, width: A.size, height: A.size, rowIndex: P, colIndex: S }), A.isDrawn = !0);}}m && o.push({ name: "foregroundImage", type: "image", imageSrc: m, imageSource: "foregroundImageSrc", x: f, y: v, width: C, height: p, padding: b, backgroundColor: y, borderRadius: k, shadowOffsetX: I, shadowOffsetY: w, shadowBlur: B, shadowColor: T });}, getModuleIsBack: function getModuleIsBack(o, e) {var r = this.moduleCount;return !(0 > o || 0 > e || o >= r || e >= r) && this.modules[o][e].isBlack;}, drawCanvas: function drawCanvas() {var _this = this;var o = this.canvasContext,e = this.foregroundColor,r = this.backgroundColor,t = this.queue,i = this.style;if (e === r) return Promise.reject(new a("[uQRCode]: foregroundColor and backgroundColor cannot be the same!"));var n = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(e, r) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.prev = 0;o.draw(!1);_context.next = 4;return _this.styleDefault();case 4:o.draw(!0);setTimeout(e, 150);_context.next = 13;break;case 8:_context.prev = 8;_context.t0 = _context["catch"](0);if (_context.t0 instanceof a) {_context.next = 12;break;}throw _context.t0;case 12:r(_context.t0);case 13:case "end":return _context.stop();}}}, _callee, null, [[0, 8]]);}));return function n(_x, _x2) {return _ref.apply(this, arguments);};}();return new Promise(function (o, e) {t ? u.queue.exec(function () {return new Promise(function (o, e) {n(o, e);});}).then(function () {setTimeout(o, 150);}).catch(function (o) {e(o);}) : n(o, e);});}, draw: function draw() {return this.drawCanvas();}, styleDefault: function styleDefault() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var o, e, r, t, i, n, d, s, g, l, h, c, m, f, v, C, p, b;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:o = _this2.drawModules, e = _this2.canvasContext, r = _this2.backgroundColor, t = _this2.margin, i = _this2.queue;n = 0;case 2:if (!(n < o.length)) {_context2.next = 46;break;}e.save();d = o[n];_context2.t0 = d.type;_context2.next = _context2.t0 === "box" ? 8 : _context2.t0 === "block" ? 10 : _context2.t0 === "image" ? 12 : 42;break;case 8:"background" == d.name && (e.setFillStyle(d.color), e.fillRect(d.x, d.y, d.width, d.height));return _context2.abrupt("break", 42);case 10:"foreground" == d.name && (e.beginPath(), e.rect(Math.round(d.x) + .5, Math.round(d.y) + .5, Math.round(d.width), Math.round(d.height)), e.closePath(), e.fillStyle = d.color, e.fill(), e.strokeStyle = d.color, e.stroke());return _context2.abrupt("break", 42);case 12:if (!("backgroundImage" === d.name)) {_context2.next = 27;break;}s = d.x, g = d.y, l = d.width, h = d.height, c = d.borderRadius;l < 2 * c && (c = l / 2), h < 2 * c && (c = h / 2), e.globalAlpha = d.alpha, e.beginPath(), e.moveTo(s + c, g), e.arcTo(s + l, g, s + l, g + h, c), e.arcTo(s + l, g + h, s, g + h, c), e.arcTo(s, g + h, s, g, c), e.arcTo(s, g, s + l, g, c), e.closePath(), e.strokeStyle = "rgba(0,0,0,0)", e.stroke(), e.clip();_context2.prev = 15;_context2.next = 18;return u.loadImage(d.imageSrc);case 18:m = _context2.sent;e.drawImage(m, d.x, d.y, d.width, d.height);_context2.next = 25;break;case 22:_context2.prev = 22;_context2.t1 = _context2["catch"](15);throw console.error("[uQRCode]: ".concat(d.imageSource, " invalid!")), new a("[uQRCode]: ".concat(d.imageSource, " invalid!"));case 25:_context2.next = 42;break;case 27:if (!("foregroundImage" === d.name)) {_context2.next = 42;break;}s = d.x, g = d.y, l = d.width, h = d.height, c = d.borderRadius;l < 2 * c && (c = l / 2), h < 2 * c && (c = h / 2);f = d.x - d.padding, v = d.y - d.padding, C = d.width + 2 * d.padding, p = d.height + 2 * d.padding, b = C / l * c;C < 2 * b && (b = C / 2), p < 2 * b && (b = p / 2), e.save(), e.shadowOffsetX = d.shadowOffsetX, e.shadowOffsetY = d.shadowOffsetY, e.shadowBlur = d.shadowBlur, e.shadowColor = d.shadowColor, e.beginPath(), e.moveTo(f + b, v), e.arcTo(f + C, v, f + C, v + p, b), e.arcTo(f + C, v + p, f, v + p, b), e.arcTo(f, v + p, f, v, b), e.arcTo(f, v, f + C, v, b), e.closePath(), e.setFillStyle(d.backgroundColor), e.fill(), e.restore(), e.beginPath(), e.moveTo(f + b, v), e.arcTo(f + C, v, f + C, v + p, b), e.arcTo(f + C, v + p, f, v + p, b), e.arcTo(f, v + p, f, v, b), e.arcTo(f, v, f + C, v, b), e.closePath(), e.setFillStyle(d.padding > 0 ? d.backgroundColor : "rgba(0,0,0,0)"), e.fill(), e.beginPath(), e.moveTo(s + c, g), e.arcTo(s + l, g, s + l, g + h, c), e.arcTo(s + l, g + h, s, g + h, c), e.arcTo(s, g + h, s, g, c), e.arcTo(s, g, s + l, g, c), e.closePath(), e.strokeStyle = "rgba(0,0,0,0)", e.stroke(), e.clip();_context2.prev = 32;_context2.next = 35;return u.loadImage(d.imageSrc);case 35:m = _context2.sent;e.drawImage(m, d.x, d.y, d.width, d.height);_context2.next = 42;break;case 39:_context2.prev = 39;_context2.t2 = _context2["catch"](32);throw console.error("[uQRCode]: ".concat(d.imageSource, " invalid!")), new a("[uQRCode]: ".concat(d.imageSource, " invalid!"));case 42:i && e.draw(!0), e.restore();case 43:n++;_context2.next = 2;break;case 46:case "end":return _context2.stop();}}}, _callee2, null, [[15, 22], [32, 39]]);}))();} }, uQRCode = u, uQRCode.export = function () {var o, e;o = "undefined" != typeof window ? window : global, e = uQRCode,  true ? module.exports = e : undefined;};}();
 //---------------------------------------------------------------------
 // 默认导出方式，非vite(vue3)使用该方式。
 // ↓
@@ -3514,7 +3514,84 @@ var _default = uQRCode;exports.default = _default;
 
 /***/ }),
 
-/***/ 123:
+/***/ 146:
+/*!********************************************************************************************************!*\
+  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/index.js ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 147));
+var _es = _interopRequireDefault(__webpack_require__(/*! ./es.json */ 148));
+var _fr = _interopRequireDefault(__webpack_require__(/*! ./fr.json */ 149));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 150));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 151));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+{
+  en: _en.default,
+  es: _es.default,
+  fr: _fr.default,
+  'zh-Hans': _zhHans.default,
+  'zh-Hant': _zhHant.default };exports.default = _default;
+
+/***/ }),
+
+/***/ 147:
+/*!*******************************************************************************************************!*\
+  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/en.json ***!
+  \*******************************************************************************************************/
+/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-pagination.prevText\":\"prev\",\"uni-pagination.nextText\":\"next\"}");
+
+/***/ }),
+
+/***/ 148:
+/*!*******************************************************************************************************!*\
+  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/es.json ***!
+  \*******************************************************************************************************/
+/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-pagination.prevText\":\"anterior\",\"uni-pagination.nextText\":\"próxima\"}");
+
+/***/ }),
+
+/***/ 149:
+/*!*******************************************************************************************************!*\
+  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/fr.json ***!
+  \*******************************************************************************************************/
+/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-pagination.prevText\":\"précédente\",\"uni-pagination.nextText\":\"suivante\"}");
+
+/***/ }),
+
+/***/ 150:
+/*!************************************************************************************************************!*\
+  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/zh-Hans.json ***!
+  \************************************************************************************************************/
+/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-pagination.prevText\":\"上一页\",\"uni-pagination.nextText\":\"下一页\"}");
+
+/***/ }),
+
+/***/ 151:
+/*!************************************************************************************************************!*\
+  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/zh-Hant.json ***!
+  \************************************************************************************************************/
+/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-pagination.prevText\":\"上一頁\",\"uni-pagination.nextText\":\"下一頁\"}");
+
+/***/ }),
+
+/***/ 159:
 /*!********************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-forms/components/uni-forms/validate.js ***!
   \********************************************************************************************/
@@ -3522,7 +3599,7 @@ var _default = uQRCode;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 112));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _createSuper(Derived) {var hasNativeReflectConstruct = _isNativeReflectConstruct();return function _createSuperInternal() {var Super = _getPrototypeOf(Derived),result;if (hasNativeReflectConstruct) {var NewTarget = _getPrototypeOf(this).constructor;result = Reflect.construct(Super, arguments, NewTarget);} else {result = Super.apply(this, arguments);}return _possibleConstructorReturn(this, result);};}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _isNativeReflectConstruct() {if (typeof Reflect === "undefined" || !Reflect.construct) return false;if (Reflect.construct.sham) return false;if (typeof Proxy === "function") return true;try {Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));return true;} catch (e) {return false;}}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var pattern = {
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 114));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _createSuper(Derived) {var hasNativeReflectConstruct = _isNativeReflectConstruct();return function _createSuperInternal() {var Super = _getPrototypeOf(Derived),result;if (hasNativeReflectConstruct) {var NewTarget = _getPrototypeOf(this).constructor;result = Reflect.construct(Super, arguments, NewTarget);} else {result = Super.apply(this, arguments);}return _possibleConstructorReturn(this, result);};}function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _isNativeReflectConstruct() {if (typeof Reflect === "undefined" || !Reflect.construct) return false;if (Reflect.construct.sham) return false;if (typeof Proxy === "function") return true;try {Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));return true;} catch (e) {return false;}}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var pattern = {
   email: /^\S+?@\S+?\.\S+?$/,
   idcard: /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/,
   url: new RegExp(
@@ -4011,7 +4088,7 @@ SchemaValidator;exports.default = _default;
 
 /***/ }),
 
-/***/ 124:
+/***/ 160:
 /*!*****************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-forms/components/uni-forms/utils.js ***!
   \*****************************************************************************************/
@@ -4315,7 +4392,704 @@ var isEqual = function isEqual(a, b) {
 
 /***/ }),
 
-/***/ 153:
+/***/ 18:
+/*!***************************************************!*\
+  !*** D:/上海电气实习/SEC_MealTicketApply/lib/js/md5.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * [js-md5]{@link https://github.com/emn178/js-md5}
+ *
+ * @namespace md5
+ * @version 0.7.3
+ * @author Chen, Yi-Cyuan [emn178@gmail.com]
+ * @copyright Chen, Yi-Cyuan 2014-2017
+ * @license MIT
+ */
+(function () {
+  'use strict';
+
+  var ERROR = 'input is invalid type';
+  var WINDOW = typeof window === 'object';
+  var root = WINDOW ? window : {};
+  if (root.JS_MD5_NO_WINDOW) {
+    WINDOW = false;
+  }
+  var WEB_WORKER = !WINDOW && typeof self === 'object';
+  var NODE_JS = !root.JS_MD5_NO_NODE_JS && typeof process === 'object' && process.versions && process.versions.node;
+  if (NODE_JS) {
+    root = global;
+  } else if (WEB_WORKER) {
+    root = self;
+  }
+  var COMMON_JS = !root.JS_MD5_NO_COMMON_JS && typeof module === 'object' && module.exports;
+  var AMD =  true && __webpack_require__(/*! !webpack amd options */ 21);
+  var ARRAY_BUFFER = !root.JS_MD5_NO_ARRAY_BUFFER && typeof ArrayBuffer !== 'undefined';
+  var HEX_CHARS = '0123456789abcdef'.split('');
+  var EXTRA = [128, 32768, 8388608, -2147483648];
+  var SHIFT = [0, 8, 16, 24];
+  var OUTPUT_TYPES = ['hex', 'array', 'digest', 'buffer', 'arrayBuffer', 'base64'];
+  var BASE64_ENCODE_CHAR = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'.split('');
+
+  var blocks = [],buffer8;
+  if (ARRAY_BUFFER) {
+    var buffer = new ArrayBuffer(68);
+    buffer8 = new Uint8Array(buffer);
+    blocks = new Uint32Array(buffer);
+  }
+
+  if (root.JS_MD5_NO_NODE_JS || !Array.isArray) {
+    Array.isArray = function (obj) {
+      return Object.prototype.toString.call(obj) === '[object Array]';
+    };
+  }
+
+  if (ARRAY_BUFFER && (root.JS_MD5_NO_ARRAY_BUFFER_IS_VIEW || !ArrayBuffer.isView)) {
+    ArrayBuffer.isView = function (obj) {
+      return typeof obj === 'object' && obj.buffer && obj.buffer.constructor === ArrayBuffer;
+    };
+  }
+
+  /**
+     * @method hex
+     * @memberof md5
+     * @description Output hash as hex string
+     * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+     * @returns {String} Hex string
+     * @example
+     * md5.hex('The quick brown fox jumps over the lazy dog');
+     * // equal to
+     * md5('The quick brown fox jumps over the lazy dog');
+     */
+  /**
+         * @method digest
+         * @memberof md5
+         * @description Output hash as bytes array
+         * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+         * @returns {Array} Bytes array
+         * @example
+         * md5.digest('The quick brown fox jumps over the lazy dog');
+         */
+  /**
+             * @method array
+             * @memberof md5
+             * @description Output hash as bytes array
+             * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+             * @returns {Array} Bytes array
+             * @example
+             * md5.array('The quick brown fox jumps over the lazy dog');
+             */
+  /**
+                 * @method arrayBuffer
+                 * @memberof md5
+                 * @description Output hash as ArrayBuffer
+                 * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+                 * @returns {ArrayBuffer} ArrayBuffer
+                 * @example
+                 * md5.arrayBuffer('The quick brown fox jumps over the lazy dog');
+                 */
+  /**
+                     * @method buffer
+                     * @deprecated This maybe confuse with Buffer in node.js. Please use arrayBuffer instead.
+                     * @memberof md5
+                     * @description Output hash as ArrayBuffer
+                     * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+                     * @returns {ArrayBuffer} ArrayBuffer
+                     * @example
+                     * md5.buffer('The quick brown fox jumps over the lazy dog');
+                     */
+  /**
+                         * @method base64
+                         * @memberof md5
+                         * @description Output hash as base64 string
+                         * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+                         * @returns {String} base64 string
+                         * @example
+                         * md5.base64('The quick brown fox jumps over the lazy dog');
+                         */
+  var createOutputMethod = function createOutputMethod(outputType) {
+    return function (message) {
+      return new Md5(true).update(message)[outputType]();
+    };
+  };
+
+  /**
+      * @method create
+      * @memberof md5
+      * @description Create Md5 object
+      * @returns {Md5} Md5 object.
+      * @example
+      * var hash = md5.create();
+      */
+  /**
+          * @method update
+          * @memberof md5
+          * @description Create and update Md5 object
+          * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+          * @returns {Md5} Md5 object.
+          * @example
+          * var hash = md5.update('The quick brown fox jumps over the lazy dog');
+          * // equal to
+          * var hash = md5.create();
+          * hash.update('The quick brown fox jumps over the lazy dog');
+          */
+  var createMethod = function createMethod() {
+    var method = createOutputMethod('hex');
+    if (NODE_JS) {
+      method = nodeWrap(method);
+    }
+    method.create = function () {
+      return new Md5();
+    };
+    method.update = function (message) {
+      return method.create().update(message);
+    };
+    for (var i = 0; i < OUTPUT_TYPES.length; ++i) {
+      var type = OUTPUT_TYPES[i];
+      method[type] = createOutputMethod(type);
+    }
+    return method;
+  };
+
+  var nodeWrap = function nodeWrap(method) {
+    var crypto = eval("require('crypto')");
+    var Buffer = eval("require('buffer').Buffer");
+    var nodeMethod = function nodeMethod(message) {
+      if (typeof message === 'string') {
+        return crypto.createHash('md5').update(message, 'utf8').digest('hex');
+      } else {
+        if (message === null || message === undefined) {
+          throw ERROR;
+        } else if (message.constructor === ArrayBuffer) {
+          message = new Uint8Array(message);
+        }
+      }
+      if (Array.isArray(message) || ArrayBuffer.isView(message) ||
+      message.constructor === Buffer) {
+        return crypto.createHash('md5').update(new Buffer(message)).digest('hex');
+      } else {
+        return method(message);
+      }
+    };
+    return nodeMethod;
+  };
+
+
+
+  /**
+      * Md5 class
+      * @class Md5
+      * @description This is internal class.
+      * @see {@link md5.create}
+      */
+  function Md5(sharedMemory) {
+    if (sharedMemory) {
+      blocks[0] = blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+      this.blocks = blocks;
+      this.buffer8 = buffer8;
+    } else {
+      if (ARRAY_BUFFER) {
+        var buffer = new ArrayBuffer(68);
+        this.buffer8 = new Uint8Array(buffer);
+        this.blocks = new Uint32Array(buffer);
+      } else {
+        this.blocks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+      }
+    }
+    this.h0 = this.h1 = this.h2 = this.h3 = this.start = this.bytes = this.hBytes = 0;
+    this.finalized = this.hashed = false;
+    this.first = true;
+  }
+
+  /**
+     * @method update
+     * @memberof Md5
+     * @instance
+     * @description Update hash
+     * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+     * @returns {Md5} Md5 object.
+     * @see {@link md5.update}
+     */
+  Md5.prototype.update = function (message) {
+    if (this.finalized) {
+      return;
+    }
+
+    var notString,type = typeof message;
+    if (type !== 'string') {
+      if (type === 'object') {
+        if (message === null) {
+          throw ERROR;
+        } else if (ARRAY_BUFFER && message.constructor === ArrayBuffer) {
+          message = new Uint8Array(message);
+        } else if (!Array.isArray(message)) {
+          if (!ARRAY_BUFFER || !ArrayBuffer.isView(message)) {
+            throw ERROR;
+          }
+        }
+      } else {
+        throw ERROR;
+      }
+      notString = true;
+    }
+    var code,index = 0,i,length = message.length,blocks = this.blocks;
+    var buffer8 = this.buffer8;
+
+    while (index < length) {
+      if (this.hashed) {
+        this.hashed = false;
+        blocks[0] = blocks[16];
+        blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+        blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+        blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+        blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+      }
+
+      if (notString) {
+        if (ARRAY_BUFFER) {
+          for (i = this.start; index < length && i < 64; ++index) {
+            buffer8[i++] = message[index];
+          }
+        } else {
+          for (i = this.start; index < length && i < 64; ++index) {
+            blocks[i >> 2] |= message[index] << SHIFT[i++ & 3];
+          }
+        }
+      } else {
+        if (ARRAY_BUFFER) {
+          for (i = this.start; index < length && i < 64; ++index) {
+            code = message.charCodeAt(index);
+            if (code < 0x80) {
+              buffer8[i++] = code;
+            } else if (code < 0x800) {
+              buffer8[i++] = 0xc0 | code >> 6;
+              buffer8[i++] = 0x80 | code & 0x3f;
+            } else if (code < 0xd800 || code >= 0xe000) {
+              buffer8[i++] = 0xe0 | code >> 12;
+              buffer8[i++] = 0x80 | code >> 6 & 0x3f;
+              buffer8[i++] = 0x80 | code & 0x3f;
+            } else {
+              code = 0x10000 + ((code & 0x3ff) << 10 | message.charCodeAt(++index) & 0x3ff);
+              buffer8[i++] = 0xf0 | code >> 18;
+              buffer8[i++] = 0x80 | code >> 12 & 0x3f;
+              buffer8[i++] = 0x80 | code >> 6 & 0x3f;
+              buffer8[i++] = 0x80 | code & 0x3f;
+            }
+          }
+        } else {
+          for (i = this.start; index < length && i < 64; ++index) {
+            code = message.charCodeAt(index);
+            if (code < 0x80) {
+              blocks[i >> 2] |= code << SHIFT[i++ & 3];
+            } else if (code < 0x800) {
+              blocks[i >> 2] |= (0xc0 | code >> 6) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | code & 0x3f) << SHIFT[i++ & 3];
+            } else if (code < 0xd800 || code >= 0xe000) {
+              blocks[i >> 2] |= (0xe0 | code >> 12) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | code >> 6 & 0x3f) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | code & 0x3f) << SHIFT[i++ & 3];
+            } else {
+              code = 0x10000 + ((code & 0x3ff) << 10 | message.charCodeAt(++index) & 0x3ff);
+              blocks[i >> 2] |= (0xf0 | code >> 18) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | code >> 12 & 0x3f) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | code >> 6 & 0x3f) << SHIFT[i++ & 3];
+              blocks[i >> 2] |= (0x80 | code & 0x3f) << SHIFT[i++ & 3];
+            }
+          }
+        }
+      }
+      this.lastByteIndex = i;
+      this.bytes += i - this.start;
+      if (i >= 64) {
+        this.start = i - 64;
+        this.hash();
+        this.hashed = true;
+      } else {
+        this.start = i;
+      }
+    }
+    if (this.bytes > 4294967295) {
+      this.hBytes += this.bytes / 4294967296 << 0;
+      this.bytes = this.bytes % 4294967296;
+    }
+    return this;
+  };
+
+  Md5.prototype.finalize = function () {
+    if (this.finalized) {
+      return;
+    }
+    this.finalized = true;
+    var blocks = this.blocks,i = this.lastByteIndex;
+    blocks[i >> 2] |= EXTRA[i & 3];
+    if (i >= 56) {
+      if (!this.hashed) {
+        this.hash();
+      }
+      blocks[0] = blocks[16];
+      blocks[16] = blocks[1] = blocks[2] = blocks[3] =
+      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
+      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
+      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
+    }
+    blocks[14] = this.bytes << 3;
+    blocks[15] = this.hBytes << 3 | this.bytes >>> 29;
+    this.hash();
+  };
+
+  Md5.prototype.hash = function () {
+    var a,b,c,d,bc,da,blocks = this.blocks;
+
+    if (this.first) {
+      a = blocks[0] - 680876937;
+      a = (a << 7 | a >>> 25) - 271733879 << 0;
+      d = (-1732584194 ^ a & 2004318071) + blocks[1] - 117830708;
+      d = (d << 12 | d >>> 20) + a << 0;
+      c = (-271733879 ^ d & (a ^ -271733879)) + blocks[2] - 1126478375;
+      c = (c << 17 | c >>> 15) + d << 0;
+      b = (a ^ c & (d ^ a)) + blocks[3] - 1316259209;
+      b = (b << 22 | b >>> 10) + c << 0;
+    } else {
+      a = this.h0;
+      b = this.h1;
+      c = this.h2;
+      d = this.h3;
+      a += (d ^ b & (c ^ d)) + blocks[0] - 680876936;
+      a = (a << 7 | a >>> 25) + b << 0;
+      d += (c ^ a & (b ^ c)) + blocks[1] - 389564586;
+      d = (d << 12 | d >>> 20) + a << 0;
+      c += (b ^ d & (a ^ b)) + blocks[2] + 606105819;
+      c = (c << 17 | c >>> 15) + d << 0;
+      b += (a ^ c & (d ^ a)) + blocks[3] - 1044525330;
+      b = (b << 22 | b >>> 10) + c << 0;
+    }
+
+    a += (d ^ b & (c ^ d)) + blocks[4] - 176418897;
+    a = (a << 7 | a >>> 25) + b << 0;
+    d += (c ^ a & (b ^ c)) + blocks[5] + 1200080426;
+    d = (d << 12 | d >>> 20) + a << 0;
+    c += (b ^ d & (a ^ b)) + blocks[6] - 1473231341;
+    c = (c << 17 | c >>> 15) + d << 0;
+    b += (a ^ c & (d ^ a)) + blocks[7] - 45705983;
+    b = (b << 22 | b >>> 10) + c << 0;
+    a += (d ^ b & (c ^ d)) + blocks[8] + 1770035416;
+    a = (a << 7 | a >>> 25) + b << 0;
+    d += (c ^ a & (b ^ c)) + blocks[9] - 1958414417;
+    d = (d << 12 | d >>> 20) + a << 0;
+    c += (b ^ d & (a ^ b)) + blocks[10] - 42063;
+    c = (c << 17 | c >>> 15) + d << 0;
+    b += (a ^ c & (d ^ a)) + blocks[11] - 1990404162;
+    b = (b << 22 | b >>> 10) + c << 0;
+    a += (d ^ b & (c ^ d)) + blocks[12] + 1804603682;
+    a = (a << 7 | a >>> 25) + b << 0;
+    d += (c ^ a & (b ^ c)) + blocks[13] - 40341101;
+    d = (d << 12 | d >>> 20) + a << 0;
+    c += (b ^ d & (a ^ b)) + blocks[14] - 1502002290;
+    c = (c << 17 | c >>> 15) + d << 0;
+    b += (a ^ c & (d ^ a)) + blocks[15] + 1236535329;
+    b = (b << 22 | b >>> 10) + c << 0;
+    a += (c ^ d & (b ^ c)) + blocks[1] - 165796510;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ c & (a ^ b)) + blocks[6] - 1069501632;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ b & (d ^ a)) + blocks[11] + 643717713;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ a & (c ^ d)) + blocks[0] - 373897302;
+    b = (b << 20 | b >>> 12) + c << 0;
+    a += (c ^ d & (b ^ c)) + blocks[5] - 701558691;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ c & (a ^ b)) + blocks[10] + 38016083;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ b & (d ^ a)) + blocks[15] - 660478335;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ a & (c ^ d)) + blocks[4] - 405537848;
+    b = (b << 20 | b >>> 12) + c << 0;
+    a += (c ^ d & (b ^ c)) + blocks[9] + 568446438;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ c & (a ^ b)) + blocks[14] - 1019803690;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ b & (d ^ a)) + blocks[3] - 187363961;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ a & (c ^ d)) + blocks[8] + 1163531501;
+    b = (b << 20 | b >>> 12) + c << 0;
+    a += (c ^ d & (b ^ c)) + blocks[13] - 1444681467;
+    a = (a << 5 | a >>> 27) + b << 0;
+    d += (b ^ c & (a ^ b)) + blocks[2] - 51403784;
+    d = (d << 9 | d >>> 23) + a << 0;
+    c += (a ^ b & (d ^ a)) + blocks[7] + 1735328473;
+    c = (c << 14 | c >>> 18) + d << 0;
+    b += (d ^ a & (c ^ d)) + blocks[12] - 1926607734;
+    b = (b << 20 | b >>> 12) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[5] - 378558;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[8] - 2022574463;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[11] + 1839030562;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[14] - 35309556;
+    b = (b << 23 | b >>> 9) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[1] - 1530992060;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[4] + 1272893353;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[7] - 155497632;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[10] - 1094730640;
+    b = (b << 23 | b >>> 9) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[13] + 681279174;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[0] - 358537222;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[3] - 722521979;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[6] + 76029189;
+    b = (b << 23 | b >>> 9) + c << 0;
+    bc = b ^ c;
+    a += (bc ^ d) + blocks[9] - 640364487;
+    a = (a << 4 | a >>> 28) + b << 0;
+    d += (bc ^ a) + blocks[12] - 421815835;
+    d = (d << 11 | d >>> 21) + a << 0;
+    da = d ^ a;
+    c += (da ^ b) + blocks[15] + 530742520;
+    c = (c << 16 | c >>> 16) + d << 0;
+    b += (da ^ c) + blocks[2] - 995338651;
+    b = (b << 23 | b >>> 9) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[0] - 198630844;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[7] + 1126891415;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[14] - 1416354905;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[5] - 57434055;
+    b = (b << 21 | b >>> 11) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[12] + 1700485571;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[3] - 1894986606;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[10] - 1051523;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[1] - 2054922799;
+    b = (b << 21 | b >>> 11) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[8] + 1873313359;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[15] - 30611744;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[6] - 1560198380;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[13] + 1309151649;
+    b = (b << 21 | b >>> 11) + c << 0;
+    a += (c ^ (b | ~d)) + blocks[4] - 145523070;
+    a = (a << 6 | a >>> 26) + b << 0;
+    d += (b ^ (a | ~c)) + blocks[11] - 1120210379;
+    d = (d << 10 | d >>> 22) + a << 0;
+    c += (a ^ (d | ~b)) + blocks[2] + 718787259;
+    c = (c << 15 | c >>> 17) + d << 0;
+    b += (d ^ (c | ~a)) + blocks[9] - 343485551;
+    b = (b << 21 | b >>> 11) + c << 0;
+
+    if (this.first) {
+      this.h0 = a + 1732584193 << 0;
+      this.h1 = b - 271733879 << 0;
+      this.h2 = c - 1732584194 << 0;
+      this.h3 = d + 271733878 << 0;
+      this.first = false;
+    } else {
+      this.h0 = this.h0 + a << 0;
+      this.h1 = this.h1 + b << 0;
+      this.h2 = this.h2 + c << 0;
+      this.h3 = this.h3 + d << 0;
+    }
+  };
+
+  /**
+      * @method hex
+      * @memberof Md5
+      * @instance
+      * @description Output hash as hex string
+      * @returns {String} Hex string
+      * @see {@link md5.hex}
+      * @example
+      * hash.hex();
+      */
+  Md5.prototype.hex = function () {
+    this.finalize();
+
+    var h0 = this.h0,h1 = this.h1,h2 = this.h2,h3 = this.h3;
+
+    return HEX_CHARS[h0 >> 4 & 0x0F] + HEX_CHARS[h0 & 0x0F] +
+    HEX_CHARS[h0 >> 12 & 0x0F] + HEX_CHARS[h0 >> 8 & 0x0F] +
+    HEX_CHARS[h0 >> 20 & 0x0F] + HEX_CHARS[h0 >> 16 & 0x0F] +
+    HEX_CHARS[h0 >> 28 & 0x0F] + HEX_CHARS[h0 >> 24 & 0x0F] +
+    HEX_CHARS[h1 >> 4 & 0x0F] + HEX_CHARS[h1 & 0x0F] +
+    HEX_CHARS[h1 >> 12 & 0x0F] + HEX_CHARS[h1 >> 8 & 0x0F] +
+    HEX_CHARS[h1 >> 20 & 0x0F] + HEX_CHARS[h1 >> 16 & 0x0F] +
+    HEX_CHARS[h1 >> 28 & 0x0F] + HEX_CHARS[h1 >> 24 & 0x0F] +
+    HEX_CHARS[h2 >> 4 & 0x0F] + HEX_CHARS[h2 & 0x0F] +
+    HEX_CHARS[h2 >> 12 & 0x0F] + HEX_CHARS[h2 >> 8 & 0x0F] +
+    HEX_CHARS[h2 >> 20 & 0x0F] + HEX_CHARS[h2 >> 16 & 0x0F] +
+    HEX_CHARS[h2 >> 28 & 0x0F] + HEX_CHARS[h2 >> 24 & 0x0F] +
+    HEX_CHARS[h3 >> 4 & 0x0F] + HEX_CHARS[h3 & 0x0F] +
+    HEX_CHARS[h3 >> 12 & 0x0F] + HEX_CHARS[h3 >> 8 & 0x0F] +
+    HEX_CHARS[h3 >> 20 & 0x0F] + HEX_CHARS[h3 >> 16 & 0x0F] +
+    HEX_CHARS[h3 >> 28 & 0x0F] + HEX_CHARS[h3 >> 24 & 0x0F];
+  };
+
+  /**
+      * @method toString
+      * @memberof Md5
+      * @instance
+      * @description Output hash as hex string
+      * @returns {String} Hex string
+      * @see {@link md5.hex}
+      * @example
+      * hash.toString();
+      */
+  Md5.prototype.toString = Md5.prototype.hex;
+
+  /**
+                                               * @method digest
+                                               * @memberof Md5
+                                               * @instance
+                                               * @description Output hash as bytes array
+                                               * @returns {Array} Bytes array
+                                               * @see {@link md5.digest}
+                                               * @example
+                                               * hash.digest();
+                                               */
+  Md5.prototype.digest = function () {
+    this.finalize();
+
+    var h0 = this.h0,h1 = this.h1,h2 = this.h2,h3 = this.h3;
+    return [
+    h0 & 0xFF, h0 >> 8 & 0xFF, h0 >> 16 & 0xFF, h0 >> 24 & 0xFF,
+    h1 & 0xFF, h1 >> 8 & 0xFF, h1 >> 16 & 0xFF, h1 >> 24 & 0xFF,
+    h2 & 0xFF, h2 >> 8 & 0xFF, h2 >> 16 & 0xFF, h2 >> 24 & 0xFF,
+    h3 & 0xFF, h3 >> 8 & 0xFF, h3 >> 16 & 0xFF, h3 >> 24 & 0xFF];
+
+  };
+
+  /**
+      * @method array
+      * @memberof Md5
+      * @instance
+      * @description Output hash as bytes array
+      * @returns {Array} Bytes array
+      * @see {@link md5.array}
+      * @example
+      * hash.array();
+      */
+  Md5.prototype.array = Md5.prototype.digest;
+
+  /**
+                                               * @method arrayBuffer
+                                               * @memberof Md5
+                                               * @instance
+                                               * @description Output hash as ArrayBuffer
+                                               * @returns {ArrayBuffer} ArrayBuffer
+                                               * @see {@link md5.arrayBuffer}
+                                               * @example
+                                               * hash.arrayBuffer();
+                                               */
+  Md5.prototype.arrayBuffer = function () {
+    this.finalize();
+
+    var buffer = new ArrayBuffer(16);
+    var blocks = new Uint32Array(buffer);
+    blocks[0] = this.h0;
+    blocks[1] = this.h1;
+    blocks[2] = this.h2;
+    blocks[3] = this.h3;
+    return buffer;
+  };
+
+  /**
+      * @method buffer
+      * @deprecated This maybe confuse with Buffer in node.js. Please use arrayBuffer instead.
+      * @memberof Md5
+      * @instance
+      * @description Output hash as ArrayBuffer
+      * @returns {ArrayBuffer} ArrayBuffer
+      * @see {@link md5.buffer}
+      * @example
+      * hash.buffer();
+      */
+  Md5.prototype.buffer = Md5.prototype.arrayBuffer;
+
+  /**
+                                                     * @method base64
+                                                     * @memberof Md5
+                                                     * @instance
+                                                     * @description Output hash as base64 string
+                                                     * @returns {String} base64 string
+                                                     * @see {@link md5.base64}
+                                                     * @example
+                                                     * hash.base64();
+                                                     */
+  Md5.prototype.base64 = function () {
+    var v1,v2,v3,base64Str = '',bytes = this.array();
+    for (var i = 0; i < 15;) {
+      v1 = bytes[i++];
+      v2 = bytes[i++];
+      v3 = bytes[i++];
+      base64Str += BASE64_ENCODE_CHAR[v1 >>> 2] +
+      BASE64_ENCODE_CHAR[(v1 << 4 | v2 >>> 4) & 63] +
+      BASE64_ENCODE_CHAR[(v2 << 2 | v3 >>> 6) & 63] +
+      BASE64_ENCODE_CHAR[v3 & 63];
+    }
+    v1 = bytes[i];
+    base64Str += BASE64_ENCODE_CHAR[v1 >>> 2] +
+    BASE64_ENCODE_CHAR[v1 << 4 & 63] +
+    '==';
+    return base64Str;
+  };
+
+  var exports = createMethod();
+
+  if (COMMON_JS) {
+    module.exports = exports;
+  } else {
+    /**
+           * @method md5
+           * @description Md5 hash function, export to global in browsers.
+           * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
+           * @returns {String} md5 hashes
+           * @example
+           * md5(''); // d41d8cd98f00b204e9800998ecf8427e
+           * md5('The quick brown fox jumps over the lazy dog'); // 9e107d9d372bb6826bd81d3542a419d6
+           * md5('The quick brown fox jumps over the lazy dog.'); // e4d909c290d0fb1ca068ffaddf22cbd0
+           *
+           * // It also supports UTF-8 encoding
+           * md5('中文'); // a7bac2239fcdcb3a067903d8077c4a07
+           *
+           * // It also supports byte `Array`, `Uint8Array`, `ArrayBuffer`
+           * md5([]); // d41d8cd98f00b204e9800998ecf8427e
+           * md5(new Uint8Array([])); // d41d8cd98f00b204e9800998ecf8427e
+           */
+    root.md5 = exports;
+    if (AMD) {
+      !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+        return exports;
+      }).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    }
+  }
+})();
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 19), __webpack_require__(/*! ./../../../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 2)))
+
+/***/ }),
+
+/***/ 189:
 /*!******************************************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/index.js ***!
   \******************************************************************************************************************/
@@ -4323,9 +5097,9 @@ var isEqual = function isEqual(a, b) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 154));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 155));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 156));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 190));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 191));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 192));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
 {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -4333,7 +5107,52 @@ var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 1
 
 /***/ }),
 
-/***/ 154:
+/***/ 19:
+/*!********************************************************!*\
+  !*** ./node_modules/node-libs-browser/mock/process.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports.nextTick = function nextTick(fn) {
+    var args = Array.prototype.slice.call(arguments);
+    args.shift();
+    setTimeout(function () {
+        fn.apply(null, args);
+    }, 0);
+};
+
+exports.platform = exports.arch = 
+exports.execPath = exports.title = 'browser';
+exports.pid = 1;
+exports.browser = true;
+exports.env = {};
+exports.argv = [];
+
+exports.binding = function (name) {
+	throw new Error('No such module. (Possibly not yet loaded)')
+};
+
+(function () {
+    var cwd = '/';
+    var path;
+    exports.cwd = function () { return cwd };
+    exports.chdir = function (dir) {
+        if (!path) path = __webpack_require__(/*! path */ 20);
+        cwd = path.resolve(dir, cwd);
+    };
+})();
+
+exports.exit = exports.kill = 
+exports.umask = exports.dlopen = 
+exports.uptime = exports.memoryUsage = 
+exports.uvCounters = function() {};
+exports.features = {};
+
+
+/***/ }),
+
+/***/ 190:
 /*!*****************************************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/en.json ***!
   \*****************************************************************************************************************/
@@ -4344,7 +5163,7 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"select date\"
 
 /***/ }),
 
-/***/ 155:
+/***/ 191:
 /*!**********************************************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hans.json ***!
   \**********************************************************************************************************************/
@@ -4355,7 +5174,7 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"选择日期\
 
 /***/ }),
 
-/***/ 156:
+/***/ 192:
 /*!**********************************************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hant.json ***!
   \**********************************************************************************************************************/
@@ -4366,7 +5185,352 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"選擇日期\
 
 /***/ }),
 
-/***/ 171:
+/***/ 2:
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 20:
+/*!***********************************************!*\
+  !*** ./node_modules/path-browserify/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {// .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
+// backported and transplited with Babel, with backwards-compat fixes
+
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+// resolves . and .. elements in a path array with directory names there
+// must be no slashes, empty elements, or device names (c:\) in the array
+// (so also no leading and trailing slashes - it does not distinguish
+// relative and absolute paths)
+function normalizeArray(parts, allowAboveRoot) {
+  // if the path tries to go above the root, `up` ends up > 0
+  var up = 0;
+  for (var i = parts.length - 1; i >= 0; i--) {
+    var last = parts[i];
+    if (last === '.') {
+      parts.splice(i, 1);
+    } else if (last === '..') {
+      parts.splice(i, 1);
+      up++;
+    } else if (up) {
+      parts.splice(i, 1);
+      up--;
+    }
+  }
+
+  // if the path is allowed to go above the root, restore leading ..s
+  if (allowAboveRoot) {
+    for (; up--; up) {
+      parts.unshift('..');
+    }
+  }
+
+  return parts;
+}
+
+// path.resolve([from ...], to)
+// posix version
+exports.resolve = function() {
+  var resolvedPath = '',
+      resolvedAbsolute = false;
+
+  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
+    var path = (i >= 0) ? arguments[i] : process.cwd();
+
+    // Skip empty and invalid entries
+    if (typeof path !== 'string') {
+      throw new TypeError('Arguments to path.resolve must be strings');
+    } else if (!path) {
+      continue;
+    }
+
+    resolvedPath = path + '/' + resolvedPath;
+    resolvedAbsolute = path.charAt(0) === '/';
+  }
+
+  // At this point the path should be resolved to a full absolute path, but
+  // handle relative paths to be safe (might happen when process.cwd() fails)
+
+  // Normalize the path
+  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function(p) {
+    return !!p;
+  }), !resolvedAbsolute).join('/');
+
+  return ((resolvedAbsolute ? '/' : '') + resolvedPath) || '.';
+};
+
+// path.normalize(path)
+// posix version
+exports.normalize = function(path) {
+  var isAbsolute = exports.isAbsolute(path),
+      trailingSlash = substr(path, -1) === '/';
+
+  // Normalize the path
+  path = normalizeArray(filter(path.split('/'), function(p) {
+    return !!p;
+  }), !isAbsolute).join('/');
+
+  if (!path && !isAbsolute) {
+    path = '.';
+  }
+  if (path && trailingSlash) {
+    path += '/';
+  }
+
+  return (isAbsolute ? '/' : '') + path;
+};
+
+// posix version
+exports.isAbsolute = function(path) {
+  return path.charAt(0) === '/';
+};
+
+// posix version
+exports.join = function() {
+  var paths = Array.prototype.slice.call(arguments, 0);
+  return exports.normalize(filter(paths, function(p, index) {
+    if (typeof p !== 'string') {
+      throw new TypeError('Arguments to path.join must be strings');
+    }
+    return p;
+  }).join('/'));
+};
+
+
+// path.relative(from, to)
+// posix version
+exports.relative = function(from, to) {
+  from = exports.resolve(from).substr(1);
+  to = exports.resolve(to).substr(1);
+
+  function trim(arr) {
+    var start = 0;
+    for (; start < arr.length; start++) {
+      if (arr[start] !== '') break;
+    }
+
+    var end = arr.length - 1;
+    for (; end >= 0; end--) {
+      if (arr[end] !== '') break;
+    }
+
+    if (start > end) return [];
+    return arr.slice(start, end - start + 1);
+  }
+
+  var fromParts = trim(from.split('/'));
+  var toParts = trim(to.split('/'));
+
+  var length = Math.min(fromParts.length, toParts.length);
+  var samePartsLength = length;
+  for (var i = 0; i < length; i++) {
+    if (fromParts[i] !== toParts[i]) {
+      samePartsLength = i;
+      break;
+    }
+  }
+
+  var outputParts = [];
+  for (var i = samePartsLength; i < fromParts.length; i++) {
+    outputParts.push('..');
+  }
+
+  outputParts = outputParts.concat(toParts.slice(samePartsLength));
+
+  return outputParts.join('/');
+};
+
+exports.sep = '/';
+exports.delimiter = ':';
+
+exports.dirname = function (path) {
+  if (typeof path !== 'string') path = path + '';
+  if (path.length === 0) return '.';
+  var code = path.charCodeAt(0);
+  var hasRoot = code === 47 /*/*/;
+  var end = -1;
+  var matchedSlash = true;
+  for (var i = path.length - 1; i >= 1; --i) {
+    code = path.charCodeAt(i);
+    if (code === 47 /*/*/) {
+        if (!matchedSlash) {
+          end = i;
+          break;
+        }
+      } else {
+      // We saw the first non-path separator
+      matchedSlash = false;
+    }
+  }
+
+  if (end === -1) return hasRoot ? '/' : '.';
+  if (hasRoot && end === 1) {
+    // return '//';
+    // Backwards-compat fix:
+    return '/';
+  }
+  return path.slice(0, end);
+};
+
+function basename(path) {
+  if (typeof path !== 'string') path = path + '';
+
+  var start = 0;
+  var end = -1;
+  var matchedSlash = true;
+  var i;
+
+  for (i = path.length - 1; i >= 0; --i) {
+    if (path.charCodeAt(i) === 47 /*/*/) {
+        // If we reached a path separator that was not part of a set of path
+        // separators at the end of the string, stop now
+        if (!matchedSlash) {
+          start = i + 1;
+          break;
+        }
+      } else if (end === -1) {
+      // We saw the first non-path separator, mark this as the end of our
+      // path component
+      matchedSlash = false;
+      end = i + 1;
+    }
+  }
+
+  if (end === -1) return '';
+  return path.slice(start, end);
+}
+
+// Uses a mixed approach for backwards-compatibility, as ext behavior changed
+// in new Node.js versions, so only basename() above is backported here
+exports.basename = function (path, ext) {
+  var f = basename(path);
+  if (ext && f.substr(-1 * ext.length) === ext) {
+    f = f.substr(0, f.length - ext.length);
+  }
+  return f;
+};
+
+exports.extname = function (path) {
+  if (typeof path !== 'string') path = path + '';
+  var startDot = -1;
+  var startPart = 0;
+  var end = -1;
+  var matchedSlash = true;
+  // Track the state of characters (if any) we see before our first dot and
+  // after any path separator we find
+  var preDotState = 0;
+  for (var i = path.length - 1; i >= 0; --i) {
+    var code = path.charCodeAt(i);
+    if (code === 47 /*/*/) {
+        // If we reached a path separator that was not part of a set of path
+        // separators at the end of the string, stop now
+        if (!matchedSlash) {
+          startPart = i + 1;
+          break;
+        }
+        continue;
+      }
+    if (end === -1) {
+      // We saw the first non-path separator, mark this as the end of our
+      // extension
+      matchedSlash = false;
+      end = i + 1;
+    }
+    if (code === 46 /*.*/) {
+        // If this is our first dot, mark it as the start of our extension
+        if (startDot === -1)
+          startDot = i;
+        else if (preDotState !== 1)
+          preDotState = 1;
+    } else if (startDot !== -1) {
+      // We saw a non-dot and non-path separator before our dot, so we should
+      // have a good chance at having a non-empty extension
+      preDotState = -1;
+    }
+  }
+
+  if (startDot === -1 || end === -1 ||
+      // We saw a non-dot character immediately before the dot
+      preDotState === 0 ||
+      // The (right-most) trimmed path component is exactly '..'
+      preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
+    return '';
+  }
+  return path.slice(startDot, end);
+};
+
+function filter (xs, f) {
+    if (xs.filter) return xs.filter(f);
+    var res = [];
+    for (var i = 0; i < xs.length; i++) {
+        if (f(xs[i], i, xs)) res.push(xs[i]);
+    }
+    return res;
+}
+
+// String.prototype.substr - negative index don't work in IE8
+var substr = 'ab'.substr(-1) === 'b'
+    ? function (str, start, len) { return str.substr(start, len) }
+    : function (str, start, len) {
+        if (start < 0) start = str.length + start;
+        return str.substr(start, len);
+    }
+;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 19)))
+
+/***/ }),
+
+/***/ 207:
 /*!*****************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \*****************************************************************************************/
@@ -5543,1093 +6707,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 18:
-/*!***************************************************!*\
-  !*** D:/上海电气实习/SEC_MealTicketApply/lib/js/md5.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
- * [js-md5]{@link https://github.com/emn178/js-md5}
- *
- * @namespace md5
- * @version 0.7.3
- * @author Chen, Yi-Cyuan [emn178@gmail.com]
- * @copyright Chen, Yi-Cyuan 2014-2017
- * @license MIT
- */
-(function () {
-  'use strict';
-
-  var ERROR = 'input is invalid type';
-  var WINDOW = typeof window === 'object';
-  var root = WINDOW ? window : {};
-  if (root.JS_MD5_NO_WINDOW) {
-    WINDOW = false;
-  }
-  var WEB_WORKER = !WINDOW && typeof self === 'object';
-  var NODE_JS = !root.JS_MD5_NO_NODE_JS && typeof process === 'object' && process.versions && process.versions.node;
-  if (NODE_JS) {
-    root = global;
-  } else if (WEB_WORKER) {
-    root = self;
-  }
-  var COMMON_JS = !root.JS_MD5_NO_COMMON_JS && typeof module === 'object' && module.exports;
-  var AMD =  true && __webpack_require__(/*! !webpack amd options */ 21);
-  var ARRAY_BUFFER = !root.JS_MD5_NO_ARRAY_BUFFER && typeof ArrayBuffer !== 'undefined';
-  var HEX_CHARS = '0123456789abcdef'.split('');
-  var EXTRA = [128, 32768, 8388608, -2147483648];
-  var SHIFT = [0, 8, 16, 24];
-  var OUTPUT_TYPES = ['hex', 'array', 'digest', 'buffer', 'arrayBuffer', 'base64'];
-  var BASE64_ENCODE_CHAR = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'.split('');
-
-  var blocks = [],buffer8;
-  if (ARRAY_BUFFER) {
-    var buffer = new ArrayBuffer(68);
-    buffer8 = new Uint8Array(buffer);
-    blocks = new Uint32Array(buffer);
-  }
-
-  if (root.JS_MD5_NO_NODE_JS || !Array.isArray) {
-    Array.isArray = function (obj) {
-      return Object.prototype.toString.call(obj) === '[object Array]';
-    };
-  }
-
-  if (ARRAY_BUFFER && (root.JS_MD5_NO_ARRAY_BUFFER_IS_VIEW || !ArrayBuffer.isView)) {
-    ArrayBuffer.isView = function (obj) {
-      return typeof obj === 'object' && obj.buffer && obj.buffer.constructor === ArrayBuffer;
-    };
-  }
-
-  /**
-     * @method hex
-     * @memberof md5
-     * @description Output hash as hex string
-     * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-     * @returns {String} Hex string
-     * @example
-     * md5.hex('The quick brown fox jumps over the lazy dog');
-     * // equal to
-     * md5('The quick brown fox jumps over the lazy dog');
-     */
-  /**
-         * @method digest
-         * @memberof md5
-         * @description Output hash as bytes array
-         * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-         * @returns {Array} Bytes array
-         * @example
-         * md5.digest('The quick brown fox jumps over the lazy dog');
-         */
-  /**
-             * @method array
-             * @memberof md5
-             * @description Output hash as bytes array
-             * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-             * @returns {Array} Bytes array
-             * @example
-             * md5.array('The quick brown fox jumps over the lazy dog');
-             */
-  /**
-                 * @method arrayBuffer
-                 * @memberof md5
-                 * @description Output hash as ArrayBuffer
-                 * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-                 * @returns {ArrayBuffer} ArrayBuffer
-                 * @example
-                 * md5.arrayBuffer('The quick brown fox jumps over the lazy dog');
-                 */
-  /**
-                     * @method buffer
-                     * @deprecated This maybe confuse with Buffer in node.js. Please use arrayBuffer instead.
-                     * @memberof md5
-                     * @description Output hash as ArrayBuffer
-                     * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-                     * @returns {ArrayBuffer} ArrayBuffer
-                     * @example
-                     * md5.buffer('The quick brown fox jumps over the lazy dog');
-                     */
-  /**
-                         * @method base64
-                         * @memberof md5
-                         * @description Output hash as base64 string
-                         * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-                         * @returns {String} base64 string
-                         * @example
-                         * md5.base64('The quick brown fox jumps over the lazy dog');
-                         */
-  var createOutputMethod = function createOutputMethod(outputType) {
-    return function (message) {
-      return new Md5(true).update(message)[outputType]();
-    };
-  };
-
-  /**
-      * @method create
-      * @memberof md5
-      * @description Create Md5 object
-      * @returns {Md5} Md5 object.
-      * @example
-      * var hash = md5.create();
-      */
-  /**
-          * @method update
-          * @memberof md5
-          * @description Create and update Md5 object
-          * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-          * @returns {Md5} Md5 object.
-          * @example
-          * var hash = md5.update('The quick brown fox jumps over the lazy dog');
-          * // equal to
-          * var hash = md5.create();
-          * hash.update('The quick brown fox jumps over the lazy dog');
-          */
-  var createMethod = function createMethod() {
-    var method = createOutputMethod('hex');
-    if (NODE_JS) {
-      method = nodeWrap(method);
-    }
-    method.create = function () {
-      return new Md5();
-    };
-    method.update = function (message) {
-      return method.create().update(message);
-    };
-    for (var i = 0; i < OUTPUT_TYPES.length; ++i) {
-      var type = OUTPUT_TYPES[i];
-      method[type] = createOutputMethod(type);
-    }
-    return method;
-  };
-
-  var nodeWrap = function nodeWrap(method) {
-    var crypto = eval("require('crypto')");
-    var Buffer = eval("require('buffer').Buffer");
-    var nodeMethod = function nodeMethod(message) {
-      if (typeof message === 'string') {
-        return crypto.createHash('md5').update(message, 'utf8').digest('hex');
-      } else {
-        if (message === null || message === undefined) {
-          throw ERROR;
-        } else if (message.constructor === ArrayBuffer) {
-          message = new Uint8Array(message);
-        }
-      }
-      if (Array.isArray(message) || ArrayBuffer.isView(message) ||
-      message.constructor === Buffer) {
-        return crypto.createHash('md5').update(new Buffer(message)).digest('hex');
-      } else {
-        return method(message);
-      }
-    };
-    return nodeMethod;
-  };
-
-
-
-  /**
-      * Md5 class
-      * @class Md5
-      * @description This is internal class.
-      * @see {@link md5.create}
-      */
-  function Md5(sharedMemory) {
-    if (sharedMemory) {
-      blocks[0] = blocks[16] = blocks[1] = blocks[2] = blocks[3] =
-      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
-      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
-      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
-      this.blocks = blocks;
-      this.buffer8 = buffer8;
-    } else {
-      if (ARRAY_BUFFER) {
-        var buffer = new ArrayBuffer(68);
-        this.buffer8 = new Uint8Array(buffer);
-        this.blocks = new Uint32Array(buffer);
-      } else {
-        this.blocks = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-      }
-    }
-    this.h0 = this.h1 = this.h2 = this.h3 = this.start = this.bytes = this.hBytes = 0;
-    this.finalized = this.hashed = false;
-    this.first = true;
-  }
-
-  /**
-     * @method update
-     * @memberof Md5
-     * @instance
-     * @description Update hash
-     * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-     * @returns {Md5} Md5 object.
-     * @see {@link md5.update}
-     */
-  Md5.prototype.update = function (message) {
-    if (this.finalized) {
-      return;
-    }
-
-    var notString,type = typeof message;
-    if (type !== 'string') {
-      if (type === 'object') {
-        if (message === null) {
-          throw ERROR;
-        } else if (ARRAY_BUFFER && message.constructor === ArrayBuffer) {
-          message = new Uint8Array(message);
-        } else if (!Array.isArray(message)) {
-          if (!ARRAY_BUFFER || !ArrayBuffer.isView(message)) {
-            throw ERROR;
-          }
-        }
-      } else {
-        throw ERROR;
-      }
-      notString = true;
-    }
-    var code,index = 0,i,length = message.length,blocks = this.blocks;
-    var buffer8 = this.buffer8;
-
-    while (index < length) {
-      if (this.hashed) {
-        this.hashed = false;
-        blocks[0] = blocks[16];
-        blocks[16] = blocks[1] = blocks[2] = blocks[3] =
-        blocks[4] = blocks[5] = blocks[6] = blocks[7] =
-        blocks[8] = blocks[9] = blocks[10] = blocks[11] =
-        blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
-      }
-
-      if (notString) {
-        if (ARRAY_BUFFER) {
-          for (i = this.start; index < length && i < 64; ++index) {
-            buffer8[i++] = message[index];
-          }
-        } else {
-          for (i = this.start; index < length && i < 64; ++index) {
-            blocks[i >> 2] |= message[index] << SHIFT[i++ & 3];
-          }
-        }
-      } else {
-        if (ARRAY_BUFFER) {
-          for (i = this.start; index < length && i < 64; ++index) {
-            code = message.charCodeAt(index);
-            if (code < 0x80) {
-              buffer8[i++] = code;
-            } else if (code < 0x800) {
-              buffer8[i++] = 0xc0 | code >> 6;
-              buffer8[i++] = 0x80 | code & 0x3f;
-            } else if (code < 0xd800 || code >= 0xe000) {
-              buffer8[i++] = 0xe0 | code >> 12;
-              buffer8[i++] = 0x80 | code >> 6 & 0x3f;
-              buffer8[i++] = 0x80 | code & 0x3f;
-            } else {
-              code = 0x10000 + ((code & 0x3ff) << 10 | message.charCodeAt(++index) & 0x3ff);
-              buffer8[i++] = 0xf0 | code >> 18;
-              buffer8[i++] = 0x80 | code >> 12 & 0x3f;
-              buffer8[i++] = 0x80 | code >> 6 & 0x3f;
-              buffer8[i++] = 0x80 | code & 0x3f;
-            }
-          }
-        } else {
-          for (i = this.start; index < length && i < 64; ++index) {
-            code = message.charCodeAt(index);
-            if (code < 0x80) {
-              blocks[i >> 2] |= code << SHIFT[i++ & 3];
-            } else if (code < 0x800) {
-              blocks[i >> 2] |= (0xc0 | code >> 6) << SHIFT[i++ & 3];
-              blocks[i >> 2] |= (0x80 | code & 0x3f) << SHIFT[i++ & 3];
-            } else if (code < 0xd800 || code >= 0xe000) {
-              blocks[i >> 2] |= (0xe0 | code >> 12) << SHIFT[i++ & 3];
-              blocks[i >> 2] |= (0x80 | code >> 6 & 0x3f) << SHIFT[i++ & 3];
-              blocks[i >> 2] |= (0x80 | code & 0x3f) << SHIFT[i++ & 3];
-            } else {
-              code = 0x10000 + ((code & 0x3ff) << 10 | message.charCodeAt(++index) & 0x3ff);
-              blocks[i >> 2] |= (0xf0 | code >> 18) << SHIFT[i++ & 3];
-              blocks[i >> 2] |= (0x80 | code >> 12 & 0x3f) << SHIFT[i++ & 3];
-              blocks[i >> 2] |= (0x80 | code >> 6 & 0x3f) << SHIFT[i++ & 3];
-              blocks[i >> 2] |= (0x80 | code & 0x3f) << SHIFT[i++ & 3];
-            }
-          }
-        }
-      }
-      this.lastByteIndex = i;
-      this.bytes += i - this.start;
-      if (i >= 64) {
-        this.start = i - 64;
-        this.hash();
-        this.hashed = true;
-      } else {
-        this.start = i;
-      }
-    }
-    if (this.bytes > 4294967295) {
-      this.hBytes += this.bytes / 4294967296 << 0;
-      this.bytes = this.bytes % 4294967296;
-    }
-    return this;
-  };
-
-  Md5.prototype.finalize = function () {
-    if (this.finalized) {
-      return;
-    }
-    this.finalized = true;
-    var blocks = this.blocks,i = this.lastByteIndex;
-    blocks[i >> 2] |= EXTRA[i & 3];
-    if (i >= 56) {
-      if (!this.hashed) {
-        this.hash();
-      }
-      blocks[0] = blocks[16];
-      blocks[16] = blocks[1] = blocks[2] = blocks[3] =
-      blocks[4] = blocks[5] = blocks[6] = blocks[7] =
-      blocks[8] = blocks[9] = blocks[10] = blocks[11] =
-      blocks[12] = blocks[13] = blocks[14] = blocks[15] = 0;
-    }
-    blocks[14] = this.bytes << 3;
-    blocks[15] = this.hBytes << 3 | this.bytes >>> 29;
-    this.hash();
-  };
-
-  Md5.prototype.hash = function () {
-    var a,b,c,d,bc,da,blocks = this.blocks;
-
-    if (this.first) {
-      a = blocks[0] - 680876937;
-      a = (a << 7 | a >>> 25) - 271733879 << 0;
-      d = (-1732584194 ^ a & 2004318071) + blocks[1] - 117830708;
-      d = (d << 12 | d >>> 20) + a << 0;
-      c = (-271733879 ^ d & (a ^ -271733879)) + blocks[2] - 1126478375;
-      c = (c << 17 | c >>> 15) + d << 0;
-      b = (a ^ c & (d ^ a)) + blocks[3] - 1316259209;
-      b = (b << 22 | b >>> 10) + c << 0;
-    } else {
-      a = this.h0;
-      b = this.h1;
-      c = this.h2;
-      d = this.h3;
-      a += (d ^ b & (c ^ d)) + blocks[0] - 680876936;
-      a = (a << 7 | a >>> 25) + b << 0;
-      d += (c ^ a & (b ^ c)) + blocks[1] - 389564586;
-      d = (d << 12 | d >>> 20) + a << 0;
-      c += (b ^ d & (a ^ b)) + blocks[2] + 606105819;
-      c = (c << 17 | c >>> 15) + d << 0;
-      b += (a ^ c & (d ^ a)) + blocks[3] - 1044525330;
-      b = (b << 22 | b >>> 10) + c << 0;
-    }
-
-    a += (d ^ b & (c ^ d)) + blocks[4] - 176418897;
-    a = (a << 7 | a >>> 25) + b << 0;
-    d += (c ^ a & (b ^ c)) + blocks[5] + 1200080426;
-    d = (d << 12 | d >>> 20) + a << 0;
-    c += (b ^ d & (a ^ b)) + blocks[6] - 1473231341;
-    c = (c << 17 | c >>> 15) + d << 0;
-    b += (a ^ c & (d ^ a)) + blocks[7] - 45705983;
-    b = (b << 22 | b >>> 10) + c << 0;
-    a += (d ^ b & (c ^ d)) + blocks[8] + 1770035416;
-    a = (a << 7 | a >>> 25) + b << 0;
-    d += (c ^ a & (b ^ c)) + blocks[9] - 1958414417;
-    d = (d << 12 | d >>> 20) + a << 0;
-    c += (b ^ d & (a ^ b)) + blocks[10] - 42063;
-    c = (c << 17 | c >>> 15) + d << 0;
-    b += (a ^ c & (d ^ a)) + blocks[11] - 1990404162;
-    b = (b << 22 | b >>> 10) + c << 0;
-    a += (d ^ b & (c ^ d)) + blocks[12] + 1804603682;
-    a = (a << 7 | a >>> 25) + b << 0;
-    d += (c ^ a & (b ^ c)) + blocks[13] - 40341101;
-    d = (d << 12 | d >>> 20) + a << 0;
-    c += (b ^ d & (a ^ b)) + blocks[14] - 1502002290;
-    c = (c << 17 | c >>> 15) + d << 0;
-    b += (a ^ c & (d ^ a)) + blocks[15] + 1236535329;
-    b = (b << 22 | b >>> 10) + c << 0;
-    a += (c ^ d & (b ^ c)) + blocks[1] - 165796510;
-    a = (a << 5 | a >>> 27) + b << 0;
-    d += (b ^ c & (a ^ b)) + blocks[6] - 1069501632;
-    d = (d << 9 | d >>> 23) + a << 0;
-    c += (a ^ b & (d ^ a)) + blocks[11] + 643717713;
-    c = (c << 14 | c >>> 18) + d << 0;
-    b += (d ^ a & (c ^ d)) + blocks[0] - 373897302;
-    b = (b << 20 | b >>> 12) + c << 0;
-    a += (c ^ d & (b ^ c)) + blocks[5] - 701558691;
-    a = (a << 5 | a >>> 27) + b << 0;
-    d += (b ^ c & (a ^ b)) + blocks[10] + 38016083;
-    d = (d << 9 | d >>> 23) + a << 0;
-    c += (a ^ b & (d ^ a)) + blocks[15] - 660478335;
-    c = (c << 14 | c >>> 18) + d << 0;
-    b += (d ^ a & (c ^ d)) + blocks[4] - 405537848;
-    b = (b << 20 | b >>> 12) + c << 0;
-    a += (c ^ d & (b ^ c)) + blocks[9] + 568446438;
-    a = (a << 5 | a >>> 27) + b << 0;
-    d += (b ^ c & (a ^ b)) + blocks[14] - 1019803690;
-    d = (d << 9 | d >>> 23) + a << 0;
-    c += (a ^ b & (d ^ a)) + blocks[3] - 187363961;
-    c = (c << 14 | c >>> 18) + d << 0;
-    b += (d ^ a & (c ^ d)) + blocks[8] + 1163531501;
-    b = (b << 20 | b >>> 12) + c << 0;
-    a += (c ^ d & (b ^ c)) + blocks[13] - 1444681467;
-    a = (a << 5 | a >>> 27) + b << 0;
-    d += (b ^ c & (a ^ b)) + blocks[2] - 51403784;
-    d = (d << 9 | d >>> 23) + a << 0;
-    c += (a ^ b & (d ^ a)) + blocks[7] + 1735328473;
-    c = (c << 14 | c >>> 18) + d << 0;
-    b += (d ^ a & (c ^ d)) + blocks[12] - 1926607734;
-    b = (b << 20 | b >>> 12) + c << 0;
-    bc = b ^ c;
-    a += (bc ^ d) + blocks[5] - 378558;
-    a = (a << 4 | a >>> 28) + b << 0;
-    d += (bc ^ a) + blocks[8] - 2022574463;
-    d = (d << 11 | d >>> 21) + a << 0;
-    da = d ^ a;
-    c += (da ^ b) + blocks[11] + 1839030562;
-    c = (c << 16 | c >>> 16) + d << 0;
-    b += (da ^ c) + blocks[14] - 35309556;
-    b = (b << 23 | b >>> 9) + c << 0;
-    bc = b ^ c;
-    a += (bc ^ d) + blocks[1] - 1530992060;
-    a = (a << 4 | a >>> 28) + b << 0;
-    d += (bc ^ a) + blocks[4] + 1272893353;
-    d = (d << 11 | d >>> 21) + a << 0;
-    da = d ^ a;
-    c += (da ^ b) + blocks[7] - 155497632;
-    c = (c << 16 | c >>> 16) + d << 0;
-    b += (da ^ c) + blocks[10] - 1094730640;
-    b = (b << 23 | b >>> 9) + c << 0;
-    bc = b ^ c;
-    a += (bc ^ d) + blocks[13] + 681279174;
-    a = (a << 4 | a >>> 28) + b << 0;
-    d += (bc ^ a) + blocks[0] - 358537222;
-    d = (d << 11 | d >>> 21) + a << 0;
-    da = d ^ a;
-    c += (da ^ b) + blocks[3] - 722521979;
-    c = (c << 16 | c >>> 16) + d << 0;
-    b += (da ^ c) + blocks[6] + 76029189;
-    b = (b << 23 | b >>> 9) + c << 0;
-    bc = b ^ c;
-    a += (bc ^ d) + blocks[9] - 640364487;
-    a = (a << 4 | a >>> 28) + b << 0;
-    d += (bc ^ a) + blocks[12] - 421815835;
-    d = (d << 11 | d >>> 21) + a << 0;
-    da = d ^ a;
-    c += (da ^ b) + blocks[15] + 530742520;
-    c = (c << 16 | c >>> 16) + d << 0;
-    b += (da ^ c) + blocks[2] - 995338651;
-    b = (b << 23 | b >>> 9) + c << 0;
-    a += (c ^ (b | ~d)) + blocks[0] - 198630844;
-    a = (a << 6 | a >>> 26) + b << 0;
-    d += (b ^ (a | ~c)) + blocks[7] + 1126891415;
-    d = (d << 10 | d >>> 22) + a << 0;
-    c += (a ^ (d | ~b)) + blocks[14] - 1416354905;
-    c = (c << 15 | c >>> 17) + d << 0;
-    b += (d ^ (c | ~a)) + blocks[5] - 57434055;
-    b = (b << 21 | b >>> 11) + c << 0;
-    a += (c ^ (b | ~d)) + blocks[12] + 1700485571;
-    a = (a << 6 | a >>> 26) + b << 0;
-    d += (b ^ (a | ~c)) + blocks[3] - 1894986606;
-    d = (d << 10 | d >>> 22) + a << 0;
-    c += (a ^ (d | ~b)) + blocks[10] - 1051523;
-    c = (c << 15 | c >>> 17) + d << 0;
-    b += (d ^ (c | ~a)) + blocks[1] - 2054922799;
-    b = (b << 21 | b >>> 11) + c << 0;
-    a += (c ^ (b | ~d)) + blocks[8] + 1873313359;
-    a = (a << 6 | a >>> 26) + b << 0;
-    d += (b ^ (a | ~c)) + blocks[15] - 30611744;
-    d = (d << 10 | d >>> 22) + a << 0;
-    c += (a ^ (d | ~b)) + blocks[6] - 1560198380;
-    c = (c << 15 | c >>> 17) + d << 0;
-    b += (d ^ (c | ~a)) + blocks[13] + 1309151649;
-    b = (b << 21 | b >>> 11) + c << 0;
-    a += (c ^ (b | ~d)) + blocks[4] - 145523070;
-    a = (a << 6 | a >>> 26) + b << 0;
-    d += (b ^ (a | ~c)) + blocks[11] - 1120210379;
-    d = (d << 10 | d >>> 22) + a << 0;
-    c += (a ^ (d | ~b)) + blocks[2] + 718787259;
-    c = (c << 15 | c >>> 17) + d << 0;
-    b += (d ^ (c | ~a)) + blocks[9] - 343485551;
-    b = (b << 21 | b >>> 11) + c << 0;
-
-    if (this.first) {
-      this.h0 = a + 1732584193 << 0;
-      this.h1 = b - 271733879 << 0;
-      this.h2 = c - 1732584194 << 0;
-      this.h3 = d + 271733878 << 0;
-      this.first = false;
-    } else {
-      this.h0 = this.h0 + a << 0;
-      this.h1 = this.h1 + b << 0;
-      this.h2 = this.h2 + c << 0;
-      this.h3 = this.h3 + d << 0;
-    }
-  };
-
-  /**
-      * @method hex
-      * @memberof Md5
-      * @instance
-      * @description Output hash as hex string
-      * @returns {String} Hex string
-      * @see {@link md5.hex}
-      * @example
-      * hash.hex();
-      */
-  Md5.prototype.hex = function () {
-    this.finalize();
-
-    var h0 = this.h0,h1 = this.h1,h2 = this.h2,h3 = this.h3;
-
-    return HEX_CHARS[h0 >> 4 & 0x0F] + HEX_CHARS[h0 & 0x0F] +
-    HEX_CHARS[h0 >> 12 & 0x0F] + HEX_CHARS[h0 >> 8 & 0x0F] +
-    HEX_CHARS[h0 >> 20 & 0x0F] + HEX_CHARS[h0 >> 16 & 0x0F] +
-    HEX_CHARS[h0 >> 28 & 0x0F] + HEX_CHARS[h0 >> 24 & 0x0F] +
-    HEX_CHARS[h1 >> 4 & 0x0F] + HEX_CHARS[h1 & 0x0F] +
-    HEX_CHARS[h1 >> 12 & 0x0F] + HEX_CHARS[h1 >> 8 & 0x0F] +
-    HEX_CHARS[h1 >> 20 & 0x0F] + HEX_CHARS[h1 >> 16 & 0x0F] +
-    HEX_CHARS[h1 >> 28 & 0x0F] + HEX_CHARS[h1 >> 24 & 0x0F] +
-    HEX_CHARS[h2 >> 4 & 0x0F] + HEX_CHARS[h2 & 0x0F] +
-    HEX_CHARS[h2 >> 12 & 0x0F] + HEX_CHARS[h2 >> 8 & 0x0F] +
-    HEX_CHARS[h2 >> 20 & 0x0F] + HEX_CHARS[h2 >> 16 & 0x0F] +
-    HEX_CHARS[h2 >> 28 & 0x0F] + HEX_CHARS[h2 >> 24 & 0x0F] +
-    HEX_CHARS[h3 >> 4 & 0x0F] + HEX_CHARS[h3 & 0x0F] +
-    HEX_CHARS[h3 >> 12 & 0x0F] + HEX_CHARS[h3 >> 8 & 0x0F] +
-    HEX_CHARS[h3 >> 20 & 0x0F] + HEX_CHARS[h3 >> 16 & 0x0F] +
-    HEX_CHARS[h3 >> 28 & 0x0F] + HEX_CHARS[h3 >> 24 & 0x0F];
-  };
-
-  /**
-      * @method toString
-      * @memberof Md5
-      * @instance
-      * @description Output hash as hex string
-      * @returns {String} Hex string
-      * @see {@link md5.hex}
-      * @example
-      * hash.toString();
-      */
-  Md5.prototype.toString = Md5.prototype.hex;
-
-  /**
-                                               * @method digest
-                                               * @memberof Md5
-                                               * @instance
-                                               * @description Output hash as bytes array
-                                               * @returns {Array} Bytes array
-                                               * @see {@link md5.digest}
-                                               * @example
-                                               * hash.digest();
-                                               */
-  Md5.prototype.digest = function () {
-    this.finalize();
-
-    var h0 = this.h0,h1 = this.h1,h2 = this.h2,h3 = this.h3;
-    return [
-    h0 & 0xFF, h0 >> 8 & 0xFF, h0 >> 16 & 0xFF, h0 >> 24 & 0xFF,
-    h1 & 0xFF, h1 >> 8 & 0xFF, h1 >> 16 & 0xFF, h1 >> 24 & 0xFF,
-    h2 & 0xFF, h2 >> 8 & 0xFF, h2 >> 16 & 0xFF, h2 >> 24 & 0xFF,
-    h3 & 0xFF, h3 >> 8 & 0xFF, h3 >> 16 & 0xFF, h3 >> 24 & 0xFF];
-
-  };
-
-  /**
-      * @method array
-      * @memberof Md5
-      * @instance
-      * @description Output hash as bytes array
-      * @returns {Array} Bytes array
-      * @see {@link md5.array}
-      * @example
-      * hash.array();
-      */
-  Md5.prototype.array = Md5.prototype.digest;
-
-  /**
-                                               * @method arrayBuffer
-                                               * @memberof Md5
-                                               * @instance
-                                               * @description Output hash as ArrayBuffer
-                                               * @returns {ArrayBuffer} ArrayBuffer
-                                               * @see {@link md5.arrayBuffer}
-                                               * @example
-                                               * hash.arrayBuffer();
-                                               */
-  Md5.prototype.arrayBuffer = function () {
-    this.finalize();
-
-    var buffer = new ArrayBuffer(16);
-    var blocks = new Uint32Array(buffer);
-    blocks[0] = this.h0;
-    blocks[1] = this.h1;
-    blocks[2] = this.h2;
-    blocks[3] = this.h3;
-    return buffer;
-  };
-
-  /**
-      * @method buffer
-      * @deprecated This maybe confuse with Buffer in node.js. Please use arrayBuffer instead.
-      * @memberof Md5
-      * @instance
-      * @description Output hash as ArrayBuffer
-      * @returns {ArrayBuffer} ArrayBuffer
-      * @see {@link md5.buffer}
-      * @example
-      * hash.buffer();
-      */
-  Md5.prototype.buffer = Md5.prototype.arrayBuffer;
-
-  /**
-                                                     * @method base64
-                                                     * @memberof Md5
-                                                     * @instance
-                                                     * @description Output hash as base64 string
-                                                     * @returns {String} base64 string
-                                                     * @see {@link md5.base64}
-                                                     * @example
-                                                     * hash.base64();
-                                                     */
-  Md5.prototype.base64 = function () {
-    var v1,v2,v3,base64Str = '',bytes = this.array();
-    for (var i = 0; i < 15;) {
-      v1 = bytes[i++];
-      v2 = bytes[i++];
-      v3 = bytes[i++];
-      base64Str += BASE64_ENCODE_CHAR[v1 >>> 2] +
-      BASE64_ENCODE_CHAR[(v1 << 4 | v2 >>> 4) & 63] +
-      BASE64_ENCODE_CHAR[(v2 << 2 | v3 >>> 6) & 63] +
-      BASE64_ENCODE_CHAR[v3 & 63];
-    }
-    v1 = bytes[i];
-    base64Str += BASE64_ENCODE_CHAR[v1 >>> 2] +
-    BASE64_ENCODE_CHAR[v1 << 4 & 63] +
-    '==';
-    return base64Str;
-  };
-
-  var exports = createMethod();
-
-  if (COMMON_JS) {
-    module.exports = exports;
-  } else {
-    /**
-           * @method md5
-           * @description Md5 hash function, export to global in browsers.
-           * @param {String|Array|Uint8Array|ArrayBuffer} message message to hash
-           * @returns {String} md5 hashes
-           * @example
-           * md5(''); // d41d8cd98f00b204e9800998ecf8427e
-           * md5('The quick brown fox jumps over the lazy dog'); // 9e107d9d372bb6826bd81d3542a419d6
-           * md5('The quick brown fox jumps over the lazy dog.'); // e4d909c290d0fb1ca068ffaddf22cbd0
-           *
-           * // It also supports UTF-8 encoding
-           * md5('中文'); // a7bac2239fcdcb3a067903d8077c4a07
-           *
-           * // It also supports byte `Array`, `Uint8Array`, `ArrayBuffer`
-           * md5([]); // d41d8cd98f00b204e9800998ecf8427e
-           * md5(new Uint8Array([])); // d41d8cd98f00b204e9800998ecf8427e
-           */
-    root.md5 = exports;
-    if (AMD) {
-      !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-        return exports;
-      }).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    }
-  }
-})();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 19), __webpack_require__(/*! ./../../../../HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 2)))
-
-/***/ }),
-
-/***/ 19:
-/*!********************************************************!*\
-  !*** ./node_modules/node-libs-browser/mock/process.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports.nextTick = function nextTick(fn) {
-    var args = Array.prototype.slice.call(arguments);
-    args.shift();
-    setTimeout(function () {
-        fn.apply(null, args);
-    }, 0);
-};
-
-exports.platform = exports.arch = 
-exports.execPath = exports.title = 'browser';
-exports.pid = 1;
-exports.browser = true;
-exports.env = {};
-exports.argv = [];
-
-exports.binding = function (name) {
-	throw new Error('No such module. (Possibly not yet loaded)')
-};
-
-(function () {
-    var cwd = '/';
-    var path;
-    exports.cwd = function () { return cwd };
-    exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 20);
-        cwd = path.resolve(dir, cwd);
-    };
-})();
-
-exports.exit = exports.kill = 
-exports.umask = exports.dlopen = 
-exports.uptime = exports.memoryUsage = 
-exports.uvCounters = function() {};
-exports.features = {};
-
-
-/***/ }),
-
-/***/ 2:
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 20:
-/*!***********************************************!*\
-  !*** ./node_modules/path-browserify/index.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {// .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
-// backported and transplited with Babel, with backwards-compat fixes
-
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-// resolves . and .. elements in a path array with directory names there
-// must be no slashes, empty elements, or device names (c:\) in the array
-// (so also no leading and trailing slashes - it does not distinguish
-// relative and absolute paths)
-function normalizeArray(parts, allowAboveRoot) {
-  // if the path tries to go above the root, `up` ends up > 0
-  var up = 0;
-  for (var i = parts.length - 1; i >= 0; i--) {
-    var last = parts[i];
-    if (last === '.') {
-      parts.splice(i, 1);
-    } else if (last === '..') {
-      parts.splice(i, 1);
-      up++;
-    } else if (up) {
-      parts.splice(i, 1);
-      up--;
-    }
-  }
-
-  // if the path is allowed to go above the root, restore leading ..s
-  if (allowAboveRoot) {
-    for (; up--; up) {
-      parts.unshift('..');
-    }
-  }
-
-  return parts;
-}
-
-// path.resolve([from ...], to)
-// posix version
-exports.resolve = function() {
-  var resolvedPath = '',
-      resolvedAbsolute = false;
-
-  for (var i = arguments.length - 1; i >= -1 && !resolvedAbsolute; i--) {
-    var path = (i >= 0) ? arguments[i] : process.cwd();
-
-    // Skip empty and invalid entries
-    if (typeof path !== 'string') {
-      throw new TypeError('Arguments to path.resolve must be strings');
-    } else if (!path) {
-      continue;
-    }
-
-    resolvedPath = path + '/' + resolvedPath;
-    resolvedAbsolute = path.charAt(0) === '/';
-  }
-
-  // At this point the path should be resolved to a full absolute path, but
-  // handle relative paths to be safe (might happen when process.cwd() fails)
-
-  // Normalize the path
-  resolvedPath = normalizeArray(filter(resolvedPath.split('/'), function(p) {
-    return !!p;
-  }), !resolvedAbsolute).join('/');
-
-  return ((resolvedAbsolute ? '/' : '') + resolvedPath) || '.';
-};
-
-// path.normalize(path)
-// posix version
-exports.normalize = function(path) {
-  var isAbsolute = exports.isAbsolute(path),
-      trailingSlash = substr(path, -1) === '/';
-
-  // Normalize the path
-  path = normalizeArray(filter(path.split('/'), function(p) {
-    return !!p;
-  }), !isAbsolute).join('/');
-
-  if (!path && !isAbsolute) {
-    path = '.';
-  }
-  if (path && trailingSlash) {
-    path += '/';
-  }
-
-  return (isAbsolute ? '/' : '') + path;
-};
-
-// posix version
-exports.isAbsolute = function(path) {
-  return path.charAt(0) === '/';
-};
-
-// posix version
-exports.join = function() {
-  var paths = Array.prototype.slice.call(arguments, 0);
-  return exports.normalize(filter(paths, function(p, index) {
-    if (typeof p !== 'string') {
-      throw new TypeError('Arguments to path.join must be strings');
-    }
-    return p;
-  }).join('/'));
-};
-
-
-// path.relative(from, to)
-// posix version
-exports.relative = function(from, to) {
-  from = exports.resolve(from).substr(1);
-  to = exports.resolve(to).substr(1);
-
-  function trim(arr) {
-    var start = 0;
-    for (; start < arr.length; start++) {
-      if (arr[start] !== '') break;
-    }
-
-    var end = arr.length - 1;
-    for (; end >= 0; end--) {
-      if (arr[end] !== '') break;
-    }
-
-    if (start > end) return [];
-    return arr.slice(start, end - start + 1);
-  }
-
-  var fromParts = trim(from.split('/'));
-  var toParts = trim(to.split('/'));
-
-  var length = Math.min(fromParts.length, toParts.length);
-  var samePartsLength = length;
-  for (var i = 0; i < length; i++) {
-    if (fromParts[i] !== toParts[i]) {
-      samePartsLength = i;
-      break;
-    }
-  }
-
-  var outputParts = [];
-  for (var i = samePartsLength; i < fromParts.length; i++) {
-    outputParts.push('..');
-  }
-
-  outputParts = outputParts.concat(toParts.slice(samePartsLength));
-
-  return outputParts.join('/');
-};
-
-exports.sep = '/';
-exports.delimiter = ':';
-
-exports.dirname = function (path) {
-  if (typeof path !== 'string') path = path + '';
-  if (path.length === 0) return '.';
-  var code = path.charCodeAt(0);
-  var hasRoot = code === 47 /*/*/;
-  var end = -1;
-  var matchedSlash = true;
-  for (var i = path.length - 1; i >= 1; --i) {
-    code = path.charCodeAt(i);
-    if (code === 47 /*/*/) {
-        if (!matchedSlash) {
-          end = i;
-          break;
-        }
-      } else {
-      // We saw the first non-path separator
-      matchedSlash = false;
-    }
-  }
-
-  if (end === -1) return hasRoot ? '/' : '.';
-  if (hasRoot && end === 1) {
-    // return '//';
-    // Backwards-compat fix:
-    return '/';
-  }
-  return path.slice(0, end);
-};
-
-function basename(path) {
-  if (typeof path !== 'string') path = path + '';
-
-  var start = 0;
-  var end = -1;
-  var matchedSlash = true;
-  var i;
-
-  for (i = path.length - 1; i >= 0; --i) {
-    if (path.charCodeAt(i) === 47 /*/*/) {
-        // If we reached a path separator that was not part of a set of path
-        // separators at the end of the string, stop now
-        if (!matchedSlash) {
-          start = i + 1;
-          break;
-        }
-      } else if (end === -1) {
-      // We saw the first non-path separator, mark this as the end of our
-      // path component
-      matchedSlash = false;
-      end = i + 1;
-    }
-  }
-
-  if (end === -1) return '';
-  return path.slice(start, end);
-}
-
-// Uses a mixed approach for backwards-compatibility, as ext behavior changed
-// in new Node.js versions, so only basename() above is backported here
-exports.basename = function (path, ext) {
-  var f = basename(path);
-  if (ext && f.substr(-1 * ext.length) === ext) {
-    f = f.substr(0, f.length - ext.length);
-  }
-  return f;
-};
-
-exports.extname = function (path) {
-  if (typeof path !== 'string') path = path + '';
-  var startDot = -1;
-  var startPart = 0;
-  var end = -1;
-  var matchedSlash = true;
-  // Track the state of characters (if any) we see before our first dot and
-  // after any path separator we find
-  var preDotState = 0;
-  for (var i = path.length - 1; i >= 0; --i) {
-    var code = path.charCodeAt(i);
-    if (code === 47 /*/*/) {
-        // If we reached a path separator that was not part of a set of path
-        // separators at the end of the string, stop now
-        if (!matchedSlash) {
-          startPart = i + 1;
-          break;
-        }
-        continue;
-      }
-    if (end === -1) {
-      // We saw the first non-path separator, mark this as the end of our
-      // extension
-      matchedSlash = false;
-      end = i + 1;
-    }
-    if (code === 46 /*.*/) {
-        // If this is our first dot, mark it as the start of our extension
-        if (startDot === -1)
-          startDot = i;
-        else if (preDotState !== 1)
-          preDotState = 1;
-    } else if (startDot !== -1) {
-      // We saw a non-dot and non-path separator before our dot, so we should
-      // have a good chance at having a non-empty extension
-      preDotState = -1;
-    }
-  }
-
-  if (startDot === -1 || end === -1 ||
-      // We saw a non-dot character immediately before the dot
-      preDotState === 0 ||
-      // The (right-most) trimmed path component is exactly '..'
-      preDotState === 1 && startDot === end - 1 && startDot === startPart + 1) {
-    return '';
-  }
-  return path.slice(startDot, end);
-};
-
-function filter (xs, f) {
-    if (xs.filter) return xs.filter(f);
-    var res = [];
-    for (var i = 0; i < xs.length; i++) {
-        if (f(xs[i], i, xs)) res.push(xs[i]);
-    }
-    return res;
-}
-
-// String.prototype.substr - negative index don't work in IE8
-var substr = 'ab'.substr(-1) === 'b'
-    ? function (str, start, len) { return str.substr(start, len) }
-    : function (str, start, len) {
-        if (start < 0) start = str.length + start;
-        return str.substr(start, len);
-    }
-;
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 19)))
-
-/***/ }),
-
 /***/ 21:
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
@@ -6644,84 +6721,7 @@ module.exports = __webpack_amd_options__;
 
 /***/ }),
 
-/***/ 221:
-/*!********************************************************************************************************!*\
-  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/index.js ***!
-  \********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 222));
-var _es = _interopRequireDefault(__webpack_require__(/*! ./es.json */ 223));
-var _fr = _interopRequireDefault(__webpack_require__(/*! ./fr.json */ 224));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 225));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 226));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
-{
-  en: _en.default,
-  es: _es.default,
-  fr: _fr.default,
-  'zh-Hans': _zhHans.default,
-  'zh-Hant': _zhHant.default };exports.default = _default;
-
-/***/ }),
-
-/***/ 222:
-/*!*******************************************************************************************************!*\
-  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/en.json ***!
-  \*******************************************************************************************************/
-/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-pagination.prevText\":\"prev\",\"uni-pagination.nextText\":\"next\"}");
-
-/***/ }),
-
-/***/ 223:
-/*!*******************************************************************************************************!*\
-  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/es.json ***!
-  \*******************************************************************************************************/
-/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-pagination.prevText\":\"anterior\",\"uni-pagination.nextText\":\"próxima\"}");
-
-/***/ }),
-
-/***/ 224:
-/*!*******************************************************************************************************!*\
-  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/fr.json ***!
-  \*******************************************************************************************************/
-/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-pagination.prevText\":\"précédente\",\"uni-pagination.nextText\":\"suivante\"}");
-
-/***/ }),
-
-/***/ 225:
-/*!************************************************************************************************************!*\
-  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/zh-Hans.json ***!
-  \************************************************************************************************************/
-/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-pagination.prevText\":\"上一页\",\"uni-pagination.nextText\":\"下一页\"}");
-
-/***/ }),
-
-/***/ 226:
-/*!************************************************************************************************************!*\
-  !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-pagination/components/uni-pagination/i18n/zh-Hant.json ***!
-  \************************************************************************************************************/
-/*! exports provided: uni-pagination.prevText, uni-pagination.nextText, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-pagination.prevText\":\"上一頁\",\"uni-pagination.nextText\":\"下一頁\"}");
-
-/***/ }),
-
-/***/ 234:
+/***/ 243:
 /*!*************************************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
   \*************************************************************************************************************/
@@ -6861,7 +6861,7 @@ function createAnimation(option, _this) {
 
 /***/ }),
 
-/***/ 240:
+/***/ 249:
 /*!************************************************************************************************************!*\
   !*** D:/上海电气实习/SEC_MealTicketApply/uni_modules/uni-datetime-picker/components/uni-datetime-picker/util.js ***!
   \************************************************************************************************************/

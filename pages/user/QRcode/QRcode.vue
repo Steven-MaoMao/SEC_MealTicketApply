@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="container">
-			<uqrcode ref="uqrcode" canvas-id="qrcode" value="https://doc.uqrcode.cn" size="350"></uqrcode>
+			<uqrcode ref="uqrcode" canvas-id="qrcode" :value="ticketId" size="350" auto></uqrcode>
 			<button @click="selectTicket">选择饭票</button>
 		</view>
 		<uni-drawer ref="drawer" width="250">
@@ -49,6 +49,7 @@
 				tickets: [],
 				current: 1,
 				total: 0,
+				ticketId: -1
 			}
 		},
 		onShow() {
@@ -62,6 +63,7 @@
 				success: (res) => {
 					_this.total = res.data.total
 					_this.tickets = res.data.records
+					_this.ticketId = _this.tickets[0].id
 					for(const ticket of _this.tickets) {
 						if(ticket.useDate === null) {
 							ticket.useDate = '无'
@@ -90,6 +92,9 @@
 						}
 					}
 				})
+			},
+			radioChange(e) {
+				this.ticketId = e.detail.value
 			}
 		}
 	}
