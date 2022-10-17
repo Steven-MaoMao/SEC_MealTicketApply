@@ -10,7 +10,7 @@
 					<label v-for="(ticket) in tickets" :key="ticket.id">
 						<uni-row>
 							<uni-col :span="4">
-								<radio :value="ticket.id" style="transform:scale(1.2)" :disabled="ticket.state==='已使用'" />
+								<radio :value="ticket.id" style="transform:scale(1.2)" :disabled="ticket.state==='已使用'" :checked="ticket.checked" />
 							</uni-col>
 							<uni-col :span="20">
 								<view>
@@ -64,6 +64,7 @@
 					_this.total = res.data.total
 					_this.tickets = res.data.records
 					_this.ticketId = _this.tickets[0].id
+					_this.tickets[0].checked = true
 					for(const ticket of _this.tickets) {
 						if(ticket.useDate === null) {
 							ticket.useDate = '无'

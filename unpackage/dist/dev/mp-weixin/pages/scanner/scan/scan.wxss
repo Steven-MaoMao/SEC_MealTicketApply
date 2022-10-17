@@ -1,0 +1,9 @@
+
+.scan, .myself {
+	width: 600rpx;
+	height: 100rpx;
+	background-color: #f0f8ff;
+	font-size: 120%;
+	margin-top: 300rpx;
+}
+

@@ -9,7 +9,8 @@
     "pages/user/changePassword/changePassword",
     "pages/user/myApplies/myApplies",
     "pages/user/approve/approve",
-    "pages/user/myApproves/myApproves"
+    "pages/user/myApproves/myApproves",
+    "pages/scanner/myself/myself"
   ],
   "subPackages": [],
   "window": {

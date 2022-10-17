@@ -98,19 +98,19 @@ var components
 try {
   components = {
     uqrcode: function() {
-      return Promise.all(/*! import() | uni_modules/Sansnn-uQRCode/components/uqrcode/uqrcode */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/Sansnn-uQRCode/components/uqrcode/uqrcode")]).then(__webpack_require__.bind(null, /*! @/uni_modules/Sansnn-uQRCode/components/uqrcode/uqrcode.vue */ 109))
+      return Promise.all(/*! import() | uni_modules/Sansnn-uQRCode/components/uqrcode/uqrcode */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/Sansnn-uQRCode/components/uqrcode/uqrcode")]).then(__webpack_require__.bind(null, /*! @/uni_modules/Sansnn-uQRCode/components/uqrcode/uqrcode.vue */ 119))
     },
     uniDrawer: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-drawer/components/uni-drawer/uni-drawer */ "uni_modules/uni-drawer/components/uni-drawer/uni-drawer").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-drawer/components/uni-drawer/uni-drawer.vue */ 120))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-drawer/components/uni-drawer/uni-drawer */ "uni_modules/uni-drawer/components/uni-drawer/uni-drawer").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-drawer/components/uni-drawer/uni-drawer.vue */ 130))
     },
     uniRow: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-row/components/uni-row/uni-row */ "uni_modules/uni-row/components/uni-row/uni-row").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-row/components/uni-row/uni-row.vue */ 127))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-row/components/uni-row/uni-row */ "uni_modules/uni-row/components/uni-row/uni-row").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-row/components/uni-row/uni-row.vue */ 137))
     },
     uniCol: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-row/components/uni-col/uni-col */ "uni_modules/uni-row/components/uni-col/uni-col").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-row/components/uni-col/uni-col.vue */ 134))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-row/components/uni-col/uni-col */ "uni_modules/uni-row/components/uni-col/uni-col").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-row/components/uni-col/uni-col.vue */ 144))
     },
     uniPagination: function() {
-      return Promise.all(/*! import() | uni_modules/uni-pagination/components/uni-pagination/uni-pagination */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-pagination/components/uni-pagination/uni-pagination")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-pagination/components/uni-pagination/uni-pagination.vue */ 141))
+      return Promise.all(/*! import() | uni_modules/uni-pagination/components/uni-pagination/uni-pagination */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-pagination/components/uni-pagination/uni-pagination")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-pagination/components/uni-pagination/uni-pagination.vue */ 151))
     }
   }
 } catch (e) {
@@ -232,7 +232,8 @@ var _default =
       success: function success(res) {
         _this.total = res.data.total;
         _this.tickets = res.data.records;
-        _this.ticketId = _this.tickets[0].id;var _iterator = _createForOfIteratorHelper(
+        _this.ticketId = _this.tickets[0].id;
+        _this.tickets[0].checked = true;var _iterator = _createForOfIteratorHelper(
         _this.tickets),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var ticket = _step.value;
             if (ticket.useDate === null) {
               ticket.useDate = '无';

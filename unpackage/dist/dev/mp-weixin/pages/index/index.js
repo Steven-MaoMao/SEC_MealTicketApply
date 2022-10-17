@@ -106,10 +106,10 @@ var components
 try {
   components = {
     uniPopup: function() {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 94))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 104))
     },
     uniPopupMessage: function() {
-      return Promise.all(/*! import() | uni_modules/uni-popup/components/uni-popup-message/uni-popup-message */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-popup/components/uni-popup-message/uni-popup-message")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup-message/uni-popup-message.vue */ 101))
+      return Promise.all(/*! import() | uni_modules/uni-popup/components/uni-popup-message/uni-popup-message */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-popup/components/uni-popup-message/uni-popup-message")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup-message/uni-popup-message.vue */ 111))
     }
   }
 } catch (e) {
@@ -227,17 +227,18 @@ var _default = { data: function data() {return { phone: '', password: '', msgTyp
                 uni.setStorageSync('company', res.data.company),
                 uni.setStorageSync('department', res.data.department),
                 uni.setStorageSync('role', res.data.role);
+
+                if (uni.getStorageSync('role') === 'scanner') {
+                  uni.redirectTo({
+                    url: '/pages/scanner/scan/scan' });
+
+                } else {
+                  uni.switchTab({
+                    url: '/pages/user/QRcode/QRcode' });
+
+                }
               } });
 
-            if (uni.getStorageSync('role') === 'scanner') {
-              uni.switchTab({
-                url: '/pages/scanner/scan/scan' });
-
-            } else {
-              uni.switchTab({
-                url: '/pages/user/QRcode/QRcode' });
-
-            }
           }
         } });
 

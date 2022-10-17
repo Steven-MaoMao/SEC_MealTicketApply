@@ -61,17 +61,18 @@
 									uni.setStorageSync('company', res.data.company),
 									uni.setStorageSync('department', res.data.department),
 									uni.setStorageSync('role', res.data.role)
+									
+									if (uni.getStorageSync('role') === 'scanner') {
+										uni.redirectTo({
+											url: '/pages/scanner/scan/scan'
+										})
+									} else {
+										uni.switchTab({
+											url: '/pages/user/QRcode/QRcode'
+										})
+									}
 								}
 							})
-							if (uni.getStorageSync('role') === 'scanner') {
-								uni.switchTab({
-									url: '/pages/scanner/scan/scan'
-								})
-							} else {
-								uni.switchTab({
-									url: '/pages/user/QRcode/QRcode'
-								})
-							}
 						}
 					}
 				})

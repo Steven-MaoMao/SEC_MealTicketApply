@@ -1,1 +1,1 @@
-<view>扫码</view>
+<view><button data-event-opts="{{[['tap',[['scan',['$event']]]]]}}" class="scan" bindtap="__e">扫一扫</button><button data-event-opts="{{[['tap',[['myself',['$event']]]]]}}" class="myself" bindtap="__e">个人信息</button></view>

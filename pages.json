@@ -82,6 +82,15 @@
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/scanner/myself/myself",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"tabBar": {
 		"color": "#000000",
