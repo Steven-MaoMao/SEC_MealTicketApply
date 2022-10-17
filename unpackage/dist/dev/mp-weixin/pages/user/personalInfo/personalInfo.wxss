@@ -1,0 +1,22 @@
+
+.header {
+	height: 400rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f8ff;
+	border-bottom: 1rpx solid black;
+}
+.name, .phone {
+	font-size: 100%;
+}
+.name {
+	margin-top: 30rpx;
+	margin-bottom: 20rpx;
+}
+.row {
+	margin: 20rpx;
+	font-size: 120%;
+}
+

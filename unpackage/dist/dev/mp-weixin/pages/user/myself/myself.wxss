@@ -1,0 +1,38 @@
+
+.header {
+	height: 400rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f8ff;
+	border-bottom: 1rpx solid black;
+}
+.name, .phone {
+	font-size: 100%;
+}
+.name {
+	margin-top: 30rpx;
+	margin-bottom: 20rpx;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15rpx;
+	padding-bottom: 15rpx;
+	border-bottom: 1rpx solid black;
+}
+.text {
+	font-size: 120%;
+	padding-left: 50rpx;
+	margin-right: 400rpx;
+}
+.quit {
+	width: 400rpx;
+	height: 100rpx;
+	font-size: 120%;
+	margin-top: 300rpx;
+}
+
