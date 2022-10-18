@@ -7,6 +7,7 @@ Vue.config.productionTip = false
 
 App.mpType = 'app'
 
+// 服务器IP地址
 Vue.prototype.baseURL = 'http://localhost:8888'
 
 const app = new Vue({

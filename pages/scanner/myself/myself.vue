@@ -5,17 +5,6 @@
 			<text class="name">{{name}}</text>
 			<text class="phone">{{phone}}</text>
 		</view>
-		<view class="row" @click="toMyScans">
-			<view>
-				<uni-icons type="shop" size="30"></uni-icons>
-			</view>
-			<view>
-				<text class="text">扫码记录</text>
-			</view>
-			<view>
-				<uni-icons type="forward" size="30"></uni-icons>
-			</view>
-		</view>
 		<view class="row" @click="toPersonalInfo">
 			<view>
 				<uni-icons type="gear" size="30"></uni-icons>
@@ -61,11 +50,8 @@
 					url: '/pages/index/index'
 				})
 			},
-			toMyScans() {
-				uni.navigateTo({
-					url: ''
-				})
-			},
+			
+			// 直接用user页面的下的personalInfo和changePassword页面
 			toPersonalInfo() {
 				uni.navigateTo({
 					url: '/pages/user/personalInfo/personalInfo'

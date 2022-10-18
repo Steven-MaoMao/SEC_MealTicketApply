@@ -18,6 +18,7 @@ _vue.default.config.productionTip = false;
 
 _App.default.mpType = 'app';
 
+// 服务器IP地址
 _vue.default.prototype.baseURL = 'http://localhost:8888';
 
 var app = new _vue.default(_objectSpread({},

@@ -195,7 +195,8 @@ var _md = _interopRequireDefault(__webpack_require__(/*! ../../lib/js/md5.js */ 
 //
 //
 //
-var _default = { data: function data() {return { phone: '', password: '', msgType: '', messageText: '' };}, methods: { login: function login() {var _this2 = this;var _this = this;uni.request({ url: this.baseURL + "/login", method: "POST",
+var _default = { data: function data() {return { phone: '', password: '', msgType: '', messageText: '' };}, methods: { // 用户登录
+    login: function login() {var _this2 = this;var _this = this;uni.request({ url: this.baseURL + "/login", method: "POST",
         data: {
           phone: _this.phone,
           password: (0, _md.default)(_this.password) },
@@ -220,6 +221,7 @@ var _default = { data: function data() {return { phone: '', password: '', msgTyp
               url: _this2.baseURL + '/users/phone/' + _this.phone,
               method: 'GET',
               success: function success(res) {
+                // 登录成功后将用户信息存入storage中
                 uni.setStorageSync('wno', res.data.wno),
                 uni.setStorageSync('name', res.data.name),
                 uni.setStorageSync('phone', res.data.phone),
@@ -228,6 +230,7 @@ var _default = { data: function data() {return { phone: '', password: '', msgTyp
                 uni.setStorageSync('department', res.data.department),
                 uni.setStorageSync('role', res.data.role);
 
+                // 根据用户身份的不同跳转到不同的页面
                 if (uni.getStorageSync('role') === 'scanner') {
                   uni.redirectTo({
                     url: '/pages/scanner/scan/scan' });

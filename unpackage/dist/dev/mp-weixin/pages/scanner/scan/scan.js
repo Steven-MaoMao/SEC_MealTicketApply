@@ -95,6 +95,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    uniPopup: function() {
+      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 104))
+    },
+    uniPopupDialog: function() {
+      return Promise.all(/*! import() | uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog.vue */ 220))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -139,19 +165,56 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
-    return {};
-
+    return {
+      url: this.baseURL,
+      msgType: '',
+      msgTitle: '',
+      message: '' };
 
   },
   methods: {
     scan: function scan() {
+      var _this = this;
       uni.scanCode({
+        scanType: ['qrCode'],
         success: function success(res) {
-          console.log('条码类型：' + res.scanType);
-          console.log('条码内容：' + res.result);
+          uni.request({
+            url: _this.url + '/tickets/useTicket/' + res.result,
+            method: "PUT",
+            success: function success(res) {
+              if (res.data === "STATE_ERROR") {
+                _this.msgType = 'error';
+                _this.msgTitle = '错误';
+                _this.message = '饭票已失效！';
+                _this.$refs.alertDialog.open();
+              } else if (res.data === "DATE_ERROR") {
+                _this.msgType = 'error';
+                _this.msgTitle = '错误';
+                _this.message = '饭票已过期！';
+                _this.$refs.alertDialog.open();
+              } else if (res.data === "ERROR") {
+                _this.msgType = 'error';
+                _this.msgTitle = '错误';
+                _this.message = '扫码失败，请重试！';
+                _this.$refs.alertDialog.open();
+              } else {
+                _this.msgType = 'success';
+                _this.msgTitle = '成功';
+                _this.message = '扫码成功！';
+                _this.$refs.alertDialog.open();
+              }
+            } });
+
         } });
 
     },
@@ -159,6 +222,9 @@ var _default =
       uni.navigateTo({
         url: '/pages/scanner/myself/myself' });
 
+    },
+    dialogClose: function dialogClose() {
+      this.$refs.alertDialog.close();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

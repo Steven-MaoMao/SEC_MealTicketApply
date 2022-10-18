@@ -57,17 +57,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -87,11 +76,8 @@ var _default =
         url: '/pages/index/index' });
 
     },
-    toMyScans: function toMyScans() {
-      uni.navigateTo({
-        url: '' });
 
-    },
+    // 直接用user页面的下的personalInfo和changePassword页面
     toPersonalInfo: function toPersonalInfo() {
       uni.navigateTo({
         url: '/pages/user/personalInfo/personalInfo' });

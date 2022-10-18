@@ -25,6 +25,7 @@
 			}
 		},
 		methods: {
+			// 用户登录
 			login() {
 				const _this = this
 				uni.request({
@@ -54,6 +55,7 @@
 								url: this.baseURL + '/users/phone/' + _this.phone,
 								method: 'GET',
 								success: (res) => {
+									// 登录成功后将用户信息存入storage中
 									uni.setStorageSync('wno', res.data.wno),
 									uni.setStorageSync('name', res.data.name),
 									uni.setStorageSync('phone', res.data.phone),
@@ -62,6 +64,7 @@
 									uni.setStorageSync('department', res.data.department),
 									uni.setStorageSync('role', res.data.role)
 									
+									// 根据用户身份的不同跳转到不同的页面
 									if (uni.getStorageSync('role') === 'scanner') {
 										uni.redirectTo({
 											url: '/pages/scanner/scan/scan'
